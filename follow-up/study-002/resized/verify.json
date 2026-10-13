@@ -1,0 +1,111 @@
+{
+  "sessions": [
+    {
+      "id": "restart-stock-s1",
+      "status": "completed",
+      "tokens": 834401
+    },
+    {
+      "id": "restart-stock-s2",
+      "status": "completed",
+      "tokens": 1041146
+    },
+    {
+      "id": "restart-lean-s1",
+      "status": "completed",
+      "tokens": 1354745
+    },
+    {
+      "id": "restart-lean-s2",
+      "status": "completed",
+      "tokens": 1698954
+    },
+    {
+      "id": "tablib-lean-s1",
+      "status": "completed",
+      "tokens": 1783885
+    },
+    {
+      "id": "tablib-lean-s2",
+      "status": "completed",
+      "tokens": 1866099
+    },
+    {
+      "id": "tablib-stock-s1",
+      "status": "completed",
+      "tokens": 1330920
+    },
+    {
+      "id": "tablib-stock-s2",
+      "status": "completed",
+      "tokens": 695478
+    },
+    {
+      "id": "fastapi-stock-s1",
+      "status": "completed",
+      "tokens": 181130
+    },
+    {
+      "id": "fastapi-lean-s1",
+      "status": "completed",
+      "tokens": 186813
+    },
+    {
+      "id": "watson-lean-s1",
+      "status": "completed",
+      "tokens": 943729
+    },
+    {
+      "id": "watson-lean-s2",
+      "status": "completed",
+      "tokens": 1626659
+    },
+    {
+      "id": "watson-stock-s1",
+      "status": "completed",
+      "tokens": 735366
+    },
+    {
+      "id": "watson-stock-s2",
+      "status": "completed",
+      "tokens": 5133142
+    },
+    {
+      "id": "mlflow-stock-s1",
+      "status": "completed",
+      "tokens": 648054
+    },
+    {
+      "id": "mlflow-lean-s1",
+      "status": "completed",
+      "tokens": 2613351
+    },
+    {
+      "id": "public-lean-s1",
+      "status": "completed",
+      "tokens": 4121340
+    },
+    {
+      "id": "public-stock-s1",
+      "status": "completed",
+      "tokens": 816397
+    },
+    {
+      "id": "restart-full-s1",
+      "status": "completed",
+      "tokens": 8579151
+    },
+    {
+      "id": "restart-full-s2",
+      "status": "not started"
+    },
+    {
+      "id": "public-full-s1",
+      "status": "not started"
+    }
+  ],
+  "studyTokens": 36190760,
+  "reviews": 42,
+  "reviewTokens": 958988,
+  "problems": []
+}

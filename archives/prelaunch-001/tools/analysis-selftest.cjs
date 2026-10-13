@@ -1,0 +1,13 @@
+'use strict';
+const assert=require('node:assert/strict');
+const {describe,paired}=require('./analyse.cjs');
+assert.deepEqual(describe([]),{n:0,mean:null,median:null,min:null,max:null});
+assert.deepEqual(describe([3,1]),{n:2,mean:2,median:2,min:1,max:3});
+const rows=[{task:'a',repetition:1,condition:'control',tokens:100},{task:'a',repetition:1,condition:'full',tokens:150},{task:'b',repetition:1,condition:'control',tokens:400},{task:'b',repetition:1,condition:'full',tokens:200},{task:'a',repetition:2,condition:'control',tokens:null}];
+const comparison=paired(rows,'control','full','tokens');
+assert.equal(comparison.pairs.length,2);
+assert.deepEqual(comparison.pairs.map(row=>row.percent),[50,-50]);
+assert.equal(comparison.relativePercent.median,0);
+assert.equal(comparison.absolute.mean,-75);
+assert.equal(paired([{task:'a',repetition:1,condition:'control',tokens:0},{task:'a',repetition:1,condition:'full',tokens:3}],'control','full','tokens').relativePercent.n,0);
+process.stdout.write('Analysis selftest passed: matched groups, missing values, zero denominators and descriptive statistics.\n');

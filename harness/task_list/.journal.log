@@ -1,0 +1,82 @@
+2026-10-01 19:44:33 new 00 open/00_unify_claude_and_codex_harness_and_validate_native.md
+2026-10-01 22:31:16 move 00 open->closed closed/00_unify_claude_and_codex_harness_and_validate_native.md
+2026-10-08 18:22:24 new 01 open/01_fix_ordinary_task_transition_dry_run.md
+2026-10-08 18:25:20 review 01 PASS
+2026-10-08 18:37:03 move 01 open->closed closed/01_fix_ordinary_task_transition_dry_run.md
+2026-10-08 22:00:52 new 02 open/02_load_the_shared_instructions_once_per_assistant.md
+2026-10-08 22:00:52 new 03 open/03_make_task_js_refuse_unknown_flags_receiptless_clos.md
+2026-10-08 22:00:52 new 04 open/04_judge_each_hook_write_by_its_own_repository_and_fi.md
+2026-10-08 22:00:53 new 05 open/05_make_closed_mean_committed.md
+2026-10-08 22:00:53 new 06 open/06_replace_the_restart_summary_with_a_handoff_built_f.md
+2026-10-08 22:00:53 new 07 open/07_set_reviewer_models_explicitly_and_record_per_task.md
+2026-10-09 09:10:11 move 04 open->pending_review pending_review/04_judge_each_hook_write_by_its_own_repository_and_fi.md
+2026-10-09 09:14:11 move 02 open->pending_review pending_review/02_load_the_shared_instructions_once_per_assistant.md
+2026-10-09 09:16:48 move 03 open->pending_review pending_review/03_make_task_js_refuse_unknown_flags_receiptless_clos.md
+2026-10-09 09:17:05 new 08 open/08_make_the_size_gate_judge_by_the_file_s_repository_.md
+2026-10-09 09:18:47 move 08 open->pending_review pending_review/08_make_the_size_gate_judge_by_the_file_s_repository_.md
+2026-10-09 09:20:58 move 07 open->pending_review pending_review/07_set_reviewer_models_explicitly_and_record_per_task.md
+2026-10-09 09:20:58 start 06
+2026-10-09 09:29:14 new 09 open/09_fix_the_reproduced_harness_review_gaps.md
+2026-10-09 09:29:37 move 06 open->pending_review pending_review/06_replace_the_restart_summary_with_a_handoff_built_f.md
+2026-10-09 09:30:21 review 05 PASS
+2026-10-09 09:30:21 start 05
+2026-10-09 09:38:15 move 05 open->pending_review pending_review/05_make_closed_mean_committed.md
+2026-10-09 09:38:16 review 09 PASS
+2026-10-09 09:38:32 start 09
+2026-10-09 09:55:01 move 09 open->pending_review pending_review/09_fix_the_reproduced_harness_review_gaps.md
+2026-10-09 14:39:32 move 03 pending_review->closed closed/03_make_task_js_refuse_unknown_flags_receiptless_clos.md
+2026-10-09 14:39:33 move 05 pending_review->closed closed/05_make_closed_mean_committed.md
+2026-10-09 14:39:34 move 08 pending_review->closed closed/08_make_the_size_gate_judge_by_the_file_s_repository_.md
+2026-10-12 15:43:39 new 10 open/10_make_codex_honour_harness_refusals_and_record_code.md
+2026-10-12 15:43:39 start 10
+2026-10-12 15:58:09 move 10 open->pending_review pending_review/10_make_codex_honour_harness_refusals_and_record_code.md
+2026-10-12 16:00:28 move 10 pending_review->closed closed/10_make_codex_honour_harness_refusals_and_record_code.md
+2026-10-12 19:06:17 new 11 open/11_let_a_session_end_after_three_consecutive_completi.md
+2026-10-12 19:06:17 start 11
+2026-10-12 19:11:14 move 11 open->pending_review pending_review/11_let_a_session_end_after_three_consecutive_completi.md
+2026-10-12 19:15:39 move 11 pending_review->closed closed/11_let_a_session_end_after_three_consecutive_completi.md
+2026-10-13 08:17:22 new 12 open/12_keep_the_task_tool_s_board_inside_the_repository.md
+2026-10-13 08:17:22 start 12
+2026-10-13 08:20:40 move 12 open->closed closed/12_keep_the_task_tool_s_board_inside_the_repository.md
+2026-10-13 08:21:05 new 13 open/13_let_task_js_close_a_task_when_git_cannot_run.md
+2026-10-13 08:21:05 start 13
+2026-10-13 08:23:11 move 13 open->closed closed/13_let_task_js_close_a_task_when_git_cannot_run.md
+2026-10-13 08:23:25 new 14 open/14_allow_and_log_codex_patches_the_checker_cannot_reb.md
+2026-10-13 08:23:25 start 14
+2026-10-13 08:25:44 move 14 open->closed closed/14_allow_and_log_codex_patches_the_checker_cannot_reb.md
+2026-10-13 08:26:12 new 15 open/15_refuse_the_end_of_a_session_at_most_once_in_one_li.md
+2026-10-13 08:26:12 start 15
+2026-10-13 08:29:26 move 15 open->closed closed/15_refuse_the_end_of_a_session_at_most_once_in_one_li.md
+2026-10-13 08:32:07 new 16 open/16_build_the_lean_harness_profile.md
+2026-10-13 08:32:07 start 16
+2026-10-13 08:42:14 move 16 open->closed closed/16_build_the_lean_harness_profile.md
+2026-10-13 08:54:19 new 17 open/17_let_the_lean_checks_run_where_node_cannot_start_ot.md
+2026-10-13 08:54:19 start 17
+2026-10-13 09:00:19 move 17 open->closed closed/17_let_the_lean_checks_run_where_node_cannot_start_ot.md
+2026-10-13 09:06:04 new 18 open/18_fix_the_lean_probe_findings_unreadable_folders_the.md
+2026-10-13 09:06:04 start 18
+2026-10-13 09:09:02 move 18 open->closed closed/18_fix_the_lean_probe_findings_unreadable_folders_the.md
+2026-10-13 16:00:35 new 19 open/19_read_python_source_as_utf_8_in_the_complexity_chec.md
+2026-10-13 16:00:35 start 19
+2026-10-13 16:01:50 move 19 open->closed closed/19_read_python_source_as_utf_8_in_the_complexity_chec.md
+2026-10-13 16:24:28 new 20 open/20_version_the_harness_tag_today_s_setup_v1_and_relea.md
+2026-10-13 16:34:18 new 21 open/21_add_task_js_files_add_to_put_a_file_under_the_open.md
+2026-10-13 16:34:18 start 21
+2026-10-13 16:36:56 move 21 open->closed closed/21_add_task_js_files_add_to_put_a_file_under_the_open.md
+2026-10-13 16:37:14 new 22 open/22_remove_the_files_contradiction_from_the_lean_instr.md
+2026-10-13 16:37:14 start 22
+2026-10-13 16:38:32 move 22 open->closed closed/22_remove_the_files_contradiction_from_the_lean_instr.md
+2026-10-13 16:39:02 new 23 open/23_make_finish_checked_name_a_check_that_ran.md
+2026-10-13 16:39:02 start 23
+2026-10-13 16:41:19 move 23 open->closed closed/23_make_finish_checked_name_a_check_that_ran.md
+2026-10-13 17:35:37 review 20 FAIL
+2026-10-13 17:36:35 review 20 PASS
+2026-10-13 17:36:35 start 20
+2026-10-13 20:17:10 move 20 open->closed closed/20_version_the_harness_tag_today_s_setup_v1_and_relea.md
+2026-10-13 22:33:52 new 24 open/24_record_time_and_claude_tokens_on_each_task_at_fini.md
+2026-10-13 22:33:52 start 24
+2026-10-13 22:34:22 start 24
+2026-10-13 22:38:13 move 24 open->closed closed/24_record_time_and_claude_tokens_on_each_task_at_fini.md
+2026-10-13 22:45:41 new 25 open/25_untrack_skills_synced.md
+2026-10-13 22:45:41 start 25
+2026-10-13 22:46:36 move 25 open->closed closed/25_untrack_skills_synced.md

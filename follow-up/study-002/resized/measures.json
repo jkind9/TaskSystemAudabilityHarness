@@ -1,0 +1,1845 @@
+{
+  "generatedAt": "2026-10-13T14:59:50.482Z",
+  "checker": {
+    "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+    "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064",
+    "files": [
+      "checks/complexity.cjs",
+      "checks/complexity.py",
+      "checks/deadcode.cjs",
+      "checks/duplicates.cjs",
+      "checks/gitread.cjs",
+      "checks/linediff.cjs",
+      "checks/prose.cjs",
+      "checks/run.cjs",
+      "scripts/lib/plain-language.js"
+    ]
+  },
+  "reviewsAvailable": true,
+  "runs": [
+    {
+      "runId": "restart-stock",
+      "task": "restart",
+      "config": "stock",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a1353f-4690-75d2-9392-e839b8f25099"
+        },
+        {
+          "n": 2,
+          "status": "completed",
+          "threadId": "01a13541-66ec-7cd0-9a53-ccbdda66fbbe"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 2,
+        "categoriesTotal": 4,
+        "missed": [
+          "part2",
+          "compat"
+        ]
+      },
+      "recovery": {
+        "applicable": true,
+        "discovery": {
+          "found": true,
+          "tokensBefore": 72561,
+          "toolCallsBefore": 4,
+          "commandsBefore": 4
+        },
+        "decisions": {
+          "kept": 5,
+          "changed": 0,
+          "duplicated": 0,
+          "notDecided": 0,
+          "total": 5
+        },
+        "missedAtEnd": [
+          "part2",
+          "compat"
+        ]
+      },
+      "auditability": {
+        "score": 6.5,
+        "correct": 6,
+        "partial": 1,
+        "wrong": 1,
+        "notRecorded": 0,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "cannot tell",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": null,
+            "after": null,
+            "files": 5
+          },
+          "filesTouched": 7,
+          "linesAdded": 320,
+          "linesRemoved": 66,
+          "filesOver800": [
+            "tests/test_tinydb.py",
+            "tinydb/table.py"
+          ],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 6,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 2,
+            "naming_consistency": 2,
+            "error_handling": 2,
+            "test_quality": 2,
+            "change_scope": 2
+          },
+          "total": 12
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 166,
+            "sentences": 14,
+            "avgSentenceLength": 11.86,
+            "flesch": 50.6,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 168,
+            "sentences": 27,
+            "avgSentenceLength": 6.22,
+            "flesch": 52,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          }
+        },
+        "clarity": 4,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 58624,
+            "cachedInput": 766720,
+            "output": 9057,
+            "reasoning": 3803,
+            "total": 834401,
+            "elapsedSeconds": 139.108
+          },
+          {
+            "freshInput": 63905,
+            "cachedInput": 966656,
+            "output": 10585,
+            "reasoning": 4891,
+            "total": 1041146,
+            "elapsedSeconds": 156.303
+          }
+        ],
+        "run": {
+          "freshInput": 122529,
+          "cachedInput": 1733376,
+          "output": 19642,
+          "reasoning": 8694,
+          "total": 1875547,
+          "elapsedSeconds": 295.411,
+          "reviewTokens": 87559,
+          "sessions": 2
+        }
+      },
+      "mechanism": {
+        "blocked": {},
+        "cloneInstructionReads": [
+          null,
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "restart-lean",
+      "task": "restart",
+      "config": "lean",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a13543-cab1-7e62-aea8-3d8bafbf0731"
+        },
+        {
+          "n": 2,
+          "status": "completed",
+          "threadId": "01a13546-5d3c-74f2-a6ca-df1e471cac16"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 2,
+        "categoriesTotal": 4,
+        "missed": [
+          "part2",
+          "compat"
+        ]
+      },
+      "recovery": {
+        "applicable": true,
+        "discovery": {
+          "found": true,
+          "tokensBefore": 177199,
+          "toolCallsBefore": 7,
+          "commandsBefore": 7
+        },
+        "decisions": {
+          "kept": 3,
+          "changed": 1,
+          "duplicated": 1,
+          "notDecided": 0,
+          "total": 5
+        },
+        "missedAtEnd": [
+          "part2",
+          "compat"
+        ]
+      },
+      "auditability": {
+        "score": 6.5,
+        "correct": 6,
+        "partial": 1,
+        "wrong": 1,
+        "notRecorded": 0,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "full custom harness",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0,
+            "after": 0.06432748538011696,
+            "files": 4
+          },
+          "filesTouched": 8,
+          "linesAdded": 397,
+          "linesRemoved": 93,
+          "filesOver800": [],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 6,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 1,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 1,
+            "change_scope": 2
+          },
+          "total": 9
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 71,
+            "sentences": 9,
+            "avgSentenceLength": 7.89,
+            "flesch": 59.4,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 150,
+            "sentences": 24,
+            "avgSentenceLength": 6.25,
+            "flesch": 65.7,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 349,
+            "sentences": 68,
+            "avgSentenceLength": 5.13,
+            "flesch": 54.2,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          }
+        },
+        "clarity": 4,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 70394,
+            "cachedInput": 1271552,
+            "output": 12799,
+            "reasoning": 5485,
+            "total": 1354745,
+            "elapsedSeconds": 168.443
+          },
+          {
+            "freshInput": 74649,
+            "cachedInput": 1604608,
+            "output": 19697,
+            "reasoning": 11300,
+            "total": 1698954,
+            "elapsedSeconds": 289.526
+          }
+        ],
+        "run": {
+          "freshInput": 145043,
+          "cachedInput": 2876160,
+          "output": 32496,
+          "reasoning": 16785,
+          "total": 3053699,
+          "elapsedSeconds": 457.96900000000005,
+          "reviewTokens": 96248,
+          "sessions": 2
+        }
+      },
+      "mechanism": {
+        "blocked": {
+          "refusal": 3
+        },
+        "cloneInstructionReads": [
+          null,
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "tablib-lean",
+      "task": "tablib",
+      "config": "lean",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a1354a-c954-7812-bcee-02bad75d7e14"
+        },
+        {
+          "n": 2,
+          "status": "completed",
+          "threadId": "01a13552-09de-7402-a4b6-88a7fabb0b7c"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 4,
+        "categoriesTotal": 4,
+        "missed": []
+      },
+      "recovery": {
+        "applicable": true,
+        "discovery": {
+          "found": true,
+          "tokensBefore": 172937,
+          "toolCallsBefore": 7,
+          "commandsBefore": 7
+        },
+        "decisions": {
+          "kept": 5,
+          "changed": 0,
+          "duplicated": 0,
+          "notDecided": 0,
+          "total": 5
+        },
+        "missedAtEnd": []
+      },
+      "auditability": {
+        "score": 5.5,
+        "correct": 5,
+        "partial": 1,
+        "wrong": 2,
+        "notRecorded": 0,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "full custom harness",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": null,
+            "after": null,
+            "files": 4
+          },
+          "filesTouched": 10,
+          "linesAdded": 392,
+          "linesRemoved": 56,
+          "filesOver800": [
+            "tests/test_tablib.py"
+          ],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 9,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 2,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 2,
+            "change_scope": 2
+          },
+          "total": 11
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 96,
+            "sentences": 10,
+            "avgSentenceLength": 9.6,
+            "flesch": 57.9,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 165,
+            "sentences": 25,
+            "avgSentenceLength": 6.6,
+            "flesch": 62.7,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 703,
+            "sentences": 115,
+            "avgSentenceLength": 6.11,
+            "flesch": 53.2,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          }
+        },
+        "clarity": 3,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 132558,
+            "cachedInput": 1634560,
+            "output": 16767,
+            "reasoning": 8786,
+            "total": 1783885,
+            "elapsedSeconds": 475.017
+          },
+          {
+            "freshInput": 80649,
+            "cachedInput": 1771264,
+            "output": 14186,
+            "reasoning": 6884,
+            "total": 1866099,
+            "elapsedSeconds": 264.488
+          }
+        ],
+        "run": {
+          "freshInput": 213207,
+          "cachedInput": 3405824,
+          "output": 30953,
+          "reasoning": 15670,
+          "total": 3649984,
+          "elapsedSeconds": 739.505,
+          "reviewTokens": 98006,
+          "sessions": 2
+        }
+      },
+      "mechanism": {
+        "blocked": {
+          "refusal": 4
+        },
+        "cloneInstructionReads": [
+          null,
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "tablib-stock",
+      "task": "tablib",
+      "config": "stock",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a13556-1477-7d73-8f88-a386e63238be"
+        },
+        {
+          "n": 2,
+          "status": "completed",
+          "threadId": "01a1355a-f969-7a63-bb5c-9d5099e00bed"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 3,
+        "categoriesTotal": 4,
+        "missed": [
+          "part1"
+        ]
+      },
+      "recovery": {
+        "applicable": true,
+        "discovery": {
+          "found": true,
+          "tokensBefore": 133479,
+          "toolCallsBefore": 6,
+          "commandsBefore": 6
+        },
+        "decisions": {
+          "kept": 4,
+          "changed": 1,
+          "duplicated": 0,
+          "notDecided": 0,
+          "total": 5
+        },
+        "missedAtEnd": [
+          "part1"
+        ]
+      },
+      "auditability": {
+        "score": 6,
+        "correct": 6,
+        "partial": 0,
+        "wrong": 2,
+        "notRecorded": 0,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "cannot tell",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": null,
+            "after": null,
+            "files": 4
+          },
+          "filesTouched": 6,
+          "linesAdded": 295,
+          "linesRemoved": 52,
+          "filesOver800": [
+            "src/tablib/core.py",
+            "tests/test_tablib.py"
+          ],
+          "duplicateBlocks": {
+            "total": 2,
+            "source": 2,
+            "test": 0,
+            "examples": [
+              {
+                "file": "src/tablib/formats/_yaml.py",
+                "firstLine": "if version == 1:"
+              },
+              {
+                "file": "src/tablib/formats/_yaml.py",
+                "firstLine": "else:"
+              }
+            ]
+          },
+          "testsAdded": 7,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 1,
+            "dead_code": 2,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 2,
+            "change_scope": 2
+          },
+          "total": 10
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 184,
+            "sentences": 16,
+            "avgSentenceLength": 11.5,
+            "flesch": 61.4,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 195,
+            "sentences": 35,
+            "avgSentenceLength": 5.57,
+            "flesch": 71,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          }
+        },
+        "clarity": 4,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 73071,
+            "cachedInput": 1243392,
+            "output": 14457,
+            "reasoning": 4141,
+            "total": 1330920,
+            "elapsedSeconds": 320.562
+          },
+          {
+            "freshInput": 90199,
+            "cachedInput": 596992,
+            "output": 8287,
+            "reasoning": 2638,
+            "total": 695478,
+            "elapsedSeconds": 123.094
+          }
+        ],
+        "run": {
+          "freshInput": 163270,
+          "cachedInput": 1840384,
+          "output": 22744,
+          "reasoning": 6779,
+          "total": 2026398,
+          "elapsedSeconds": 443.656,
+          "reviewTokens": 88652,
+          "sessions": 2
+        }
+      },
+      "mechanism": {
+        "blocked": {},
+        "cloneInstructionReads": [
+          null,
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "fastapi-stock",
+      "task": "fastapi",
+      "config": "stock",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a1355c-dd80-7b82-a680-2d7abcf9c4b1"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 0,
+        "categoriesTotal": 1,
+        "f2pPassRate": 0,
+        "missed": [
+          "target tests 0% passing"
+        ]
+      },
+      "recovery": {
+        "applicable": false
+      },
+      "auditability": {
+        "score": 1.5,
+        "correct": 1,
+        "partial": 1,
+        "wrong": 0,
+        "notRecorded": 6,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "cannot tell",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0,
+            "after": 0,
+            "files": 2
+          },
+          "filesTouched": 2,
+          "linesAdded": 36,
+          "linesRemoved": 1,
+          "filesOver800": [],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 0,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 2,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 0,
+            "change_scope": 2
+          },
+          "total": 9
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 38,
+            "sentences": 3,
+            "avgSentenceLength": 12.67,
+            "flesch": 60.4,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          }
+        },
+        "clarity": 3,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 23447,
+            "cachedInput": 155648,
+            "output": 2035,
+            "reasoning": 787,
+            "total": 181130,
+            "elapsedSeconds": 45.539
+          }
+        ],
+        "run": {
+          "freshInput": 23447,
+          "cachedInput": 155648,
+          "output": 2035,
+          "reasoning": 787,
+          "total": 181130,
+          "elapsedSeconds": 45.539,
+          "reviewTokens": 49643,
+          "sessions": 1
+        }
+      },
+      "mechanism": {
+        "blocked": {},
+        "cloneInstructionReads": [
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "fastapi-lean",
+      "task": "fastapi",
+      "config": "lean",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a1355d-9174-7460-9630-978bd4161db2"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 0,
+        "categoriesTotal": 1,
+        "f2pPassRate": 0,
+        "missed": [
+          "target tests 0% passing"
+        ]
+      },
+      "recovery": {
+        "applicable": false
+      },
+      "auditability": {
+        "score": 7.5,
+        "correct": 7,
+        "partial": 1,
+        "wrong": 0,
+        "notRecorded": 0,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "full custom harness",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0,
+            "after": 0,
+            "files": 2
+          },
+          "filesTouched": 4,
+          "linesAdded": 71,
+          "linesRemoved": 1,
+          "filesOver800": [],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 0,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 1,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 0,
+            "change_scope": 1
+          },
+          "total": 7
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 17,
+            "sentences": 4,
+            "avgSentenceLength": 4.25,
+            "flesch": 33.3,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 96,
+            "sentences": 24,
+            "avgSentenceLength": 4,
+            "flesch": 54.7,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          }
+        },
+        "clarity": 3,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 37856,
+            "cachedInput": 146432,
+            "output": 2525,
+            "reasoning": 1289,
+            "total": 186813,
+            "elapsedSeconds": 78.294
+          }
+        ],
+        "run": {
+          "freshInput": 37856,
+          "cachedInput": 146432,
+          "output": 2525,
+          "reasoning": 1289,
+          "total": 186813,
+          "elapsedSeconds": 78.294,
+          "reviewTokens": 51258,
+          "sessions": 1
+        }
+      },
+      "mechanism": {
+        "blocked": {},
+        "cloneInstructionReads": [
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "watson-lean",
+      "task": "watson",
+      "config": "lean",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a1355e-c483-7bf2-a83c-9de8e352b6fa"
+        },
+        {
+          "n": 2,
+          "status": "completed",
+          "threadId": "01a13562-39f5-7bb3-8808-ee17b5ad2772"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 4,
+        "categoriesTotal": 4,
+        "missed": []
+      },
+      "recovery": {
+        "applicable": true,
+        "discovery": {
+          "found": true,
+          "tokensBefore": 148732,
+          "toolCallsBefore": 6,
+          "commandsBefore": 6
+        },
+        "decisions": {
+          "kept": 3,
+          "changed": 1,
+          "duplicated": 0,
+          "notDecided": 1,
+          "total": 5
+        },
+        "missedAtEnd": []
+      },
+      "auditability": {
+        "score": 6.5,
+        "correct": 6,
+        "partial": 1,
+        "wrong": 0,
+        "notRecorded": 1,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "full custom harness",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0.2943396226415094,
+            "after": 0.2846715328467153,
+            "files": 6
+          },
+          "filesTouched": 10,
+          "linesAdded": 276,
+          "linesRemoved": 37,
+          "filesOver800": [
+            "tests/test_watson.py",
+            "watson/cli.py"
+          ],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 7,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 2,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 1,
+            "change_scope": 2
+          },
+          "total": 10
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 77,
+            "sentences": 10,
+            "avgSentenceLength": 7.7,
+            "flesch": 74.9,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 136,
+            "sentences": 20,
+            "avgSentenceLength": 6.8,
+            "flesch": 89.2,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 286,
+            "sentences": 63,
+            "avgSentenceLength": 4.54,
+            "flesch": 74.1,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          }
+        },
+        "clarity": 4,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 62280,
+            "cachedInput": 866816,
+            "output": 14633,
+            "reasoning": 8548,
+            "total": 943729,
+            "elapsedSeconds": 226.482
+          },
+          {
+            "freshInput": 91824,
+            "cachedInput": 1516288,
+            "output": 18547,
+            "reasoning": 9841,
+            "total": 1626659,
+            "elapsedSeconds": 299.67
+          }
+        ],
+        "run": {
+          "freshInput": 154104,
+          "cachedInput": 2383104,
+          "output": 33180,
+          "reasoning": 18389,
+          "total": 2570388,
+          "elapsedSeconds": 526.152,
+          "reviewTokens": 92550,
+          "sessions": 2
+        }
+      },
+      "mechanism": {
+        "blocked": {
+          "refusal": 6
+        },
+        "cloneInstructionReads": [
+          null,
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "watson-stock",
+      "task": "watson",
+      "config": "stock",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a13566-ce3e-79b0-ac65-cec102d6d708"
+        },
+        {
+          "n": 2,
+          "status": "completed",
+          "threadId": "01a13569-5161-7d72-b9d7-700f7b71474e"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 3,
+        "categoriesTotal": 4,
+        "missed": [
+          "compat"
+        ]
+      },
+      "recovery": {
+        "applicable": true,
+        "discovery": {
+          "found": true,
+          "tokensBefore": 205732,
+          "toolCallsBefore": 8,
+          "commandsBefore": 8
+        },
+        "decisions": {
+          "kept": 4,
+          "changed": 1,
+          "duplicated": 0,
+          "notDecided": 0,
+          "total": 5
+        },
+        "missedAtEnd": [
+          "compat"
+        ]
+      },
+      "auditability": {
+        "score": 2,
+        "correct": 2,
+        "partial": 0,
+        "wrong": 3,
+        "notRecorded": 3,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "cannot tell",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0.27177700348432055,
+            "after": 0.2816666666666667,
+            "files": 7
+          },
+          "filesTouched": 9,
+          "linesAdded": 1044,
+          "linesRemoved": 816,
+          "filesOver800": [
+            "tests/test_watson.py",
+            "watson/cli.py"
+          ],
+          "duplicateBlocks": {
+            "total": 3,
+            "source": 3,
+            "test": 0,
+            "examples": [
+              {
+                "file": "docs/user-guide/commands.md",
+                "firstLine": "apollo11 - 13h 22m 20s"
+              },
+              {
+                "file": "docs/user-guide/commands.md",
+                "firstLine": "### Options"
+              },
+              {
+                "file": "docs/user-guide/commands.md",
+                "firstLine": "`-y, --year` | Reports activity for the current year."
+              }
+            ]
+          },
+          "testsAdded": 8,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 2,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 1,
+            "change_scope": 1
+          },
+          "total": 9
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 107,
+            "sentences": 9,
+            "avgSentenceLength": 11.89,
+            "flesch": 53.2,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 2807,
+            "sentences": 532,
+            "avgSentenceLength": 5.28,
+            "flesch": 75.5,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          }
+        },
+        "clarity": 4,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 53375,
+            "cachedInput": 675072,
+            "output": 6919,
+            "reasoning": 2783,
+            "total": 735366,
+            "elapsedSeconds": 164.467
+          },
+          {
+            "freshInput": 154542,
+            "cachedInput": 4950528,
+            "output": 28072,
+            "reasoning": 13579,
+            "total": 5133142,
+            "elapsedSeconds": 953.611
+          }
+        ],
+        "run": {
+          "freshInput": 207917,
+          "cachedInput": 5625600,
+          "output": 34991,
+          "reasoning": 16362,
+          "total": 5868508,
+          "elapsedSeconds": 1118.078,
+          "reviewTokens": 141165,
+          "sessions": 2
+        }
+      },
+      "mechanism": {
+        "blocked": {},
+        "cloneInstructionReads": [
+          null,
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "mlflow-stock",
+      "task": "mlflow",
+      "config": "stock",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a13577-e51a-72f1-baa3-0ab01601f26e"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 0,
+        "categoriesTotal": 1,
+        "f2pPassRate": 0.9455,
+        "missed": [
+          "target tests 94.6% passing"
+        ]
+      },
+      "recovery": {
+        "applicable": false
+      },
+      "auditability": {
+        "score": 1,
+        "correct": 0,
+        "partial": 2,
+        "wrong": 1,
+        "notRecorded": 5,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "cannot tell",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0.3188405797101449,
+            "after": 0.2900763358778626,
+            "files": 3
+          },
+          "filesTouched": 3,
+          "linesAdded": 190,
+          "linesRemoved": 3,
+          "filesOver800": [],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 0,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 1,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 0,
+            "change_scope": 2
+          },
+          "total": 8
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 33,
+            "sentences": 3,
+            "avgSentenceLength": 11,
+            "flesch": 26.5,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          }
+        },
+        "clarity": 3,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 49835,
+            "cachedInput": 590592,
+            "output": 7627,
+            "reasoning": 3299,
+            "total": 648054,
+            "elapsedSeconds": 132.321
+          }
+        ],
+        "run": {
+          "freshInput": 49835,
+          "cachedInput": 590592,
+          "output": 7627,
+          "reasoning": 3299,
+          "total": 648054,
+          "elapsedSeconds": 132.321,
+          "reviewTokens": 56243,
+          "sessions": 1
+        }
+      },
+      "mechanism": {
+        "blocked": {},
+        "cloneInstructionReads": [
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "mlflow-lean",
+      "task": "mlflow",
+      "config": "lean",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a13579-f07c-7593-b4d3-1d064b6f2924"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 0,
+        "categoriesTotal": 1,
+        "f2pPassRate": 0.9455,
+        "missed": [
+          "target tests 94.6% passing"
+        ]
+      },
+      "recovery": {
+        "applicable": false
+      },
+      "auditability": {
+        "score": 2.5,
+        "correct": 2,
+        "partial": 1,
+        "wrong": 5,
+        "notRecorded": 0,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "full custom harness",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0.41509433962264153,
+            "after": 0.4326923076923077,
+            "files": 2
+          },
+          "filesTouched": 4,
+          "linesAdded": 199,
+          "linesRemoved": 4,
+          "filesOver800": [],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 0,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 1,
+            "naming_consistency": 2,
+            "error_handling": 2,
+            "test_quality": 0,
+            "change_scope": 1
+          },
+          "total": 8
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 26,
+            "sentences": 4,
+            "avgSentenceLength": 6.5,
+            "flesch": 37.5,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 105,
+            "sentences": 24,
+            "avgSentenceLength": 4.38,
+            "flesch": 51.7,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          }
+        },
+        "clarity": 3,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 352323,
+            "cachedInput": 2107136,
+            "output": 153892,
+            "reasoning": 3354,
+            "total": 2613351,
+            "elapsedSeconds": 974.569
+          }
+        ],
+        "run": {
+          "freshInput": 352323,
+          "cachedInput": 2107136,
+          "output": 153892,
+          "reasoning": 3354,
+          "total": 2613351,
+          "elapsedSeconds": 974.569,
+          "reviewTokens": 57892,
+          "sessions": 1
+        }
+      },
+      "mechanism": {
+        "blocked": {},
+        "cloneInstructionReads": [
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "public-lean",
+      "task": "public",
+      "config": "lean",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a1358a-1236-7771-8e1f-65b52bebabf0"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 0,
+        "categoriesTotal": 1,
+        "f2pPassRate": 0.449,
+        "missed": [
+          "target tests 44.9% passing"
+        ]
+      },
+      "recovery": {
+        "applicable": false
+      },
+      "auditability": {
+        "score": 7,
+        "correct": 7,
+        "partial": 0,
+        "wrong": 1,
+        "notRecorded": 0,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "task tracking only",
+        "right": true
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0,
+            "after": 0.43870967741935485,
+            "files": 2
+          },
+          "filesTouched": 4,
+          "linesAdded": 437,
+          "linesRemoved": 597,
+          "filesOver800": [],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 0,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 2,
+            "dead_code": 2,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 0,
+            "change_scope": 2
+          },
+          "total": 9
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 21,
+            "sentences": 4,
+            "avgSentenceLength": 5.25,
+            "flesch": 32.3,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 102,
+            "sentences": 24,
+            "avgSentenceLength": 4.25,
+            "flesch": 35.8,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          }
+        },
+        "clarity": 3,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 132440,
+            "cachedInput": 3941120,
+            "output": 47780,
+            "reasoning": 10070,
+            "total": 4121340,
+            "elapsedSeconds": 1229.235
+          }
+        ],
+        "run": {
+          "freshInput": 132440,
+          "cachedInput": 3941120,
+          "output": 47780,
+          "reasoning": 10070,
+          "total": 4121340,
+          "elapsedSeconds": 1229.235,
+          "reviewTokens": 76359,
+          "sessions": 1
+        }
+      },
+      "mechanism": {
+        "blocked": {
+          "refusal": 1
+        },
+        "cloneInstructionReads": [
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    },
+    {
+      "runId": "public-stock",
+      "task": "public",
+      "config": "stock",
+      "sessions": [
+        {
+          "n": 1,
+          "status": "completed",
+          "threadId": "01a1359c-d579-73d0-971b-d1fd917bb12e"
+        }
+      ],
+      "correctness": {
+        "wholeTaskPass": false,
+        "categoriesPassed": 0,
+        "categoriesTotal": 1,
+        "f2pPassRate": 0.7211,
+        "missed": [
+          "target tests 72.1% passing"
+        ]
+      },
+      "recovery": {
+        "applicable": false
+      },
+      "auditability": {
+        "score": 4.5,
+        "correct": 4,
+        "partial": 1,
+        "wrong": 3,
+        "notRecorded": 0,
+        "of": 8
+      },
+      "setupGuess": {
+        "guess": "cannot tell",
+        "right": false
+      },
+      "debt": {
+        "script": {
+          "complexityShare": {
+            "before": 0,
+            "after": 0.40625,
+            "files": 2
+          },
+          "filesTouched": 2,
+          "linesAdded": 377,
+          "linesRemoved": 1,
+          "filesOver800": [
+            "src/packaging/metadata.py"
+          ],
+          "duplicateBlocks": {
+            "total": 0,
+            "source": 0,
+            "test": 0,
+            "examples": []
+          },
+          "testsAdded": 0,
+          "linter": null
+        },
+        "rubric": {
+          "items": {
+            "duplication": 1,
+            "dead_code": 0,
+            "naming_consistency": 2,
+            "error_handling": 1,
+            "test_quality": 0,
+            "change_scope": 2
+          },
+          "total": 6
+        }
+      },
+      "plainLanguage": {
+        "script": {
+          "checker": {
+            "commit": "ab8f166a90442095faf6990f0d2c5bff43210e4e",
+            "sha256": "e7dbec2061d1deaba18f02cb7a8725b6f6758160a799e6c0afacdb1adad16064"
+          },
+          "messages": {
+            "words": 41,
+            "sentences": 3,
+            "avgSentenceLength": 13.67,
+            "flesch": 25.8,
+            "patternHits": 0,
+            "patternsPer1000": 0,
+            "byPattern": {}
+          },
+          "docs": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          },
+          "taskRecords": {
+            "words": 0,
+            "sentences": 0,
+            "avgSentenceLength": null,
+            "flesch": null,
+            "patternHits": 0,
+            "patternsPer1000": null,
+            "byPattern": {}
+          }
+        },
+        "clarity": 4,
+        "clarityUnknown": null
+      },
+      "cost": {
+        "sessions": [
+          {
+            "freshInput": 79440,
+            "cachedInput": 727296,
+            "output": 9661,
+            "reasoning": 2971,
+            "total": 816397,
+            "elapsedSeconds": 227.392
+          }
+        ],
+        "run": {
+          "freshInput": 79440,
+          "cachedInput": 727296,
+          "output": 9661,
+          "reasoning": 2971,
+          "total": 816397,
+          "elapsedSeconds": 227.392,
+          "reviewTokens": 63413,
+          "sessions": 1
+        }
+      },
+      "mechanism": {
+        "blocked": {},
+        "cloneInstructionReads": [
+          null
+        ]
+      },
+      "protocol": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\protocol.json"
+    }
+  ]
+}

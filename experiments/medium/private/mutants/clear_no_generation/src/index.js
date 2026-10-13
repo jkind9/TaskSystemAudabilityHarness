@@ -1,0 +1,3 @@
+'use strict';
+function createCache(loader) { const values = new Map(); const active = new Map(); return { get(key) { if (values.has(key)) return Promise.resolve(values.get(key)); if (active.has(key)) return active.get(key); const p = Promise.resolve().then(() => loader(key)).then(value => { values.set(key, value); return value; }).finally(() => { if (active.get(key) === p) active.delete(key); }); active.set(key, p); return p; }, invalidate(key) { values.delete(key); }, clear() { values.clear(); active.clear(); } }; }
+module.exports = { createCache };

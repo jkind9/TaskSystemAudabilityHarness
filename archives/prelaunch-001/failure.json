@@ -1,0 +1,9 @@
+{
+  "classification": "CLI argument validation failure",
+  "attempts": 18,
+  "modelThreads": 0,
+  "exposedUsageCounters": 0,
+  "reason": "--approve-for-me cannot be used with --sandbox",
+  "evidenceRetained": true,
+  "changes": "Remove incompatible explicit --sandbox flag; identical tasks/graders/prompts/model/order; new study id and fresh repos; stop on missing thread"
+}

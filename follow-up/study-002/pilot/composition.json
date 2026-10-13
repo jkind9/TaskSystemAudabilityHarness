@@ -1,0 +1,8 @@
+{
+  "note": "Which pilot runs come from which frozen protocol. The owner raised the session allowance after the first run (2026-10-12), so the remaining runs were frozen again in pilot-b with byte-identical tools, task inputs and profiles. Reviews run under the first protocol, so they live in reviews/.",
+  "reviewProtocol": "protocol.json",
+  "studies": [
+    { "protocol": "protocol.json", "runs": ["restart-task-only"] },
+    { "protocol": "pilot-b/protocol.json", "runs": ["restart-stock", "restart-full", "public-stock", "public-full", "public-task-only"] }
+  ]
+}

@@ -1,0 +1,250 @@
+{
+  "conflicts": [
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\agent-sort\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\agent-sort\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\agent-sort\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\ai-regression-testing\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\ai-regression-testing\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\ai-regression-testing\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\autonomous-loops\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\autonomous-loops\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\autonomous-loops\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\blueprint\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\blueprint\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\blueprint\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\carrier-relationship-management\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\carrier-relationship-management\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\carrier-relationship-management\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\claude-api\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\claude-api\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\claude-api\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\claude-devfleet\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\claude-devfleet\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\claude-devfleet\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\configure-ecc\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\configure-ecc\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\configure-ecc\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\continuous-learning\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\continuous-learning\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\continuous-learning\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\continuous-learning-v2\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\continuous-learning-v2\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\continuous-learning-v2\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\cost-aware-llm-pipeline\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\cost-aware-llm-pipeline\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\cost-aware-llm-pipeline\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\council\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\council\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\council\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\customs-trade-compliance\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\customs-trade-compliance\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\customs-trade-compliance\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\deep-research\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\deep-research\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\deep-research\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\dmux-workflows\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\dmux-workflows\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\dmux-workflows\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\ecc-tools-cost-audit\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\ecc-tools-cost-audit\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\ecc-tools-cost-audit\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\energy-procurement\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\energy-procurement\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\energy-procurement\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\eval-harness\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\eval-harness\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\eval-harness\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\exa-search\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\exa-search\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\exa-search\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\fal-ai-media\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\fal-ai-media\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\fal-ai-media\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\graphify\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\graphify\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\graphify\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\hookify-rules\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\hookify-rules\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\hookify-rules\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\inventory-demand-planning\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\inventory-demand-planning\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\inventory-demand-planning\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\jira-integration\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\jira-integration\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\jira-integration\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\knowledge-ops\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\knowledge-ops\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\knowledge-ops\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\laravel-plugin-discovery\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\laravel-plugin-discovery\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\laravel-plugin-discovery\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\logistics-exception-management\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\logistics-exception-management\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\logistics-exception-management\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\mcp-server-patterns\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\mcp-server-patterns\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\mcp-server-patterns\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\nanoclaw-repl\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\nanoclaw-repl\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\nanoclaw-repl\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\plankton-code-quality\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\plankton-code-quality\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\plankton-code-quality\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\product-capability\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\product-capability\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\product-capability\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\production-scheduling\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\production-scheduling\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\production-scheduling\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\project-guidelines-example\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\project-guidelines-example\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\project-guidelines-example\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\prompt-optimizer\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\prompt-optimizer\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\prompt-optimizer\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\quality-nonconformance\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\quality-nonconformance\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\quality-nonconformance\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\regex-vs-llm-structured-text\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\regex-vs-llm-structured-text\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\regex-vs-llm-structured-text\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\returns-reverse-logistics\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\returns-reverse-logistics\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\returns-reverse-logistics\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\search-first\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\search-first\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\search-first\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\security-scan\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\security-scan\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\security-scan\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\skill-stocktake\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\skill-stocktake\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\skill-stocktake\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\strategic-compact\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\strategic-compact\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\strategic-compact\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\team-builder\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\team-builder\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\team-builder\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\token-budget-advisor\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\token-budget-advisor\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\token-budget-advisor\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\unified-notifications-ops\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\unified-notifications-ops\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\unified-notifications-ops\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\verification-loop\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\verification-loop\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\verification-loop\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\video-editing\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\video-editing\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\video-editing\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\videodb\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\videodb\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\videodb\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\workspace-surface-audit\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\workspace-surface-audit\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\workspace-surface-audit\\SKILL.md"
+    },
+    {
+      "source": "C:\\Users\\jkind\\.claude\\skills\\x-api\\SKILL.md",
+      "target": "C:\\Users\\jkind\\Documents\\02_Work\\01_fyld\\mobile_depth_estimation_tracking\\shared-harness\\skills\\x-api\\SKILL.md",
+      "winner": "C:\\Users\\jkind\\.claude\\skills\\x-api\\SKILL.md"
+    }
+  ],
+  "hooks": 38
+}

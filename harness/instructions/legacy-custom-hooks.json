@@ -1,0 +1,129 @@
+{
+  "PreToolUse": [
+    {
+      "matcher": "tool == \"Bash\" && tool_input.command matches \"(npm run dev|pnpm( run)? dev|yarn dev|bun run dev)\"",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node -e \"console.error('[Hook] BLOCKED: Dev server must run in tmux for log access');console.error('[Hook] Use: tmux new-session -d -s dev \\\"npm run dev\\\"');console.error('[Hook] Then: tmux attach -t dev');process.exit(1)\""
+        }
+      ]
+    },
+    {
+      "matcher": "(tool == \"Write\" || tool == \"Edit\") && tool_input.file_path matches \"\\\\.(md|txt|ipynb)$\" && !(tool_input.file_path matches \"README\\\\.md$|CLAUDE\\\\.md$|AGENTS\\\\.md$|CONTRIBUTING\\\\.md$|learnings\\\\.md$|\\\\.claude[/\\\\\\\\]plans[/\\\\\\\\]|docs[/\\\\\\\\]tasks[/\\\\\\\\]|task_list[/\\\\\\\\]\")",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node -e \"const fs=require('fs');let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{const i=JSON.parse(d);const p=i.tool_input?.file_path||'';const fn=p.split(/[\\\\\\\\/]/).pop();const np=p.replace(/\\\\\\\\/g,'/');if(/\\.(md|txt|ipynb)$/.test(p)&&!/^(README|CLAUDE|AGENTS|CONTRIBUTING)\\.md$/.test(fn)&&!/learnings\\.md$/.test(p)&&!np.includes('.claude/plans/')&&!np.includes('/archive/')&&!np.includes('/scripts/')&&!np.includes('docs/tasks/')&&!np.includes('task_list/')){console.error('[Hook] ⚠️  BLOCKED: Unauthorized documentation file creation');console.error('[Hook] File: '+p);console.error('[Hook] ONLY ALLOWED: README.md, ~/.claude/learnings.md, ~/.claude/plans/*.md, or task files under docs/tasks/ | task_list/');console.error('[Hook] Ask: Should this content be in an existing README.md instead? (Task files are exempt — see task-management.md)');process.exit(1)}console.log(d)})\""
+        }
+      ]
+    },
+    {
+      "matcher": "tool == \"Bash\" && tool_input.command matches \"(echo|cat|printf|tee).*>.*\\\\.(md|txt)\"",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node -e \"console.error('[Hook] ⚠️  BLOCKED: Documentation file creation via bash');console.error('[Hook] ONLY ALLOWED: README.md or ~/.claude/learnings.md');console.error('[Hook] Use existing README.md files for documentation');process.exit(1)\""
+        }
+      ]
+    },
+    {
+      "matcher": "(tool == \"Write\" || tool == \"Edit\") && tool_input.file_path matches \"\\\\.(ts|tsx|js|jsx|py|go|rs|java|kt|cpp|c|h|hpp|cs|rb|php|swift|dart)$\"",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/task-gate.js\""
+        }
+      ]
+    },
+    {
+      "matcher": "(tool == \"Write\" || tool == \"Edit\") && tool_input.file_path matches \"\\\\.(ts|tsx|js|jsx|mjs|cjs|py|go|rs|java|kt|cpp|c|h|hpp|cs|rb|php|swift|dart|svelte)$\"",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/file-size-gate.js\""
+        }
+      ]
+    },
+    {
+      "matcher": "(tool == \"Write\" || tool == \"Edit\") && tool_input.file_path matches \"\\\\.py$\"",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/experiment-brick-gate.js\""
+        },
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/hyperparam-gate.js\""
+        }
+      ]
+    },
+    {
+      "matcher": "(tool == \"Write\" || tool == \"Edit\") && tool_input.file_path matches \"\\\\.md$\"",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/plain-language-gate.js\""
+        }
+      ]
+    }
+  ],
+  "PostToolUse": [
+    {
+      "matcher": "tool == \"Bash\"",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node -e \"let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{const i=JSON.parse(d);const cmd=i.tool_input?.command||'';if(/gh pr create/.test(cmd)){const out=i.tool_output?.output||'';const m=out.match(/https:\\/\\/github.com\\/[^/]+\\/[^/]+\\/pull\\/\\d+/);if(m){console.error('[Hook] PR created: '+m[0]);const repo=m[0].replace(/https:\\/\\/github.com\\/([^/]+\\/[^/]+)\\/pull\\/\\d+/,'$1');const pr=m[0].replace(/.*\\/pull\\/(\\d+)/,'$1');console.error('[Hook] To review: gh pr review '+pr+' --repo '+repo)}}console.log(d)})\""
+        }
+      ]
+    },
+    {
+      "matcher": "tool == \"Edit\" && tool_input.file_path matches \"\\\\.(ts|tsx|js|jsx)$\"",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node -e \"const fs=require('fs');let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{const i=JSON.parse(d);const p=i.tool_input?.file_path;if(p&&fs.existsSync(p)){const c=fs.readFileSync(p,'utf8');const lines=c.split('\\n');const matches=[];lines.forEach((l,idx)=>{if(/console\\.log/.test(l))matches.push((idx+1)+': '+l.trim())});if(matches.length){console.error('[Hook] WARNING: console.log found in '+p);matches.slice(0,5).forEach(m=>console.error(m));console.error('[Hook] Remove console.log before committing')}}console.log(d)})\""
+        }
+      ]
+    }
+  ],
+  "Stop": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node -e \"const{execSync}=require('child_process');const fs=require('fs');let d='';process.stdin.on('data',c=>d+=c);process.stdin.on('end',()=>{try{execSync('git rev-parse --git-dir',{stdio:'pipe'})}catch{console.log(d);process.exit(0)}try{const files=execSync('git diff --name-only HEAD',{encoding:'utf8',stdio:['pipe','pipe','pipe']}).split('\\n').filter(f=>/\\.(ts|tsx|js|jsx)$/.test(f)&&fs.existsSync(f));let hasConsole=false;for(const f of files){if(fs.readFileSync(f,'utf8').includes('console.log')){console.error('[Hook] WARNING: console.log found in '+f);hasConsole=true}}if(hasConsole)console.error('[Hook] Remove console.log statements before committing')}catch(e){}console.log(d)})\""
+        },
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/task-nudge.js\""
+        },
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/deps-surface.js\""
+        },
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/task-complete-gate.js\""
+        },
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/plain-language-audit.js\""
+        }
+      ]
+    }
+  ],
+  "SessionStart": [
+    {
+      "matcher": "*",
+      "hooks": [
+        {
+          "type": "command",
+          "command": "node \"C:/Users/jkind/.claude/scripts/hooks/docs-snapshot.js\""
+        }
+      ]
+    }
+  ]
+}

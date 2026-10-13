@@ -1,0 +1,50 @@
+2026-10-12 11:12:31 move 00 open->pending_review pending_review/00_harness_experiments.md
+2026-10-12 14:10:51 review 01 FAIL
+2026-10-12 14:12:33 review 01 PASS
+2026-10-12 14:12:33 start 01
+2026-10-12 18:03:49 review 02 FAIL
+2026-10-12 18:03:50 review 03 PASS
+2026-10-12 18:03:50 review 04 FAIL
+2026-10-12 18:03:50 review 05 FAIL
+2026-10-12 18:05:32 start 03
+2026-10-12 18:06:48 review 05 PASS
+2026-10-12 18:07:35 review 02 PASS
+2026-10-12 18:07:35 review 04 PASS
+2026-10-12 18:28:49 move 03 open->pending_review pending_review/03_build_and_calibrate_the_two_pilot_tasks.md
+2026-10-12 18:29:58 start 02
+2026-10-12 19:20:18 move 02 open->pending_review pending_review/02_build_the_isolated_pilot_runner.md
+2026-10-12 19:20:21 start 04
+2026-10-12 19:42:37 move 04 open->pending_review pending_review/04_define_the_value_measures_and_blind_review.md
+2026-10-12 19:42:44 start 05
+2026-10-12 19:50:23 take new (lock taken from 05)
+2026-10-12 19:50:23 new 07 open/07_tinydb_versioned_storage_format_and_timestamps.md
+2026-10-12 19:51:05 review 07 PASS
+2026-10-12 19:51:11 take start 07 (lock taken from 05)
+2026-10-12 19:51:11 start 07
+2026-10-12 21:01:31 take new (lock taken from 07)
+2026-10-12 21:01:31 new 08 open/08_implement_python_package_metadata_parsing_and_vali.md
+2026-10-12 21:01:31 start 08
+2026-10-12 21:25:50 move 05 open->pending_review pending_review/05_run_the_pilot.md
+2026-10-12 21:28:36 move 08 open->archive archive/08_implement_python_package_metadata_parsing_and_vali.md
+2026-10-12 21:28:37 move 07 open->archive archive/07_tinydb_versioned_storage_format_and_timestamps.md
+2026-10-12 21:33:31 start 06
+2026-10-12 21:35:28 move 06 open->pending_review pending_review/06_analyse_the_pilot_and_size_study_2.md
+2026-10-13 08:43:16 new 09 open/09_add_the_lean_setup_and_new_measures_to_the_study_2.md
+2026-10-13 08:43:16 start 09
+2026-10-13 09:16:11 close 09 without a git checkpoint: not a git repository
+2026-10-13 09:16:11 move 09 open->closed closed/09_add_the_lean_setup_and_new_measures_to_the_study_2.md
+2026-10-13 09:18:27 new 10 open/10_choose_and_calibrate_the_six_tasks_for_the_resized.md
+2026-10-13 09:18:27 start 10
+2026-10-13 13:08:58 close 10 without a git checkpoint: not a git repository
+2026-10-13 13:08:58 move 10 open->closed closed/10_choose_and_calibrate_the_six_tasks_for_the_resized.md
+2026-10-13 13:09:08 new 11 open/11_run_the_resized_study_2_stock_and_lean_on_six_task.md
+2026-10-13 13:09:08 start 11
+2026-10-13 16:03:08 move 11 open->pending_review pending_review/11_run_the_resized_study_2_stock_and_lean_on_six_task.md
+2026-10-13 16:03:12 new 12 open/12_analyse_the_resized_study_2_and_decide_on_the_lean.md
+2026-10-13 16:03:12 start 12
+2026-10-13 16:04:25 close 12 without a git checkpoint: not a git repository
+2026-10-13 16:04:25 move 12 open->closed closed/12_analyse_the_resized_study_2_and_decide_on_the_lean.md
+2026-10-13 16:24:28 new 13 open/13_update_findings_with_the_lean_harness_as_built_bef.md
+2026-10-13 16:26:55 start 13
+2026-10-13 16:32:26 close 13 without a git checkpoint: not a git repository
+2026-10-13 16:32:26 move 13 open->closed closed/13_update_findings_with_the_lean_harness_as_built_bef.md

@@ -1,0 +1,53 @@
+{
+  "studyId": "study2-pilot-20261012",
+  "kind": "pilot",
+  "codexExe": "C:/Users/jkind/.vscode/extensions/openai.chatgpt-26.1007.21434-win32-x64/bin/windows-x86_64/codex.exe",
+  "model": "gpt-6-luna",
+  "reasoning": "high",
+  "timeoutMs": 1800000,
+  "harnessCommit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+  "budget": { "sessions": 21000000, "reviews": 4000000, "firstReviewEstimate": 400000, "firstSessionEstimate": 0 },
+  "tasks": {
+    "restart": {
+      "bundle": "tasks/restart/baseline.bundle",
+      "ref": "v4.9.0",
+      "wheels": "tasks/restart/wheels",
+      "requirements": ["pytest==8.4.2", "pytest-cov==6.3.0"],
+      "editableInstall": false,
+      "prompts": { "1": "tasks/restart/prompt-1.md", "2": "tasks/restart/prompt-2.md" }
+    },
+    "public": {
+      "bundle": "tasks/public/baseline.bundle",
+      "ref": "master",
+      "wheels": "tasks/public/wheels",
+      "requirements": ["pytest==8.4.2", "pretend==1.0.9", "tomli_w==1.2.0", "flit_core==3.12.0"],
+      "editableInstall": true,
+      "prompts": { "1": "tasks/public/prompt.md" }
+    }
+  },
+  "runs": [
+    { "id": "restart-task-only", "task": "restart", "config": "task-only", "sessions": [1, 2] },
+    { "id": "restart-stock", "task": "restart", "config": "stock", "sessions": [1, 2] },
+    { "id": "restart-full", "task": "restart", "config": "full", "sessions": [1, 2] },
+    { "id": "public-stock", "task": "public", "config": "stock", "sessions": [1] },
+    { "id": "public-full", "task": "public", "config": "full", "sessions": [1] },
+    { "id": "public-task-only", "task": "public", "config": "task-only", "sessions": [1] }
+  ],
+  "hyperparameters": {
+    "model": { "value": "gpt-6-luna", "source": "owner confirmed Luna only 2026-10-12" },
+    "reasoning": { "value": "high", "source": "inherited Study 1 protocol.json:5" },
+    "configs": { "value": ["stock", "task-only", "full"], "source": "confirmed 2026-10-12 (owner)" },
+    "repetitions": { "value": 1, "source": "confirmed 2026-10-12 (owner)" },
+    "budgetCap": { "value": 25000000, "source": "confirmed 2026-10-12 (owner): 21M sessions + 4M reviews; setup probes counted separately" },
+    "timeoutMs": { "value": 1800000, "source": "deviates from Study 1 protocol.json:7 because pilot tasks are larger, confirmed 2026-10-12" },
+    "restartSplit": { "value": "two requests, clean end between", "source": "confirmed 2026-10-12 (owner)" },
+    "delegation": { "value": "off", "source": "confirmed 2026-10-12 (owner)" },
+    "sandbox": { "value": "workspace-write via --approve-for-me (automatic approval review)", "source": "inherited Study 1 tools/runner.cjs:91-93" },
+    "serviceTier": { "value": "default", "source": "inherited Study 1 tools/prepare.cjs:81" },
+    "projectDocMaxBytes": { "value": 131072, "source": "inherited Study 1 tools/prepare.cjs:82" },
+    "windowsSandbox": { "value": "unelevated", "source": "inherited Study 1 tools/prepare.cjs:84-85" },
+    "harnessClone": { "value": "4650a11 (includes the Stop cap, harness task 11)", "source": "task 05 table: 906ce37 or later; differs from the installed harness by its uncommitted skills/synced changes" },
+    "infrastructureRetries": { "value": "1 per session, only if no model thread started", "source": "confirmed 2026-10-12 (owner)" },
+    "reviewerModel": { "value": "gpt-6-luna, high, stock, read-only", "source": "task 04 table" }
+  }
+}

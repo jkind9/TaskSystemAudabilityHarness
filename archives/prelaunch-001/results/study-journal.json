@@ -1,0 +1,131 @@
+{
+  "studyId": "luna-harness-study-20261012",
+  "attempts": [
+    {
+      "runId": "easy-r1-control",
+      "status": "incomplete",
+      "childPid": 43608,
+      "at": "2026-10-12T09:11:47.397Z",
+      "updatedAt": "2026-10-12T09:11:47.625Z"
+    },
+    {
+      "runId": "easy-r1-instructions",
+      "status": "incomplete",
+      "childPid": 86352,
+      "at": "2026-10-12T09:11:48.601Z",
+      "updatedAt": "2026-10-12T09:11:48.824Z"
+    },
+    {
+      "runId": "easy-r1-full",
+      "status": "incomplete",
+      "childPid": 94044,
+      "at": "2026-10-12T09:11:49.767Z",
+      "updatedAt": "2026-10-12T09:11:49.991Z"
+    },
+    {
+      "runId": "medium-r1-instructions",
+      "status": "incomplete",
+      "childPid": 403844,
+      "at": "2026-10-12T09:11:50.970Z",
+      "updatedAt": "2026-10-12T09:11:51.208Z"
+    },
+    {
+      "runId": "medium-r1-full",
+      "status": "incomplete",
+      "childPid": 35144,
+      "at": "2026-10-12T09:11:52.167Z",
+      "updatedAt": "2026-10-12T09:11:52.385Z"
+    },
+    {
+      "runId": "medium-r1-control",
+      "status": "incomplete",
+      "childPid": 400208,
+      "at": "2026-10-12T09:11:53.357Z",
+      "updatedAt": "2026-10-12T09:11:53.580Z"
+    },
+    {
+      "runId": "hard-r1-full",
+      "status": "incomplete",
+      "childPid": 391456,
+      "at": "2026-10-12T09:11:54.500Z",
+      "updatedAt": "2026-10-12T09:11:54.717Z"
+    },
+    {
+      "runId": "hard-r1-control",
+      "status": "incomplete",
+      "childPid": 365740,
+      "at": "2026-10-12T09:11:55.716Z",
+      "updatedAt": "2026-10-12T09:11:55.947Z"
+    },
+    {
+      "runId": "hard-r1-instructions",
+      "status": "incomplete",
+      "childPid": 90584,
+      "at": "2026-10-12T09:11:56.908Z",
+      "updatedAt": "2026-10-12T09:11:57.133Z"
+    },
+    {
+      "runId": "easy-r2-full",
+      "status": "incomplete",
+      "childPid": 34048,
+      "at": "2026-10-12T09:11:58.070Z",
+      "updatedAt": "2026-10-12T09:11:58.293Z"
+    },
+    {
+      "runId": "easy-r2-instructions",
+      "status": "incomplete",
+      "childPid": 361692,
+      "at": "2026-10-12T09:11:59.213Z",
+      "updatedAt": "2026-10-12T09:11:59.423Z"
+    },
+    {
+      "runId": "easy-r2-control",
+      "status": "incomplete",
+      "childPid": 89060,
+      "at": "2026-10-12T09:12:00.369Z",
+      "updatedAt": "2026-10-12T09:12:00.592Z"
+    },
+    {
+      "runId": "medium-r2-instructions",
+      "status": "incomplete",
+      "childPid": 36312,
+      "at": "2026-10-12T09:12:01.531Z",
+      "updatedAt": "2026-10-12T09:12:01.754Z"
+    },
+    {
+      "runId": "medium-r2-control",
+      "status": "incomplete",
+      "childPid": 44460,
+      "at": "2026-10-12T09:12:02.717Z",
+      "updatedAt": "2026-10-12T09:12:02.939Z"
+    },
+    {
+      "runId": "medium-r2-full",
+      "status": "incomplete",
+      "childPid": 92980,
+      "at": "2026-10-12T09:12:03.891Z",
+      "updatedAt": "2026-10-12T09:12:04.105Z"
+    },
+    {
+      "runId": "hard-r2-control",
+      "status": "incomplete",
+      "childPid": 401332,
+      "at": "2026-10-12T09:12:05.076Z",
+      "updatedAt": "2026-10-12T09:12:05.287Z"
+    },
+    {
+      "runId": "hard-r2-full",
+      "status": "incomplete",
+      "childPid": 39004,
+      "at": "2026-10-12T09:12:06.223Z",
+      "updatedAt": "2026-10-12T09:12:06.434Z"
+    },
+    {
+      "runId": "hard-r2-instructions",
+      "status": "incomplete",
+      "childPid": 410344,
+      "at": "2026-10-12T09:12:07.440Z",
+      "updatedAt": "2026-10-12T09:12:07.674Z"
+    }
+  ]
+}

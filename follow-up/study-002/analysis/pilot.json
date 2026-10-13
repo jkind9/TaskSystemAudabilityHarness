@@ -1,0 +1,727 @@
+{
+  "generatedAt": "2026-10-12T20:34:04.647Z",
+  "source": "pilot/measures.json",
+  "measuresGeneratedAt": "2026-10-12T20:24:27.086Z",
+  "contamination": {
+    "restart-task-only": "serious",
+    "restart-full": "serious",
+    "public-full": "mild",
+    "public-task-only": "mild"
+  },
+  "rows": {
+    "pass": {
+      "restart": {
+        "task-only": {
+          "value": 0,
+          "diffVsStock": -1,
+          "ratioVsStock": 0,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 1,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 1,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        }
+      }
+    },
+    "publicTargetTests": {
+      "restart": {
+        "task-only": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 0.6667,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0.9626,
+          "diffVsStock": 0.296,
+          "ratioVsStock": 1.444,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 0.881,
+          "diffVsStock": 0.214,
+          "ratioVsStock": 1.321,
+          "contamination": "mild"
+        }
+      }
+    },
+    "audit": {
+      "restart": {
+        "task-only": {
+          "value": 6.5,
+          "diffVsStock": 4.5,
+          "ratioVsStock": 3.25,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 2,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 6,
+          "diffVsStock": 4,
+          "ratioVsStock": 3,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 1.5,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 7,
+          "diffVsStock": 5.5,
+          "ratioVsStock": 4.667,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 6.5,
+          "diffVsStock": 5,
+          "ratioVsStock": 4.333,
+          "contamination": "mild"
+        }
+      }
+    },
+    "auditWrong": {
+      "restart": {
+        "task-only": {
+          "value": 0,
+          "diffVsStock": -2,
+          "ratioVsStock": 0,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 2,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 1,
+          "diffVsStock": -1,
+          "ratioVsStock": 0.5,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 1,
+          "diffVsStock": 1,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        }
+      }
+    },
+    "debtRubric": {
+      "restart": {
+        "task-only": {
+          "value": 12,
+          "diffVsStock": 2,
+          "ratioVsStock": 1.2,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 10,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 12,
+          "diffVsStock": 2,
+          "ratioVsStock": 1.2,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 8,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 11,
+          "diffVsStock": 3,
+          "ratioVsStock": 1.375,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 9,
+          "diffVsStock": 1,
+          "ratioVsStock": 1.125,
+          "contamination": "mild"
+        }
+      }
+    },
+    "filesOver800": {
+      "restart": {
+        "task-only": {
+          "value": 1,
+          "diffVsStock": -1,
+          "ratioVsStock": 0.5,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 2,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0,
+          "diffVsStock": -2,
+          "ratioVsStock": 0,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 1,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0,
+          "diffVsStock": -1,
+          "ratioVsStock": 0,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 0,
+          "diffVsStock": -1,
+          "ratioVsStock": 0,
+          "contamination": "mild"
+        }
+      }
+    },
+    "duplicateBlocks": {
+      "restart": {
+        "task-only": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        }
+      }
+    },
+    "linesAdded": {
+      "restart": {
+        "task-only": {
+          "value": 500,
+          "diffVsStock": 203,
+          "ratioVsStock": 1.684,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 297,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 483,
+          "diffVsStock": 186,
+          "ratioVsStock": 1.626,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 334,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 1100,
+          "diffVsStock": 766,
+          "ratioVsStock": 3.293,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 943,
+          "diffVsStock": 609,
+          "ratioVsStock": 2.823,
+          "contamination": "mild"
+        }
+      }
+    },
+    "testsAdded": {
+      "restart": {
+        "task-only": {
+          "value": 9,
+          "diffVsStock": 2,
+          "ratioVsStock": 1.286,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 7,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 5,
+          "diffVsStock": -2,
+          "ratioVsStock": 0.714,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 10,
+          "diffVsStock": 10,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 5,
+          "diffVsStock": 5,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        }
+      }
+    },
+    "clarity": {
+      "restart": {
+        "task-only": {
+          "value": 4,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 4,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 4,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 3,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 3,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 4,
+          "diffVsStock": 1,
+          "ratioVsStock": 1.333,
+          "contamination": "mild"
+        }
+      }
+    },
+    "bannedPer1000": {
+      "restart": {
+        "task-only": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 0,
+          "diffVsStock": 0,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        }
+      }
+    },
+    "messageFlesch": {
+      "restart": {
+        "task-only": {
+          "value": 52.9,
+          "diffVsStock": 8.5,
+          "ratioVsStock": 1.191,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 44.4,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 50.2,
+          "diffVsStock": 5.8,
+          "ratioVsStock": 1.131,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 28.5,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 23.5,
+          "diffVsStock": -5,
+          "ratioVsStock": 0.825,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 32.8,
+          "diffVsStock": 4.3,
+          "ratioVsStock": 1.151,
+          "contamination": "mild"
+        }
+      }
+    },
+    "session2TokensBeforeFirstEdit": {
+      "restart": {
+        "task-only": {
+          "value": 111408,
+          "diffVsStock": 31567,
+          "ratioVsStock": 1.395,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 79841,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 233135,
+          "diffVsStock": 153294,
+          "ratioVsStock": 2.92,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        }
+      }
+    },
+    "decisionsKept": {
+      "restart": {
+        "task-only": {
+          "value": 5,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 5,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 4,
+          "diffVsStock": -1,
+          "ratioVsStock": 0.8,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "none"
+        },
+        "full": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": null,
+          "diffVsStock": null,
+          "ratioVsStock": null,
+          "contamination": "mild"
+        }
+      }
+    },
+    "tokens": {
+      "restart": {
+        "task-only": {
+          "value": 8460307,
+          "diffVsStock": 6616654,
+          "ratioVsStock": 4.589,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 1843653,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 6480055,
+          "diffVsStock": 4636402,
+          "ratioVsStock": 3.515,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 700522,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 9894982,
+          "diffVsStock": 9194460,
+          "ratioVsStock": 14.125,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 9181533,
+          "diffVsStock": 8481011,
+          "ratioVsStock": 13.107,
+          "contamination": "mild"
+        }
+      }
+    },
+    "minutes": {
+      "restart": {
+        "task-only": {
+          "value": 15.2,
+          "diffVsStock": 9.6,
+          "ratioVsStock": 2.714,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 5.6,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 12.1,
+          "diffVsStock": 6.5,
+          "ratioVsStock": 2.161,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 3.9,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 20.4,
+          "diffVsStock": 16.5,
+          "ratioVsStock": 5.231,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 17.7,
+          "diffVsStock": 13.8,
+          "ratioVsStock": 4.538,
+          "contamination": "mild"
+        }
+      }
+    },
+    "reviewTokens": {
+      "restart": {
+        "task-only": {
+          "value": 113665,
+          "diffVsStock": 27408,
+          "ratioVsStock": 1.318,
+          "contamination": "serious"
+        },
+        "stock": {
+          "value": 86257,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 105041,
+          "diffVsStock": 18784,
+          "ratioVsStock": 1.218,
+          "contamination": "serious"
+        }
+      },
+      "public": {
+        "stock": {
+          "value": 63462,
+          "diffVsStock": 0,
+          "ratioVsStock": 1,
+          "contamination": "none"
+        },
+        "full": {
+          "value": 96210,
+          "diffVsStock": 32748,
+          "ratioVsStock": 1.516,
+          "contamination": "mild"
+        },
+        "task-only": {
+          "value": 94148,
+          "diffVsStock": 30686,
+          "ratioVsStock": 1.484,
+          "contamination": "mild"
+        }
+      }
+    }
+  }
+}

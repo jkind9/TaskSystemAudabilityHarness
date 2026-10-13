@@ -1,0 +1,3653 @@
+{
+  "generatedAt": "2026-10-12T09:12:06.905Z",
+  "rows": [
+    {
+      "id": "easy-r1-control",
+      "task": "easy",
+      "repetition": 1,
+      "condition": "control",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 5,
+      "reportedChecks": 26,
+      "expectedChecks": 26,
+      "correctness": 0.19230769230769232,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.223,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "one interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "already sorted disjoint intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     2\n-   ],\n-   [\n-     5,\n-     7\n-   ]\n- ]\n"
+        },
+        {
+          "name": "sorts unsorted intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -2,\n-     0\n-   ],\n-   [\n-     3,\n-     4\n-   ],\n-   [\n-     8,\n-     9\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges partial overlap",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     8\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges touching intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges nested intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges duplicate intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "handles negative endpoints",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -8,\n-     1\n-   ]\n- ]\n"
+        },
+        {
+          "name": "preserves zero-length interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     4,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "keeps separated groups distinct",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     3\n-   ],\n-   [\n-     7,\n-     8\n-   ],\n-   [\n-     10,\n-     12\n-   ]\n- ]\n"
+        },
+        {
+          "name": "returns sorted output",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     1\n-   ],\n-   [\n-     4,\n-     5\n-   ],\n-   [\n-     9,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "accepts frozen outer array and pairs",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "rejects null outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects sparse outer array with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects pair with wrong length",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array pair",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects NaN endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects infinite endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects unsafe integer endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "uses RangeError for reversed endpoints",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (RangeError)."
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "easy-r1-instructions",
+      "task": "easy",
+      "repetition": 1,
+      "condition": "instructions",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 5,
+      "reportedChecks": 26,
+      "expectedChecks": 26,
+      "correctness": 0.19230769230769232,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.219,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "one interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "already sorted disjoint intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     2\n-   ],\n-   [\n-     5,\n-     7\n-   ]\n- ]\n"
+        },
+        {
+          "name": "sorts unsorted intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -2,\n-     0\n-   ],\n-   [\n-     3,\n-     4\n-   ],\n-   [\n-     8,\n-     9\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges partial overlap",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     8\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges touching intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges nested intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges duplicate intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "handles negative endpoints",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -8,\n-     1\n-   ]\n- ]\n"
+        },
+        {
+          "name": "preserves zero-length interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     4,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "keeps separated groups distinct",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     3\n-   ],\n-   [\n-     7,\n-     8\n-   ],\n-   [\n-     10,\n-     12\n-   ]\n- ]\n"
+        },
+        {
+          "name": "returns sorted output",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     1\n-   ],\n-   [\n-     4,\n-     5\n-   ],\n-   [\n-     9,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "accepts frozen outer array and pairs",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "rejects null outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects sparse outer array with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects pair with wrong length",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array pair",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects NaN endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects infinite endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects unsafe integer endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "uses RangeError for reversed endpoints",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (RangeError)."
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "easy-r1-full",
+      "task": "easy",
+      "repetition": 1,
+      "condition": "full",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 5,
+      "reportedChecks": 26,
+      "expectedChecks": 26,
+      "correctness": 0.19230769230769232,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.22,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "one interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "already sorted disjoint intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     2\n-   ],\n-   [\n-     5,\n-     7\n-   ]\n- ]\n"
+        },
+        {
+          "name": "sorts unsorted intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -2,\n-     0\n-   ],\n-   [\n-     3,\n-     4\n-   ],\n-   [\n-     8,\n-     9\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges partial overlap",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     8\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges touching intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges nested intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges duplicate intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "handles negative endpoints",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -8,\n-     1\n-   ]\n- ]\n"
+        },
+        {
+          "name": "preserves zero-length interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     4,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "keeps separated groups distinct",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     3\n-   ],\n-   [\n-     7,\n-     8\n-   ],\n-   [\n-     10,\n-     12\n-   ]\n- ]\n"
+        },
+        {
+          "name": "returns sorted output",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     1\n-   ],\n-   [\n-     4,\n-     5\n-   ],\n-   [\n-     9,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "accepts frozen outer array and pairs",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "rejects null outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects sparse outer array with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects pair with wrong length",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array pair",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects NaN endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects infinite endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects unsafe integer endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "uses RangeError for reversed endpoints",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (RangeError)."
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "medium-r1-instructions",
+      "task": "medium",
+      "repetition": 1,
+      "condition": "instructions",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 2,
+      "reportedChecks": 29,
+      "expectedChecks": 29,
+      "correctness": 0.06896551724137931,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.234,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "rejects a non-function loader synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalid empty key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid non-string key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid get does not call loader",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "miss resolves loader value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader receives the requested key once",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "same-key pending calls return the identical Promise",
+          "pass": false,
+          "error": "AssertionError: Expected \"actual\" to be reference-equal to \"expected\":\n+ actual - expected\n\n  Promise {\n    <rejected> Error: not implemented\n        at Object.get (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\medium-r1-instructions\\repo\\src\\index.js:6:35)\n        at Proxy.<anonymous> (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:21:32)\n+       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:162\n-       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:184\n        at async add (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:38:7)\n        at async grade (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:5)\n  }\n"
+        },
+        {
+          "name": "same-key pending calls invoke loader once",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 1\n"
+        },
+        {
+          "name": "different keys load independently",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'a',\n-   'b'\n- ]\n"
+        },
+        {
+          "name": "successful value is cached",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "cached value is reused after Promise turn",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader runs in the next microtask",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "rejection reaches caller",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /offline/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "rejected load is evicted for retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /first/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw becomes rejection",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /sync failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw does not poison retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /once/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "invalidate rejects invalid keys synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalidate removes a cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate allows a new load while old load is pending",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 2\n"
+        },
+        {
+          "name": "old success cannot overwrite a newer cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "old rejection cannot delete a newer in-flight load",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /old failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "clear returns undefined and removes all cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "clear allows new loads while earlier loads are pending",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear success cannot repopulate a key",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear rejection cannot delete a newer value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate one key preserves other cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "empty string values are cached as successful values",
+          "pass": false,
+          "error": "Error: not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "medium-r1-full",
+      "task": "medium",
+      "repetition": 1,
+      "condition": "full",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 2,
+      "reportedChecks": 29,
+      "expectedChecks": 29,
+      "correctness": 0.06896551724137931,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.214,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "rejects a non-function loader synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalid empty key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid non-string key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid get does not call loader",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "miss resolves loader value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader receives the requested key once",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "same-key pending calls return the identical Promise",
+          "pass": false,
+          "error": "AssertionError: Expected \"actual\" to be reference-equal to \"expected\":\n+ actual - expected\n\n  Promise {\n    <rejected> Error: not implemented\n        at Object.get (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\medium-r1-full\\repo\\src\\index.js:6:35)\n        at Proxy.<anonymous> (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:21:32)\n+       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:162\n-       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:184\n        at async add (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:38:7)\n        at async grade (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:5)\n  }\n"
+        },
+        {
+          "name": "same-key pending calls invoke loader once",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 1\n"
+        },
+        {
+          "name": "different keys load independently",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'a',\n-   'b'\n- ]\n"
+        },
+        {
+          "name": "successful value is cached",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "cached value is reused after Promise turn",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader runs in the next microtask",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "rejection reaches caller",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /offline/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "rejected load is evicted for retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /first/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw becomes rejection",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /sync failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw does not poison retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /once/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "invalidate rejects invalid keys synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalidate removes a cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate allows a new load while old load is pending",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 2\n"
+        },
+        {
+          "name": "old success cannot overwrite a newer cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "old rejection cannot delete a newer in-flight load",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /old failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "clear returns undefined and removes all cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "clear allows new loads while earlier loads are pending",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear success cannot repopulate a key",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear rejection cannot delete a newer value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate one key preserves other cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "empty string values are cached as successful values",
+          "pass": false,
+          "error": "Error: not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "medium-r1-control",
+      "task": "medium",
+      "repetition": 1,
+      "condition": "control",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 2,
+      "reportedChecks": 29,
+      "expectedChecks": 29,
+      "correctness": 0.06896551724137931,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.219,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "rejects a non-function loader synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalid empty key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid non-string key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid get does not call loader",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "miss resolves loader value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader receives the requested key once",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "same-key pending calls return the identical Promise",
+          "pass": false,
+          "error": "AssertionError: Expected \"actual\" to be reference-equal to \"expected\":\n+ actual - expected\n\n  Promise {\n    <rejected> Error: not implemented\n        at Object.get (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\medium-r1-control\\repo\\src\\index.js:6:35)\n        at Proxy.<anonymous> (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:21:32)\n+       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:162\n-       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:184\n        at async add (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:38:7)\n        at async grade (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:5)\n  }\n"
+        },
+        {
+          "name": "same-key pending calls invoke loader once",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 1\n"
+        },
+        {
+          "name": "different keys load independently",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'a',\n-   'b'\n- ]\n"
+        },
+        {
+          "name": "successful value is cached",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "cached value is reused after Promise turn",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader runs in the next microtask",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "rejection reaches caller",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /offline/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "rejected load is evicted for retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /first/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw becomes rejection",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /sync failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw does not poison retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /once/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "invalidate rejects invalid keys synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalidate removes a cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate allows a new load while old load is pending",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 2\n"
+        },
+        {
+          "name": "old success cannot overwrite a newer cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "old rejection cannot delete a newer in-flight load",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /old failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "clear returns undefined and removes all cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "clear allows new loads while earlier loads are pending",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear success cannot repopulate a key",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear rejection cannot delete a newer value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate one key preserves other cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "empty string values are cached as successful values",
+          "pass": false,
+          "error": "Error: not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "hard-r1-full",
+      "task": "hard",
+      "repetition": 1,
+      "condition": "full",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 0,
+      "reportedChecks": 20,
+      "expectedChecks": 20,
+      "correctness": 0,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.213,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "accepts class-based storage adapters",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "empty storage initializes without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "initial balances reject empty, unsafe, inherited, and malformed account keys",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "invalid transfer payloads reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "transfer returns a promise even for invalid input",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "successful transfer writes complete snapshot before commit",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "in-flight state stays hidden until write resolves",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "overlapping transfers commit in invocation order and use latest balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "matching ID and payload reuses receipt without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "conflicting ID payload rejects and preserves snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "reopen restores snapshot and ignores new initial balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed write leaves memory and bytes unchanged and retry may reuse ID",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed operation does not poison serialized queue",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "insufficient funds and receiver overflow reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "caller cannot mutate returned receipt or snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "snapshot has exact schema and independent nested copies",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved snapshot must parse and have exact top-level fields",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "saved balances are fully validated, with empty saved balances allowed",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved receipts require exact fields, unique IDs, and valid accounts and amounts",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "storage read errors propagate",
+          "pass": false,
+          "error": "The validation function is expected to return \"true\". Received false\n\nCaught error:\n\nError: openLedger is not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "hard-r1-control",
+      "task": "hard",
+      "repetition": 1,
+      "condition": "control",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 0,
+      "reportedChecks": 20,
+      "expectedChecks": 20,
+      "correctness": 0,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.227,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "accepts class-based storage adapters",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "empty storage initializes without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "initial balances reject empty, unsafe, inherited, and malformed account keys",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "invalid transfer payloads reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "transfer returns a promise even for invalid input",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "successful transfer writes complete snapshot before commit",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "in-flight state stays hidden until write resolves",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "overlapping transfers commit in invocation order and use latest balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "matching ID and payload reuses receipt without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "conflicting ID payload rejects and preserves snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "reopen restores snapshot and ignores new initial balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed write leaves memory and bytes unchanged and retry may reuse ID",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed operation does not poison serialized queue",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "insufficient funds and receiver overflow reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "caller cannot mutate returned receipt or snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "snapshot has exact schema and independent nested copies",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved snapshot must parse and have exact top-level fields",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "saved balances are fully validated, with empty saved balances allowed",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved receipts require exact fields, unique IDs, and valid accounts and amounts",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "storage read errors propagate",
+          "pass": false,
+          "error": "The validation function is expected to return \"true\". Received false\n\nCaught error:\n\nError: openLedger is not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "hard-r1-instructions",
+      "task": "hard",
+      "repetition": 1,
+      "condition": "instructions",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 0,
+      "reportedChecks": 20,
+      "expectedChecks": 20,
+      "correctness": 0,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.221,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "accepts class-based storage adapters",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "empty storage initializes without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "initial balances reject empty, unsafe, inherited, and malformed account keys",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "invalid transfer payloads reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "transfer returns a promise even for invalid input",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "successful transfer writes complete snapshot before commit",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "in-flight state stays hidden until write resolves",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "overlapping transfers commit in invocation order and use latest balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "matching ID and payload reuses receipt without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "conflicting ID payload rejects and preserves snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "reopen restores snapshot and ignores new initial balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed write leaves memory and bytes unchanged and retry may reuse ID",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed operation does not poison serialized queue",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "insufficient funds and receiver overflow reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "caller cannot mutate returned receipt or snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "snapshot has exact schema and independent nested copies",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved snapshot must parse and have exact top-level fields",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "saved balances are fully validated, with empty saved balances allowed",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved receipts require exact fields, unique IDs, and valid accounts and amounts",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "storage read errors propagate",
+          "pass": false,
+          "error": "The validation function is expected to return \"true\". Received false\n\nCaught error:\n\nError: openLedger is not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "easy-r2-full",
+      "task": "easy",
+      "repetition": 2,
+      "condition": "full",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 5,
+      "reportedChecks": 26,
+      "expectedChecks": 26,
+      "correctness": 0.19230769230769232,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.219,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "one interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "already sorted disjoint intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     2\n-   ],\n-   [\n-     5,\n-     7\n-   ]\n- ]\n"
+        },
+        {
+          "name": "sorts unsorted intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -2,\n-     0\n-   ],\n-   [\n-     3,\n-     4\n-   ],\n-   [\n-     8,\n-     9\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges partial overlap",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     8\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges touching intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges nested intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges duplicate intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "handles negative endpoints",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -8,\n-     1\n-   ]\n- ]\n"
+        },
+        {
+          "name": "preserves zero-length interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     4,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "keeps separated groups distinct",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     3\n-   ],\n-   [\n-     7,\n-     8\n-   ],\n-   [\n-     10,\n-     12\n-   ]\n- ]\n"
+        },
+        {
+          "name": "returns sorted output",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     1\n-   ],\n-   [\n-     4,\n-     5\n-   ],\n-   [\n-     9,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "accepts frozen outer array and pairs",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "rejects null outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects sparse outer array with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects pair with wrong length",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array pair",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects NaN endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects infinite endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects unsafe integer endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "uses RangeError for reversed endpoints",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (RangeError)."
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "easy-r2-instructions",
+      "task": "easy",
+      "repetition": 2,
+      "condition": "instructions",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 5,
+      "reportedChecks": 26,
+      "expectedChecks": 26,
+      "correctness": 0.19230769230769232,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.206,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "one interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "already sorted disjoint intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     2\n-   ],\n-   [\n-     5,\n-     7\n-   ]\n- ]\n"
+        },
+        {
+          "name": "sorts unsorted intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -2,\n-     0\n-   ],\n-   [\n-     3,\n-     4\n-   ],\n-   [\n-     8,\n-     9\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges partial overlap",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     8\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges touching intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges nested intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges duplicate intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "handles negative endpoints",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -8,\n-     1\n-   ]\n- ]\n"
+        },
+        {
+          "name": "preserves zero-length interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     4,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "keeps separated groups distinct",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     3\n-   ],\n-   [\n-     7,\n-     8\n-   ],\n-   [\n-     10,\n-     12\n-   ]\n- ]\n"
+        },
+        {
+          "name": "returns sorted output",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     1\n-   ],\n-   [\n-     4,\n-     5\n-   ],\n-   [\n-     9,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "accepts frozen outer array and pairs",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "rejects null outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects sparse outer array with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects pair with wrong length",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array pair",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects NaN endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects infinite endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects unsafe integer endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "uses RangeError for reversed endpoints",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (RangeError)."
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "easy-r2-control",
+      "task": "easy",
+      "repetition": 2,
+      "condition": "control",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 5,
+      "reportedChecks": 26,
+      "expectedChecks": 26,
+      "correctness": 0.19230769230769232,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.218,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "one interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "already sorted disjoint intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     2\n-   ],\n-   [\n-     5,\n-     7\n-   ]\n- ]\n"
+        },
+        {
+          "name": "sorts unsorted intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -2,\n-     0\n-   ],\n-   [\n-     3,\n-     4\n-   ],\n-   [\n-     8,\n-     9\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges partial overlap",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     8\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges touching intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     6\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges nested intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "merges duplicate intervals",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "handles negative endpoints",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -8,\n-     1\n-   ]\n- ]\n"
+        },
+        {
+          "name": "preserves zero-length interval",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     4,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "keeps separated groups distinct",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     3\n-   ],\n-   [\n-     7,\n-     8\n-   ],\n-   [\n-     10,\n-     12\n-   ]\n- ]\n"
+        },
+        {
+          "name": "returns sorted output",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     1\n-   ],\n-   [\n-     4,\n-     5\n-   ],\n-   [\n-     9,\n-     10\n-   ]\n- ]\n"
+        },
+        {
+          "name": "accepts frozen outer array and pairs",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     4\n-   ]\n- ]\n"
+        },
+        {
+          "name": "rejects null outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array outer value with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects sparse outer array with TypeError",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects pair with wrong length",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects non-array pair",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects NaN endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects infinite endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "rejects unsafe integer endpoint",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "uses RangeError for reversed endpoints",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (RangeError)."
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "medium-r2-instructions",
+      "task": "medium",
+      "repetition": 2,
+      "condition": "instructions",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 2,
+      "reportedChecks": 29,
+      "expectedChecks": 29,
+      "correctness": 0.06896551724137931,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.218,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "rejects a non-function loader synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalid empty key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid non-string key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid get does not call loader",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "miss resolves loader value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader receives the requested key once",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "same-key pending calls return the identical Promise",
+          "pass": false,
+          "error": "AssertionError: Expected \"actual\" to be reference-equal to \"expected\":\n+ actual - expected\n\n  Promise {\n    <rejected> Error: not implemented\n        at Object.get (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\medium-r2-instructions\\repo\\src\\index.js:6:35)\n        at Proxy.<anonymous> (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:21:32)\n+       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:162\n-       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:184\n        at async add (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:38:7)\n        at async grade (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:5)\n  }\n"
+        },
+        {
+          "name": "same-key pending calls invoke loader once",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 1\n"
+        },
+        {
+          "name": "different keys load independently",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'a',\n-   'b'\n- ]\n"
+        },
+        {
+          "name": "successful value is cached",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "cached value is reused after Promise turn",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader runs in the next microtask",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "rejection reaches caller",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /offline/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "rejected load is evicted for retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /first/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw becomes rejection",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /sync failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw does not poison retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /once/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "invalidate rejects invalid keys synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalidate removes a cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate allows a new load while old load is pending",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 2\n"
+        },
+        {
+          "name": "old success cannot overwrite a newer cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "old rejection cannot delete a newer in-flight load",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /old failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "clear returns undefined and removes all cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "clear allows new loads while earlier loads are pending",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear success cannot repopulate a key",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear rejection cannot delete a newer value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate one key preserves other cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "empty string values are cached as successful values",
+          "pass": false,
+          "error": "Error: not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "medium-r2-control",
+      "task": "medium",
+      "repetition": 2,
+      "condition": "control",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 2,
+      "reportedChecks": 29,
+      "expectedChecks": 29,
+      "correctness": 0.06896551724137931,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.218,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "rejects a non-function loader synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalid empty key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid non-string key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid get does not call loader",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "miss resolves loader value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader receives the requested key once",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "same-key pending calls return the identical Promise",
+          "pass": false,
+          "error": "AssertionError: Expected \"actual\" to be reference-equal to \"expected\":\n+ actual - expected\n\n  Promise {\n    <rejected> Error: not implemented\n        at Object.get (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\medium-r2-control\\repo\\src\\index.js:6:35)\n        at Proxy.<anonymous> (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:21:32)\n+       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:162\n-       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:184\n        at async add (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:38:7)\n        at async grade (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:5)\n  }\n"
+        },
+        {
+          "name": "same-key pending calls invoke loader once",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 1\n"
+        },
+        {
+          "name": "different keys load independently",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'a',\n-   'b'\n- ]\n"
+        },
+        {
+          "name": "successful value is cached",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "cached value is reused after Promise turn",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader runs in the next microtask",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "rejection reaches caller",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /offline/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "rejected load is evicted for retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /first/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw becomes rejection",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /sync failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw does not poison retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /once/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "invalidate rejects invalid keys synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalidate removes a cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate allows a new load while old load is pending",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 2\n"
+        },
+        {
+          "name": "old success cannot overwrite a newer cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "old rejection cannot delete a newer in-flight load",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /old failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "clear returns undefined and removes all cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "clear allows new loads while earlier loads are pending",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear success cannot repopulate a key",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear rejection cannot delete a newer value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate one key preserves other cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "empty string values are cached as successful values",
+          "pass": false,
+          "error": "Error: not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "medium-r2-full",
+      "task": "medium",
+      "repetition": 2,
+      "condition": "full",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 2,
+      "reportedChecks": 29,
+      "expectedChecks": 29,
+      "correctness": 0.06896551724137931,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.21,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "rejects a non-function loader synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalid empty key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid non-string key returns a rejected Promise",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "invalid get does not call loader",
+          "pass": false,
+          "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+        },
+        {
+          "name": "miss resolves loader value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader receives the requested key once",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "same-key pending calls return the identical Promise",
+          "pass": false,
+          "error": "AssertionError: Expected \"actual\" to be reference-equal to \"expected\":\n+ actual - expected\n\n  Promise {\n    <rejected> Error: not implemented\n        at Object.get (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\medium-r2-full\\repo\\src\\index.js:6:35)\n        at Proxy.<anonymous> (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:21:32)\n+       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:162\n-       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:184\n        at async add (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:38:7)\n        at async grade (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:5)\n  }\n"
+        },
+        {
+          "name": "same-key pending calls invoke loader once",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 1\n"
+        },
+        {
+          "name": "different keys load independently",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'a',\n-   'b'\n- ]\n"
+        },
+        {
+          "name": "successful value is cached",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "cached value is reused after Promise turn",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "loader runs in the next microtask",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "rejection reaches caller",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /offline/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "rejected load is evicted for retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /first/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw becomes rejection",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /sync failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "synchronous loader throw does not poison retry",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /once/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "invalidate rejects invalid keys synchronously",
+          "pass": false,
+          "error": "AssertionError: Missing expected exception (TypeError)."
+        },
+        {
+          "name": "invalidate removes a cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate allows a new load while old load is pending",
+          "pass": false,
+          "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 2\n"
+        },
+        {
+          "name": "old success cannot overwrite a newer cached value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "old rejection cannot delete a newer in-flight load",
+          "pass": false,
+          "error": "AssertionError: The input did not match the regular expression /old failure/. Input:\n\n'Error: not implemented'\n"
+        },
+        {
+          "name": "clear returns undefined and removes all cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "clear allows new loads while earlier loads are pending",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear success cannot repopulate a key",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "pre-clear rejection cannot delete a newer value",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "invalidate one key preserves other cached keys",
+          "pass": false,
+          "error": "Error: not implemented"
+        },
+        {
+          "name": "empty string values are cached as successful values",
+          "pass": false,
+          "error": "Error: not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "hard-r2-control",
+      "task": "hard",
+      "repetition": 2,
+      "condition": "control",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 0,
+      "reportedChecks": 20,
+      "expectedChecks": 20,
+      "correctness": 0,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.207,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "accepts class-based storage adapters",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "empty storage initializes without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "initial balances reject empty, unsafe, inherited, and malformed account keys",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "invalid transfer payloads reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "transfer returns a promise even for invalid input",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "successful transfer writes complete snapshot before commit",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "in-flight state stays hidden until write resolves",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "overlapping transfers commit in invocation order and use latest balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "matching ID and payload reuses receipt without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "conflicting ID payload rejects and preserves snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "reopen restores snapshot and ignores new initial balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed write leaves memory and bytes unchanged and retry may reuse ID",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed operation does not poison serialized queue",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "insufficient funds and receiver overflow reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "caller cannot mutate returned receipt or snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "snapshot has exact schema and independent nested copies",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved snapshot must parse and have exact top-level fields",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "saved balances are fully validated, with empty saved balances allowed",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved receipts require exact fields, unique IDs, and valid accounts and amounts",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "storage read errors propagate",
+          "pass": false,
+          "error": "The validation function is expected to return \"true\". Received false\n\nCaught error:\n\nError: openLedger is not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "hard-r2-full",
+      "task": "hard",
+      "repetition": 2,
+      "condition": "full",
+      "attempted": true,
+      "finished": true,
+      "status": "incomplete",
+      "exitCode": 2,
+      "timedOut": false,
+      "passedChecks": 0,
+      "reportedChecks": 20,
+      "expectedChecks": 20,
+      "correctness": 0,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": 0.207,
+      "toolCalls": 0,
+      "visibleTestsExit": 1,
+      "boardLintExit": 0,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": true,
+      "credentialAliasRemoved": true,
+      "failedChecks": [
+        {
+          "name": "accepts class-based storage adapters",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "empty storage initializes without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "initial balances reject empty, unsafe, inherited, and malformed account keys",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "invalid transfer payloads reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "transfer returns a promise even for invalid input",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "successful transfer writes complete snapshot before commit",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "in-flight state stays hidden until write resolves",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "overlapping transfers commit in invocation order and use latest balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "matching ID and payload reuses receipt without writing",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "conflicting ID payload rejects and preserves snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "reopen restores snapshot and ignores new initial balances",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed write leaves memory and bytes unchanged and retry may reuse ID",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "failed operation does not poison serialized queue",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "insufficient funds and receiver overflow reject without writes",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "caller cannot mutate returned receipt or snapshot",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "snapshot has exact schema and independent nested copies",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved snapshot must parse and have exact top-level fields",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "saved balances are fully validated, with empty saved balances allowed",
+          "pass": false,
+          "error": "openLedger is not implemented"
+        },
+        {
+          "name": "saved receipts require exact fields, unique IDs, and valid accounts and amounts",
+          "pass": false,
+          "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+        },
+        {
+          "name": "storage read errors propagate",
+          "pass": false,
+          "error": "The validation function is expected to return \"true\". Received false\n\nCaught error:\n\nError: openLedger is not implemented"
+        }
+      ],
+      "commands": [],
+      "hookRecords": []
+    },
+    {
+      "id": "hard-r2-instructions",
+      "task": "hard",
+      "repetition": 2,
+      "condition": "instructions",
+      "attempted": false,
+      "finished": false,
+      "status": null,
+      "exitCode": null,
+      "timedOut": null,
+      "passedChecks": null,
+      "reportedChecks": null,
+      "expectedChecks": 20,
+      "correctness": null,
+      "success": false,
+      "inputTokens": null,
+      "cachedInputTokens": null,
+      "freshInputTokens": null,
+      "outputTokens": null,
+      "totalTokens": null,
+      "firstInputTokens": null,
+      "elapsedSeconds": null,
+      "toolCalls": null,
+      "visibleTestsExit": null,
+      "boardLintExit": null,
+      "hookEvents": 0,
+      "blockedHookEvents": 0,
+      "hookEventsByType": {},
+      "hookScriptsById": {},
+      "skippedHookScripts": 0,
+      "invokedHookScriptsById": {},
+      "hookNonzeroRecords": [],
+      "taskCommands": 0,
+      "testCommands": 0,
+      "commandsReferencingSharedPaths": 0,
+      "explicitFileChangeItems": 0,
+      "hostUnchanged": null,
+      "credentialAliasRemoved": null,
+      "failedChecks": [],
+      "commands": [],
+      "hookRecords": []
+    }
+  ],
+  "conditions": [
+    {
+      "condition": "control",
+      "planned": 6,
+      "attempted": 6,
+      "finished": 6,
+      "successes": 0,
+      "metrics": {
+        "correctness": {
+          "n": 6,
+          "mean": 0.08709106984969055,
+          "median": 0.06896551724137931,
+          "min": 0,
+          "max": 0.19230769230769232
+        },
+        "totalTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "freshInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cachedInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "outputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "firstInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "elapsedSeconds": {
+          "n": 6,
+          "mean": 0.21866666666666668,
+          "median": 0.2185,
+          "min": 0.207,
+          "max": 0.227
+        },
+        "toolCalls": {
+          "n": 6,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "hookEvents": {
+          "n": 6,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "taskCommands": {
+          "n": 6,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "condition": "instructions",
+      "planned": 6,
+      "attempted": 5,
+      "finished": 5,
+      "successes": 0,
+      "metrics": {
+        "correctness": {
+          "n": 5,
+          "mean": 0.10450928381962865,
+          "median": 0.06896551724137931,
+          "min": 0,
+          "max": 0.19230769230769232
+        },
+        "totalTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "freshInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cachedInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "outputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "firstInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "elapsedSeconds": {
+          "n": 5,
+          "mean": 0.21960000000000002,
+          "median": 0.219,
+          "min": 0.206,
+          "max": 0.234
+        },
+        "toolCalls": {
+          "n": 5,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "hookEvents": {
+          "n": 6,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "taskCommands": {
+          "n": 6,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    },
+    {
+      "condition": "full",
+      "planned": 6,
+      "attempted": 6,
+      "finished": 6,
+      "successes": 0,
+      "metrics": {
+        "correctness": {
+          "n": 6,
+          "mean": 0.08709106984969055,
+          "median": 0.06896551724137931,
+          "min": 0,
+          "max": 0.19230769230769232
+        },
+        "totalTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "freshInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "cachedInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "outputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "firstInputTokens": {
+          "n": 0,
+          "mean": null,
+          "median": null,
+          "min": null,
+          "max": null
+        },
+        "elapsedSeconds": {
+          "n": 6,
+          "mean": 0.21383333333333332,
+          "median": 0.2135,
+          "min": 0.207,
+          "max": 0.22
+        },
+        "toolCalls": {
+          "n": 6,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "hookEvents": {
+          "n": 6,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        },
+        "taskCommands": {
+          "n": 6,
+          "mean": 0,
+          "median": 0,
+          "min": 0,
+          "max": 0
+        }
+      }
+    }
+  ],
+  "comparisons": [
+    {
+      "first": "control",
+      "second": "instructions",
+      "field": "correctness",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0.19230769230769232,
+          "after": 0.19230769230769232,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0.06896551724137931,
+          "after": 0.06896551724137931,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0.19230769230769232,
+          "after": 0.19230769230769232,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0.06896551724137931,
+          "after": 0.06896551724137931,
+          "delta": 0,
+          "percent": 0
+        }
+      ],
+      "absolute": {
+        "n": 5,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "relativePercent": {
+        "n": 4,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    {
+      "first": "control",
+      "second": "instructions",
+      "field": "totalTokens",
+      "pairs": [],
+      "absolute": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "first": "control",
+      "second": "instructions",
+      "field": "freshInputTokens",
+      "pairs": [],
+      "absolute": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "first": "control",
+      "second": "instructions",
+      "field": "elapsedSeconds",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0.223,
+          "after": 0.219,
+          "delta": -0.0040000000000000036,
+          "percent": -1.7937219730941756
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0.219,
+          "after": 0.234,
+          "delta": 0.015000000000000013,
+          "percent": 6.849315068493156
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0.227,
+          "after": 0.221,
+          "delta": -0.006000000000000005,
+          "percent": -2.643171806167399
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0.218,
+          "after": 0.206,
+          "delta": -0.01200000000000001,
+          "percent": -5.5045871559633035
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0.218,
+          "after": 0.218,
+          "delta": 0,
+          "percent": 0
+        }
+      ],
+      "absolute": {
+        "n": 5,
+        "mean": -0.0014000000000000013,
+        "median": -0.0040000000000000036,
+        "min": -0.01200000000000001,
+        "max": 0.015000000000000013
+      },
+      "relativePercent": {
+        "n": 5,
+        "mean": -0.6184331733463443,
+        "median": -1.7937219730941756,
+        "min": -5.5045871559633035,
+        "max": 6.849315068493156
+      }
+    },
+    {
+      "first": "control",
+      "second": "instructions",
+      "field": "toolCalls",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        }
+      ],
+      "absolute": {
+        "n": 5,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "first": "instructions",
+      "second": "full",
+      "field": "correctness",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0.19230769230769232,
+          "after": 0.19230769230769232,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0.06896551724137931,
+          "after": 0.06896551724137931,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0.19230769230769232,
+          "after": 0.19230769230769232,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0.06896551724137931,
+          "after": 0.06896551724137931,
+          "delta": 0,
+          "percent": 0
+        }
+      ],
+      "absolute": {
+        "n": 5,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "relativePercent": {
+        "n": 4,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    {
+      "first": "instructions",
+      "second": "full",
+      "field": "totalTokens",
+      "pairs": [],
+      "absolute": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "first": "instructions",
+      "second": "full",
+      "field": "freshInputTokens",
+      "pairs": [],
+      "absolute": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "first": "instructions",
+      "second": "full",
+      "field": "elapsedSeconds",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0.219,
+          "after": 0.22,
+          "delta": 0.0010000000000000009,
+          "percent": 0.45662100456620447
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0.234,
+          "after": 0.214,
+          "delta": -0.020000000000000018,
+          "percent": -8.54700854700855
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0.221,
+          "after": 0.213,
+          "delta": -0.008000000000000007,
+          "percent": -3.6199095022624417
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0.206,
+          "after": 0.219,
+          "delta": 0.013000000000000012,
+          "percent": 6.310679611650483
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0.218,
+          "after": 0.21,
+          "delta": -0.008000000000000007,
+          "percent": -3.669724770642202
+        }
+      ],
+      "absolute": {
+        "n": 5,
+        "mean": -0.004400000000000004,
+        "median": -0.008000000000000007,
+        "min": -0.020000000000000018,
+        "max": 0.013000000000000012
+      },
+      "relativePercent": {
+        "n": 5,
+        "mean": -1.8138684407393015,
+        "median": -3.6199095022624417,
+        "min": -8.54700854700855,
+        "max": 6.310679611650483
+      }
+    },
+    {
+      "first": "instructions",
+      "second": "full",
+      "field": "toolCalls",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        }
+      ],
+      "absolute": {
+        "n": 5,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "first": "control",
+      "second": "full",
+      "field": "correctness",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0.19230769230769232,
+          "after": 0.19230769230769232,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0.06896551724137931,
+          "after": 0.06896551724137931,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0.19230769230769232,
+          "after": 0.19230769230769232,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0.06896551724137931,
+          "after": 0.06896551724137931,
+          "delta": 0,
+          "percent": 0
+        },
+        {
+          "task": "hard",
+          "repetition": 2,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        }
+      ],
+      "absolute": {
+        "n": 6,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "relativePercent": {
+        "n": 4,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      }
+    },
+    {
+      "first": "control",
+      "second": "full",
+      "field": "totalTokens",
+      "pairs": [],
+      "absolute": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "first": "control",
+      "second": "full",
+      "field": "freshInputTokens",
+      "pairs": [],
+      "absolute": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    },
+    {
+      "first": "control",
+      "second": "full",
+      "field": "elapsedSeconds",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0.223,
+          "after": 0.22,
+          "delta": -0.0030000000000000027,
+          "percent": -1.3452914798206317
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0.219,
+          "after": 0.214,
+          "delta": -0.0050000000000000044,
+          "percent": -2.2831050228310557
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0.227,
+          "after": 0.213,
+          "delta": -0.014000000000000012,
+          "percent": -6.167400881057272
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0.218,
+          "after": 0.219,
+          "delta": 0.0010000000000000009,
+          "percent": 0.4587155963302836
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0.218,
+          "after": 0.21,
+          "delta": -0.008000000000000007,
+          "percent": -3.669724770642202
+        },
+        {
+          "task": "hard",
+          "repetition": 2,
+          "before": 0.207,
+          "after": 0.207,
+          "delta": 0,
+          "percent": 0
+        }
+      ],
+      "absolute": {
+        "n": 6,
+        "mean": -0.004833333333333338,
+        "median": -0.0040000000000000036,
+        "min": -0.014000000000000012,
+        "max": 0.0010000000000000009
+      },
+      "relativePercent": {
+        "n": 6,
+        "mean": -2.1678010930034795,
+        "median": -1.8141982513258437,
+        "min": -6.167400881057272,
+        "max": 0.4587155963302836
+      }
+    },
+    {
+      "first": "control",
+      "second": "full",
+      "field": "toolCalls",
+      "pairs": [
+        {
+          "task": "easy",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "medium",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "hard",
+          "repetition": 1,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "easy",
+          "repetition": 2,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "medium",
+          "repetition": 2,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        },
+        {
+          "task": "hard",
+          "repetition": 2,
+          "before": 0,
+          "after": 0,
+          "delta": 0,
+          "percent": null
+        }
+      ],
+      "absolute": {
+        "n": 6,
+        "mean": 0,
+        "median": 0,
+        "min": 0,
+        "max": 0
+      },
+      "relativePercent": {
+        "n": 0,
+        "mean": null,
+        "median": null,
+        "min": null,
+        "max": null
+      }
+    }
+  ],
+  "accounting": "Primary sessions only; cached input included in input; reasoning included in output. Setup/review/guardian usage excluded. Failed attempts retained."
+}

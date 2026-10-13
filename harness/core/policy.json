@@ -1,0 +1,60 @@
+{
+  "version": 1,
+  "authority": "Harness v2 installed policy (harness task 20, 2026-10-13): the five core hooks from Harness_Development/FINDINGS.md, \"The lean harness as built (v2)\". tools/render.cjs builds both assistants' hook adapters from this file and tools/dispatch.cjs reads it on every hook call. v1 used the root policy.json (git tag v1).",
+  "env": {
+    "ECC_HOOK_PROFILE": "minimal",
+    "ECC_TASK_FLOW": "lean"
+  },
+  "hooks": [
+    {
+      "id": "task-gate",
+      "event": "PreToolUse",
+      "matcher": "Edit|Write",
+      "args": [
+        "node",
+        "scripts/hooks/task-gate.js"
+      ],
+      "timeout": 30
+    },
+    {
+      "id": "file-size-gate",
+      "event": "PreToolUse",
+      "matcher": "Edit|Write",
+      "args": [
+        "node",
+        "scripts/hooks/file-size-gate.js"
+      ],
+      "timeout": 30
+    },
+    {
+      "id": "lean-stop-gate",
+      "event": "Stop",
+      "matcher": "*",
+      "args": [
+        "node",
+        "scripts/hooks/lean-stop-gate.js"
+      ],
+      "timeout": 30
+    },
+    {
+      "id": "docs-snapshot",
+      "event": "SessionStart",
+      "matcher": "*",
+      "args": [
+        "node",
+        "scripts/hooks/docs-snapshot.js"
+      ],
+      "timeout": 30
+    },
+    {
+      "id": "lean-session-note",
+      "event": "SessionStart",
+      "matcher": "*",
+      "args": [
+        "node",
+        "scripts/hooks/lean-session-note.js"
+      ],
+      "timeout": 30
+    }
+  ]
+}

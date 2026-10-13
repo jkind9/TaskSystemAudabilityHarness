@@ -1,0 +1,120 @@
+{
+  "name": "grade",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\hard\\grade.cjs",
+    "C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\hard-r2-control\\repo"
+  ],
+  "exitCode": 1,
+  "signal": null,
+  "executionError": null,
+  "stdout": "{\n  \"passed\": 0,\n  \"failed\": 20,\n  \"total\": 20,\n  \"checks\": [\n    {\n      \"name\": \"accepts class-based storage adapters\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"empty storage initializes without writing\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"initial balances reject empty, unsafe, inherited, and malformed account keys\",\n      \"pass\": false,\n      \"error\": \"The error is expected to be an instance of \\\"TypeError\\\". Received \\\"Error\\\"\\n\\nError message:\\n\\nopenLedger is not implemented\"\n    },\n    {\n      \"name\": \"invalid transfer payloads reject without writes\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"transfer returns a promise even for invalid input\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"successful transfer writes complete snapshot before commit\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"in-flight state stays hidden until write resolves\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"overlapping transfers commit in invocation order and use latest balances\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"matching ID and payload reuses receipt without writing\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"conflicting ID payload rejects and preserves snapshot\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"reopen restores snapshot and ignores new initial balances\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"failed write leaves memory and bytes unchanged and retry may reuse ID\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"failed operation does not poison serialized queue\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"insufficient funds and receiver overflow reject without writes\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"caller cannot mutate returned receipt or snapshot\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"snapshot has exact schema and independent nested copies\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"saved snapshot must parse and have exact top-level fields\",\n      \"pass\": false,\n      \"error\": \"The error is expected to be an instance of \\\"TypeError\\\". Received \\\"Error\\\"\\n\\nError message:\\n\\nopenLedger is not implemented\"\n    },\n    {\n      \"name\": \"saved balances are fully validated, with empty saved balances allowed\",\n      \"pass\": false,\n      \"error\": \"openLedger is not implemented\"\n    },\n    {\n      \"name\": \"saved receipts require exact fields, unique IDs, and valid accounts and amounts\",\n      \"pass\": false,\n      \"error\": \"The error is expected to be an instance of \\\"TypeError\\\". Received \\\"Error\\\"\\n\\nError message:\\n\\nopenLedger is not implemented\"\n    },\n    {\n      \"name\": \"storage read errors propagate\",\n      \"pass\": false,\n      \"error\": \"The validation function is expected to return \\\"true\\\". Received false\\n\\nCaught error:\\n\\nError: openLedger is not implemented\"\n    }\n  ]\n}\n",
+  "stderr": "",
+  "grade": {
+    "passed": 0,
+    "failed": 20,
+    "total": 20,
+    "checks": [
+      {
+        "name": "accepts class-based storage adapters",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "empty storage initializes without writing",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "initial balances reject empty, unsafe, inherited, and malformed account keys",
+        "pass": false,
+        "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+      },
+      {
+        "name": "invalid transfer payloads reject without writes",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "transfer returns a promise even for invalid input",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "successful transfer writes complete snapshot before commit",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "in-flight state stays hidden until write resolves",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "overlapping transfers commit in invocation order and use latest balances",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "matching ID and payload reuses receipt without writing",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "conflicting ID payload rejects and preserves snapshot",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "reopen restores snapshot and ignores new initial balances",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "failed write leaves memory and bytes unchanged and retry may reuse ID",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "failed operation does not poison serialized queue",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "insufficient funds and receiver overflow reject without writes",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "caller cannot mutate returned receipt or snapshot",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "snapshot has exact schema and independent nested copies",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "saved snapshot must parse and have exact top-level fields",
+        "pass": false,
+        "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+      },
+      {
+        "name": "saved balances are fully validated, with empty saved balances allowed",
+        "pass": false,
+        "error": "openLedger is not implemented"
+      },
+      {
+        "name": "saved receipts require exact fields, unique IDs, and valid accounts and amounts",
+        "pass": false,
+        "error": "The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nopenLedger is not implemented"
+      },
+      {
+        "name": "storage read errors propagate",
+        "pass": false,
+        "error": "The validation function is expected to return \"true\". Received false\n\nCaught error:\n\nError: openLedger is not implemented"
+      }
+    ]
+  }
+}

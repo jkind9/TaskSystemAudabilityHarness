@@ -1,0 +1,175 @@
+{
+  "studyId": "luna-harness-study-20261012",
+  "createdAt": "2026-10-12T08:58:58.058Z",
+  "model": "gpt-6-luna",
+  "reasoning": "high",
+  "repetitions": 2,
+  "timeoutMs": 720000,
+  "codexExe": "C:/Users/jkind/.vscode/extensions/openai.chatgpt-26.1007.21434-win32-x64/bin/windows-x86_64/codex.exe",
+  "tasks": [
+    {
+      "id": "easy",
+      "testFile": "test/mergeIntervals.test.js",
+      "expectedChecks": 26,
+      "prompt": "Complete the task in this repository. The following contract is frozen for this task:\n\n# Merge touching intervals\n\nImplement `mergeIntervals(intervals)` in `src/index.js`. The input is an array of two-item arrays `[start, end]`. Both endpoints must be safe integers and `start` must be no greater than `end`.\n\nReturn a new array sorted by start. Merge intervals that overlap or touch: `[1, 3]` and `[3, 5]` become `[1, 5]`. Keep disjoint intervals separate. The empty input returns a new empty array. Do not change the input or any pair in it; the input and pairs may be frozen.\n\nThrow `TypeError` when the outer value is not a dense array, a pair is not a two-item array, or an endpoint is not a safe integer. Throw `RangeError` when a valid pair has `start > end`. Validate the complete input before returning a result.\n\nRun the public tests with `node test/mergeIntervals.test.js` from this directory. The implementation uses CommonJS and exports `{ mergeIntervals }`.\nRead the existing implementation and public tests. Implement the contract, add useful regression tests, and update README.md to explain the finished behavior. Verify the result. Work only inside this repository; do not read sibling or parent experiment directories, graders, reference implementations or external answers. Use only built-in dependencies. This is a single-agent comparison: do not delegate. An independent reviewer checks the output afterward. Do not make commits or change global settings. Use normal permission mechanisms if subprocess execution requires approval. Keep task records honest if you use them; pending_review is suitable while awaiting the independent check. State changed behavior, verification results and remaining limitations in your final response."
+    },
+    {
+      "id": "medium",
+      "testFile": "test/createCache.test.js",
+      "expectedChecks": 29,
+      "prompt": "Complete the task in this repository. The following contract is frozen for this task:\n\n# Async singleflight cache\n\nImplement `createCache(loader)` in `src/index.js`. It returns `{ get, invalidate, clear }`. The loader must be a function or construction throws `TypeError`.\n\n`get(key)` accepts a nonempty primitive string. For an invalid key it returns a rejected Promise with `TypeError` and does not call the loader. For a valid uncached key, `get` immediately reserves and returns one Promise shared by every call for that key while loading. The loader is called with the key in the next microtask. A synchronous loader throw becomes a rejected Promise. A resolved value is cached and returned by later calls.\n\nA rejected load rejects its callers and is removed so a later `get` can retry. `invalidate(key)` requires a nonempty primitive string and throws `TypeError` synchronously for an invalid key. It removes the cached value and starts a new generation for that key. Pending callers still receive their original outcome, but completion from an invalidated load must not change the cache or interfere with a newer load. `clear()` synchronously removes every cached value and starts a new generation for all keys; pending callers keep their original outcome, and their completion cannot repopulate the cache or interfere with newer loads. `invalidate` and `clear` return `undefined`.\n\nRun the public tests with `node test/createCache.test.js` from this directory. The implementation uses CommonJS and exports `{ createCache }`.\nRead the existing implementation and public tests. Implement the contract, add useful regression tests, and update README.md to explain the finished behavior. Verify the result. Work only inside this repository; do not read sibling or parent experiment directories, graders, reference implementations or external answers. Use only built-in dependencies. This is a single-agent comparison: do not delegate. An independent reviewer checks the output afterward. Do not make commits or change global settings. Use normal permission mechanisms if subprocess execution requires approval. Keep task records honest if you use them; pending_review is suitable while awaiting the independent check. State changed behavior, verification results and remaining limitations in your final response."
+    },
+    {
+      "id": "hard",
+      "testFile": "test/ledger.test.js",
+      "expectedChecks": 20,
+      "prompt": "Complete the task in this repository. The following contract is frozen for this task:\n\n﻿# Durable transfer ledger\n\nImplement src/ledger.js so it exports one function: openLedger({ storage, initialBalances }).\n\nstorage has two asynchronous methods:\n\n- read() returns either null or the exact JSON string previously stored.\n- write(json) atomically replaces the stored string. If its promise rejects, the stored string remains byte-for-byte unchanged.\n\nWhen read() returns null, validate initialBalances as a nonempty plain object. Account names must match /^[A-Za-z][A-Za-z0-9_]*$/, must not name an inherited Object.prototype property, and balances must be nonnegative safe integers. Opening an empty store must not call write().\n\nWhen read() returns a string, parse and validate the whole saved snapshot before opening. A saved snapshot has exactly this shape:\n\n    { \"version\": 1, \"balances\": { \"account\": 123 }, \"receipts\": [] }\n\nIt must have exactly the listed fields. Balances may be empty in a saved snapshot. Receipt entries have exactly {id, from, to, amount}. IDs are nonempty strings and unique. Accounts are valid, distinct, and present in balances. Amounts are positive safe integers. Do not infer or replay history from receipts. A valid saved snapshot takes precedence over initialBalances, which is ignored.\n\ntransfer({id, from, to, amount}) always returns a promise. Validate the ID, distinct known accounts, and positive safe integer amount. Serialize overlapping calls in invocation order. Check each request against the latest committed balances. Reject insufficient funds and any resulting balance outside the safe integer range.\n\nFor a new transfer, persist the complete next snapshot before publishing any change in memory. If write() rejects, reject that transfer, keep the in-memory snapshot unchanged, reserve no receipt ID, and allow later calls to proceed. A repeated ID with the same from, to, and amount returns its original receipt without writing again. Reusing an ID with a different payload rejects. Failed writes do not reserve IDs.\n\nsnapshot() is synchronous and returns a fresh {version, balances, receipts} copy of committed data. Returned receipts and snapshots must not let callers mutate ledger state. In-flight transfers are not visible.\n\nUse only Node.js built-ins. Do not use the filesystem, clock, randomness, or external services.\n\nRun the public tests with:\n\n    node test/ledger.test.js\r\n\nValidation and invalid saved data reject with TypeError (including malformed JSON). Insufficient funds and balance overflow reject with RangeError. Reused IDs with a different payload reject with Error. Propagate the original storage read/write failure unchanged. The storage adapter may be a class instance; only its read and write methods are required. The ledger instance is the only writer; concurrent ledgers over the same adapter are outside this contract.\n\nRead the existing implementation and public tests. Implement the contract, add useful regression tests, and update README.md to explain the finished behavior. Verify the result. Work only inside this repository; do not read sibling or parent experiment directories, graders, reference implementations or external answers. Use only built-in dependencies. This is a single-agent comparison: do not delegate. An independent reviewer checks the output afterward. Do not make commits or change global settings. Use normal permission mechanisms if subprocess execution requires approval. Keep task records honest if you use them; pending_review is suitable while awaiting the independent check. State changed behavior, verification results and remaining limitations in your final response."
+    }
+  ],
+  "conditions": [
+    {
+      "id": "control",
+      "mode": "control"
+    },
+    {
+      "id": "instructions",
+      "mode": "instructions"
+    },
+    {
+      "id": "full",
+      "mode": "full"
+    }
+  ],
+  "runs": [
+    {
+      "id": "easy-r1-control",
+      "task": "easy",
+      "repetition": 1,
+      "condition": "control"
+    },
+    {
+      "id": "easy-r1-instructions",
+      "task": "easy",
+      "repetition": 1,
+      "condition": "instructions"
+    },
+    {
+      "id": "easy-r1-full",
+      "task": "easy",
+      "repetition": 1,
+      "condition": "full"
+    },
+    {
+      "id": "medium-r1-instructions",
+      "task": "medium",
+      "repetition": 1,
+      "condition": "instructions"
+    },
+    {
+      "id": "medium-r1-full",
+      "task": "medium",
+      "repetition": 1,
+      "condition": "full"
+    },
+    {
+      "id": "medium-r1-control",
+      "task": "medium",
+      "repetition": 1,
+      "condition": "control"
+    },
+    {
+      "id": "hard-r1-full",
+      "task": "hard",
+      "repetition": 1,
+      "condition": "full"
+    },
+    {
+      "id": "hard-r1-control",
+      "task": "hard",
+      "repetition": 1,
+      "condition": "control"
+    },
+    {
+      "id": "hard-r1-instructions",
+      "task": "hard",
+      "repetition": 1,
+      "condition": "instructions"
+    },
+    {
+      "id": "easy-r2-full",
+      "task": "easy",
+      "repetition": 2,
+      "condition": "full"
+    },
+    {
+      "id": "easy-r2-instructions",
+      "task": "easy",
+      "repetition": 2,
+      "condition": "instructions"
+    },
+    {
+      "id": "easy-r2-control",
+      "task": "easy",
+      "repetition": 2,
+      "condition": "control"
+    },
+    {
+      "id": "medium-r2-instructions",
+      "task": "medium",
+      "repetition": 2,
+      "condition": "instructions"
+    },
+    {
+      "id": "medium-r2-control",
+      "task": "medium",
+      "repetition": 2,
+      "condition": "control"
+    },
+    {
+      "id": "medium-r2-full",
+      "task": "medium",
+      "repetition": 2,
+      "condition": "full"
+    },
+    {
+      "id": "hard-r2-control",
+      "task": "hard",
+      "repetition": 2,
+      "condition": "control"
+    },
+    {
+      "id": "hard-r2-full",
+      "task": "hard",
+      "repetition": 2,
+      "condition": "full"
+    },
+    {
+      "id": "hard-r2-instructions",
+      "task": "hard",
+      "repetition": 2,
+      "condition": "instructions"
+    }
+  ],
+  "preregistration": {
+    "primaryOutcome": "All frozen contract categories pass and CLI completes; failures/unknown grades retained, never replaced.",
+    "secondaryOutcomes": [
+      "fresh/cached/total input/output tokens",
+      "elapsed time",
+      "tool commands",
+      "task-board lint",
+      "hook dispatch/status and scope"
+    ],
+    "comparisons": [
+      "instructions minus control: shared rules + custom skill catalog bundle",
+      "full minus instructions: incremental installed hook effect",
+      "full minus control: combined bundle"
+    ],
+    "statistics": "All run-level observations; paired differences matched by task/repetition; median and range across six pairs. No significance test or confidence claim with two repetitions per task.",
+    "difficulty": "Easy has local pure-function constraints; medium adds asynchronous sharing and stale-completion races; hard adds serialization, persistence failure and restart idempotence. Task identity and difficulty are confounded.",
+    "sampling": "Three dedicated tasks selected before results. One completion per scheduled cell; no best-of selection. All six condition-order permutations used once.",
+    "scope": "Single-agent Luna; delegation disabled equally; task scaffold present equally. Fixed main chat orchestrator excluded from measured sessions.",
+    "timeout": "12 minute administrative guard per attempt, not a task speed target. Retain failed/partial usage; unknown usage stays unknown.",
+    "credentials": "Temporary auth aliases only in private application homes, removed after child/streams finish; none stored in project.",
+    "hostEffects": "Full hooks may append audit and session state and refresh generated installed files. Configuration and source bytes must remain unchanged; log append does not count as source drift."
+  }
+}

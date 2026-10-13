@@ -1,0 +1,62 @@
+{
+  "version": 1,
+  "authority": "Study 2 task-only profile: harness commit 906ce37 policy.json filtered to the task-system hooks",
+  "env": {
+    "ECC_HOOK_PROFILE": "minimal",
+    "ECC_DISABLED_HOOKS": "pre:write:fact-gate,pre:edit:fact-gate,pre:bash:tmux-reminder"
+  },
+  "hooks": [
+    {
+      "id": "task-gate",
+      "event": "PreToolUse",
+      "matcher": "Edit|Write",
+      "args": [
+        "node",
+        "scripts/hooks/task-gate.js"
+      ],
+      "timeout": 30
+    },
+    {
+      "id": "file-size-gate",
+      "event": "PreToolUse",
+      "matcher": "Edit|Write",
+      "args": [
+        "node",
+        "scripts/hooks/file-size-gate.js"
+      ],
+      "timeout": 30
+    },
+    {
+      "id": "task-complete-gate",
+      "event": "Stop",
+      "matcher": "*",
+      "args": [
+        "node",
+        "scripts/hooks/task-complete-gate.js"
+      ],
+      "timeout": 30
+    },
+    {
+      "id": "docs-snapshot",
+      "event": "SessionStart",
+      "matcher": "*",
+      "args": [
+        "node",
+        "scripts/hooks/docs-snapshot.js"
+      ],
+      "timeout": 30
+    },
+    {
+      "id": "documentation-policy",
+      "event": "PreToolUse",
+      "matcher": "Edit|Write",
+      "builtin": "documentation-policy"
+    },
+    {
+      "id": "bash-documentation-policy",
+      "event": "PreToolUse",
+      "matcher": "Bash",
+      "builtin": "bash-documentation-policy"
+    }
+  ]
+}

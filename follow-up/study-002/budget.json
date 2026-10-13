@@ -1,0 +1,876 @@
+{
+  "entries": [
+    {
+      "kind": "probe",
+      "id": "study2-probes-20261012.probe-stock-s1",
+      "tokens": 44049,
+      "unknown": false,
+      "source": "probes\\results\\probe-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-12T17:45:26.129Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-probes-20261012.probe-task-only-s1",
+      "tokens": 298151,
+      "unknown": false,
+      "source": "probes\\results\\probe-task-only\\sessions\\s1\\result.json",
+      "at": "2026-10-12T17:46:39.936Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-probes-20261012.probe-full-s1",
+      "tokens": 355165,
+      "unknown": false,
+      "source": "probes\\results\\probe-full\\sessions\\s1\\result.json",
+      "at": "2026-10-12T17:47:44.768Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-probes-20261012.probe-full-s2",
+      "tokens": 36573,
+      "unknown": false,
+      "source": "probes\\results\\probe-full\\sessions\\s2\\result.json",
+      "at": "2026-10-12T17:48:15.198Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-probes-enforce-20261012.enforce-task-only-s1",
+      "tokens": 64462,
+      "unknown": false,
+      "source": "probes\\enforce\\results\\enforce-task-only\\sessions\\s1\\result.json",
+      "at": "2026-10-12T17:50:14.927Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-probes-enforce-20261012.enforce-full-s1",
+      "tokens": 190908,
+      "unknown": false,
+      "source": "probes\\enforce\\results\\enforce-full\\sessions\\s1\\result.json",
+      "at": "2026-10-12T17:50:55.348Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-probes-enforce2-20261012.enforce2-task-only-s1",
+      "tokens": 12120728,
+      "unknown": false,
+      "source": "probes\\enforce2\\results\\enforce2-task-only\\sessions\\s1\\result.json",
+      "at": "2026-10-12T18:02:34.869Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-probes-20261012.review-smoke-r1",
+      "tokens": 13887,
+      "unknown": false,
+      "source": "probes/review-smoke/r1/events.jsonl",
+      "at": "2026-10-12T18:19:29.864Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-20261012.restart-task-only-s1",
+      "tokens": 4984635,
+      "unknown": false,
+      "source": "results\\restart-task-only\\sessions\\s1\\result.json",
+      "at": "2026-10-12T18:58:10.933Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-20261012.restart-task-only-s2",
+      "tokens": 3475672,
+      "unknown": false,
+      "source": "results\\restart-task-only\\sessions\\s2\\result.json",
+      "at": "2026-10-12T19:05:25.514Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-b-20261012.restart-stock-s1",
+      "tokens": 813280,
+      "unknown": false,
+      "source": "pilot-b\\results\\restart-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-12T19:18:34.169Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-b-20261012.restart-stock-s2",
+      "tokens": 1030373,
+      "unknown": false,
+      "source": "pilot-b\\results\\restart-stock\\sessions\\s2\\result.json",
+      "at": "2026-10-12T19:22:36.064Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-b-20261012.restart-full-s1",
+      "tokens": 3859667,
+      "unknown": false,
+      "source": "pilot-b\\results\\restart-full\\sessions\\s1\\result.json",
+      "at": "2026-10-12T19:29:35.996Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-b-20261012.restart-full-s2",
+      "tokens": 2620388,
+      "unknown": false,
+      "source": "pilot-b\\results\\restart-full\\sessions\\s2\\result.json",
+      "at": "2026-10-12T19:35:04.478Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-b-20261012.public-stock-s1",
+      "tokens": 700522,
+      "unknown": false,
+      "source": "pilot-b\\results\\public-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-12T19:39:05.130Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-b-20261012.public-full-s1",
+      "tokens": 9894982,
+      "unknown": false,
+      "source": "pilot-b\\results\\public-full\\sessions\\s1\\result.json",
+      "at": "2026-10-12T19:59:39.005Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-pilot-b-20261012.public-task-only-s1",
+      "tokens": 9181533,
+      "unknown": false,
+      "source": "pilot-b\\results\\public-task-only\\sessions\\s1\\result.json",
+      "at": "2026-10-12T20:18:33.595Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-6391d264",
+      "tokens": 21081,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-6391d264\\result.json",
+      "at": "2026-10-12T20:19:10.054Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-5f6a8349",
+      "tokens": 14675,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-5f6a8349\\result.json",
+      "at": "2026-10-12T20:19:15.173Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-d41b1de4",
+      "tokens": 25887,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-d41b1de4\\result.json",
+      "at": "2026-10-12T20:19:27.851Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-03d51652",
+      "tokens": 30853,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-03d51652\\result.json",
+      "at": "2026-10-12T20:19:41.801Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-252ebfbf",
+      "tokens": 22640,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-252ebfbf\\result.json",
+      "at": "2026-10-12T20:19:56.433Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-203956bb",
+      "tokens": 22697,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-203956bb\\result.json",
+      "at": "2026-10-12T20:20:11.980Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-d7708b17",
+      "tokens": 14174,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-d7708b17\\result.json",
+      "at": "2026-10-12T20:20:18.061Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-aa94cf11",
+      "tokens": 15722,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-aa94cf11\\result.json",
+      "at": "2026-10-12T20:20:23.354Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-18f7aa4b",
+      "tokens": 21086,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-18f7aa4b\\result.json",
+      "at": "2026-10-12T20:20:36.945Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-8162ab6f",
+      "tokens": 17317,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-8162ab6f\\result.json",
+      "at": "2026-10-12T20:20:42.346Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-f8521afa",
+      "tokens": 25330,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-f8521afa\\result.json",
+      "at": "2026-10-12T20:21:02.465Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-d2a4f20c",
+      "tokens": 30544,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-d2a4f20c\\result.json",
+      "at": "2026-10-12T20:21:21.314Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-610a73bf",
+      "tokens": 19689,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-610a73bf\\result.json",
+      "at": "2026-10-12T20:21:35.538Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-42423fb4",
+      "tokens": 15918,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-42423fb4\\result.json",
+      "at": "2026-10-12T20:21:42.158Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-822deab3",
+      "tokens": 15140,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-822deab3\\result.json",
+      "at": "2026-10-12T20:21:48.973Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-b0ca3a8e",
+      "tokens": 48155,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-b0ca3a8e\\result.json",
+      "at": "2026-10-12T20:22:30.229Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-15b87b14",
+      "tokens": 41096,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-15b87b14\\result.json",
+      "at": "2026-10-12T20:22:55.660Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-af53f97c",
+      "tokens": 49416,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-af53f97c\\result.json",
+      "at": "2026-10-12T20:23:12.517Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-8673ce5e",
+      "tokens": 29415,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-8673ce5e\\result.json",
+      "at": "2026-10-12T20:23:35.412Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-ec0ecaa7",
+      "tokens": 48349,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-ec0ecaa7\\result.json",
+      "at": "2026-10-12T20:23:52.292Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-pilot-20261012.review.rv-dcff52b6",
+      "tokens": 29599,
+      "unknown": false,
+      "source": "reviews\\runs\\rv-dcff52b6\\result.json",
+      "at": "2026-10-12T20:24:15.316Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-resized-probes-20261013.probe-lean-gates-s1",
+      "tokens": 206853,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\probes\\results\\probe-lean-gates\\sessions\\s1\\result.json",
+      "at": "2026-10-13T07:51:55.674Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-resized-probes2-20261013.probe-lean-gates-s1",
+      "tokens": 147990,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\probes2\\results\\probe-lean-gates\\sessions\\s1\\result.json",
+      "at": "2026-10-13T08:03:25.374Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-resized-probes2-20261013.probe-stock-flow-s1",
+      "tokens": 58551,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\probes2\\results\\probe-stock-flow\\sessions\\s1\\result.json",
+      "at": "2026-10-13T08:03:39.422Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-resized-probes2-20261013.probe-lean-flow-s1",
+      "tokens": 255373,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\probes2\\results\\probe-lean-flow\\sessions\\s1\\result.json",
+      "at": "2026-10-13T08:05:34.271Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-resized-probes3-20261013.probe-lean-gates-s1",
+      "tokens": 193679,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\probes3\\results\\probe-lean-gates\\sessions\\s1\\result.json",
+      "at": "2026-10-13T08:14:02.601Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-resized-probes3-20261013.probe-stock-flow-s1",
+      "tokens": 74745,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\probes3\\results\\probe-stock-flow\\sessions\\s1\\result.json",
+      "at": "2026-10-13T08:14:27.860Z"
+    },
+    {
+      "kind": "probe",
+      "id": "study2-resized-probes3-20261013.probe-lean-flow-s1",
+      "tokens": 96020,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\probes3\\results\\probe-lean-flow\\sessions\\s1\\result.json",
+      "at": "2026-10-13T08:14:56.190Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.restart-stock-s1",
+      "tokens": 834401,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\restart-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-13T12:34:00.846Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.restart-stock-s2",
+      "tokens": 1041146,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\restart-stock\\sessions\\s2\\result.json",
+      "at": "2026-10-13T12:36:37.344Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.restart-lean-s1",
+      "tokens": 1354745,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\restart-lean\\sessions\\s1\\result.json",
+      "at": "2026-10-13T12:39:26.050Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.restart-lean-s2",
+      "tokens": 1698954,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\restart-lean\\sessions\\s2\\result.json",
+      "at": "2026-10-13T12:44:15.765Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.tablib-lean-s1",
+      "tokens": 1783885,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\tablib-lean\\sessions\\s1\\result.json",
+      "at": "2026-10-13T12:52:11.047Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.tablib-lean-s2",
+      "tokens": 1866099,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\tablib-lean\\sessions\\s2\\result.json",
+      "at": "2026-10-13T12:56:35.792Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.tablib-stock-s1",
+      "tokens": 1330920,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\tablib-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-13T13:01:56.673Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.tablib-stock-s2",
+      "tokens": 695478,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\tablib-stock\\sessions\\s2\\result.json",
+      "at": "2026-10-13T13:04:00.014Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.fastapi-stock-s1",
+      "tokens": 181130,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\fastapi-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-13T13:04:46.309Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.fastapi-lean-s1",
+      "tokens": 186813,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\fastapi-lean\\sessions\\s1\\result.json",
+      "at": "2026-10-13T13:06:05.195Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.watson-lean-s1",
+      "tokens": 943729,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\watson-lean\\sessions\\s1\\result.json",
+      "at": "2026-10-13T13:09:51.988Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.watson-lean-s2",
+      "tokens": 1626659,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\watson-lean\\sessions\\s2\\result.json",
+      "at": "2026-10-13T13:14:51.882Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.watson-stock-s1",
+      "tokens": 735366,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\watson-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-13T13:17:36.693Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.watson-stock-s2",
+      "tokens": 5133142,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\watson-stock\\sessions\\s2\\result.json",
+      "at": "2026-10-13T13:33:30.559Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.mlflow-stock-s1",
+      "tokens": 648054,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\mlflow-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-13T13:35:44.548Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.mlflow-lean-s1",
+      "tokens": 2613351,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\mlflow-lean\\sessions\\s1\\result.json",
+      "at": "2026-10-13T13:52:00.810Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.public-lean-s1",
+      "tokens": 4121340,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\public-lean\\sessions\\s1\\result.json",
+      "at": "2026-10-13T14:13:52.692Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.public-stock-s1",
+      "tokens": 816397,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\public-stock\\sessions\\s1\\result.json",
+      "at": "2026-10-13T14:17:40.418Z"
+    },
+    {
+      "kind": "session",
+      "id": "study2-resized-20261013.restart-full-s1",
+      "tokens": 8579151,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\results\\restart-full\\sessions\\s1\\result.json",
+      "at": "2026-10-13T14:32:49.708Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-25de81b9",
+      "tokens": 20940,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-25de81b9\\result.json",
+      "at": "2026-10-13T14:34:57.275Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-746600bb",
+      "tokens": 23795,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-746600bb\\result.json",
+      "at": "2026-10-13T14:35:32.925Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-a954195c",
+      "tokens": 14406,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-a954195c\\result.json",
+      "at": "2026-10-13T14:35:40.878Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-a044eb12",
+      "tokens": 14156,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-a044eb12\\result.json",
+      "at": "2026-10-13T14:35:49.025Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-ff43c146",
+      "tokens": 22211,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-ff43c146\\result.json",
+      "at": "2026-10-13T14:36:00.752Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-f1fe313a",
+      "tokens": 15986,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-f1fe313a\\result.json",
+      "at": "2026-10-13T14:36:25.678Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-59c36725",
+      "tokens": 14135,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-59c36725\\result.json",
+      "at": "2026-10-13T14:36:34.312Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-09864d2e",
+      "tokens": 16374,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-09864d2e\\result.json",
+      "at": "2026-10-13T14:36:41.501Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-60d1dadd",
+      "tokens": 16624,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-60d1dadd\\result.json",
+      "at": "2026-10-13T14:36:58.425Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-32b5203d",
+      "tokens": 19748,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-32b5203d\\result.json",
+      "at": "2026-10-13T14:37:14.289Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-47803468",
+      "tokens": 14615,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-47803468\\result.json",
+      "at": "2026-10-13T14:37:21.709Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-b6292ac4",
+      "tokens": 14197,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-b6292ac4\\result.json",
+      "at": "2026-10-13T14:37:31.346Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-2ddb5ea1",
+      "tokens": 22035,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-2ddb5ea1\\result.json",
+      "at": "2026-10-13T14:37:57.335Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-483f287a",
+      "tokens": 15273,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-483f287a\\result.json",
+      "at": "2026-10-13T14:38:07.085Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-46992999",
+      "tokens": 14486,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-46992999\\result.json",
+      "at": "2026-10-13T14:38:17.687Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-1ae13fb5",
+      "tokens": 14975,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-1ae13fb5\\result.json",
+      "at": "2026-10-13T14:38:25.597Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-120dd361",
+      "tokens": 20330,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-120dd361\\result.json",
+      "at": "2026-10-13T14:38:44.464Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-4898adb8",
+      "tokens": 22759,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-4898adb8\\result.json",
+      "at": "2026-10-13T14:39:15.366Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-f057647a",
+      "tokens": 14449,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-f057647a\\result.json",
+      "at": "2026-10-13T14:39:22.741Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-515a7252",
+      "tokens": 22444,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-515a7252\\result.json",
+      "at": "2026-10-13T14:39:38.999Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-f07dfe3f",
+      "tokens": 22124,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-f07dfe3f\\result.json",
+      "at": "2026-10-13T14:40:08.104Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-488e45be",
+      "tokens": 38100,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-488e45be\\result.json",
+      "at": "2026-10-13T14:40:26.401Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-0e91d27c",
+      "tokens": 18186,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-0e91d27c\\result.json",
+      "at": "2026-10-13T14:40:46.444Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-6f394734",
+      "tokens": 22337,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-6f394734\\result.json",
+      "at": "2026-10-13T14:41:03.747Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-86ae0e29",
+      "tokens": 39246,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-86ae0e29\\result.json",
+      "at": "2026-10-13T14:41:22.395Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-37ea5443",
+      "tokens": 21160,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-37ea5443\\result.json",
+      "at": "2026-10-13T14:41:39.302Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-89b701e9",
+      "tokens": 18125,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-89b701e9\\result.json",
+      "at": "2026-10-13T14:42:09.099Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-f9d94580",
+      "tokens": 21854,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-f9d94580\\result.json",
+      "at": "2026-10-13T14:42:22.729Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-1b8e014b",
+      "tokens": 22207,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-1b8e014b\\result.json",
+      "at": "2026-10-13T14:42:35.997Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-cd2eca9e",
+      "tokens": 15267,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-cd2eca9e\\result.json",
+      "at": "2026-10-13T14:42:44.274Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-ea1b502c",
+      "tokens": 36666,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-ea1b502c\\result.json",
+      "at": "2026-10-13T14:43:07.262Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-653e4ff2",
+      "tokens": 39536,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-653e4ff2\\result.json",
+      "at": "2026-10-13T14:43:39.860Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-d303687d",
+      "tokens": 41965,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-d303687d\\result.json",
+      "at": "2026-10-13T14:44:17.002Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-198dd2c2",
+      "tokens": 19501,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-198dd2c2\\result.json",
+      "at": "2026-10-13T14:44:38.404Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-6173e680",
+      "tokens": 34742,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-6173e680\\result.json",
+      "at": "2026-10-13T14:45:13.778Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-a74006e2",
+      "tokens": 20228,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-a74006e2\\result.json",
+      "at": "2026-10-13T14:45:37.668Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-6414fb0e",
+      "tokens": 33118,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-6414fb0e\\result.json",
+      "at": "2026-10-13T14:46:54.644Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-6af73287",
+      "tokens": 29468,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-6af73287\\result.json",
+      "at": "2026-10-13T14:47:13.060Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-2b487bcb",
+      "tokens": 25318,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-2b487bcb\\result.json",
+      "at": "2026-10-13T14:47:38.763Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-850fee9d",
+      "tokens": 23922,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-850fee9d\\result.json",
+      "at": "2026-10-13T14:48:01.750Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-b4e3a119",
+      "tokens": 32407,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-b4e3a119\\result.json",
+      "at": "2026-10-13T14:48:28.464Z"
+    },
+    {
+      "kind": "review",
+      "id": "study2-resized-20261013.review.rv-4e018d1a",
+      "tokens": 29573,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\study2-resized\\reviews\\runs\\rv-4e018d1a\\result.json",
+      "at": "2026-10-13T14:48:48.155Z"
+    },
+    {
+      "kind": "probe",
+      "id": "harness-v2-probe-20261013.v2-gates-s1",
+      "tokens": 114203,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\harness-v2-probe\\results\\v2-gates\\sessions\\s1\\result.json",
+      "at": "2026-10-13T16:44:32.500Z"
+    },
+    {
+      "kind": "probe",
+      "id": "harness-v2-probe-20261013.v2-flow-s1",
+      "tokens": 96181,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\harness-v2-probe\\results\\v2-flow\\sessions\\s1\\result.json",
+      "at": "2026-10-13T16:45:08.038Z"
+    },
+    {
+      "kind": "probe",
+      "id": "harness-v2-probe-20261013.v2-files-s1",
+      "tokens": 96023,
+      "unknown": false,
+      "source": "..\\..\\..\\..\\..\\..\\..\\tmp\\harness-v2-probe\\results\\v2-files\\sessions\\s1\\result.json",
+      "at": "2026-10-13T16:45:38.844Z"
+    }
+  ]
+}

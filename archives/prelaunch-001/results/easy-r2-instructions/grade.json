@@ -1,0 +1,145 @@
+{
+  "name": "grade",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\easy\\grade.cjs",
+    "C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\easy-r2-instructions\\repo"
+  ],
+  "exitCode": 1,
+  "signal": null,
+  "executionError": null,
+  "stdout": "{\"passed\":5,\"failed\":21,\"total\":26,\"checks\":[{\"name\":\"exports a function\",\"pass\":true},{\"name\":\"empty input\",\"pass\":true},{\"name\":\"one interval\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     2,\\n-     6\\n-   ]\\n- ]\\n\"},{\"name\":\"already sorted disjoint intervals\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     1,\\n-     2\\n-   ],\\n-   [\\n-     5,\\n-     7\\n-   ]\\n- ]\\n\"},{\"name\":\"sorts unsorted intervals\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     -2,\\n-     0\\n-   ],\\n-   [\\n-     3,\\n-     4\\n-   ],\\n-   [\\n-     8,\\n-     9\\n-   ]\\n- ]\\n\"},{\"name\":\"merges partial overlap\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     1,\\n-     8\\n-   ]\\n- ]\\n\"},{\"name\":\"merges touching intervals\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     1,\\n-     6\\n-   ]\\n- ]\\n\"},{\"name\":\"merges nested intervals\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     1,\\n-     10\\n-   ]\\n- ]\\n\"},{\"name\":\"merges duplicate intervals\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     2,\\n-     4\\n-   ]\\n- ]\\n\"},{\"name\":\"handles negative endpoints\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     -8,\\n-     1\\n-   ]\\n- ]\\n\"},{\"name\":\"preserves zero-length interval\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     4,\\n-     4\\n-   ]\\n- ]\\n\"},{\"name\":\"keeps separated groups distinct\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     1,\\n-     3\\n-   ],\\n-   [\\n-     7,\\n-     8\\n-   ],\\n-   [\\n-     10,\\n-     12\\n-   ]\\n- ]\\n\"},{\"name\":\"returns sorted output\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     1,\\n-     1\\n-   ],\\n-   [\\n-     4,\\n-     5\\n-   ],\\n-   [\\n-     9,\\n-     10\\n-   ]\\n- ]\\n\"},{\"name\":\"returns a fresh outer array\",\"pass\":true},{\"name\":\"returns fresh interval pairs\",\"pass\":true},{\"name\":\"does not mutate ordinary input\",\"pass\":true},{\"name\":\"accepts frozen outer array and pairs\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   [\\n-     1,\\n-     4\\n-   ]\\n- ]\\n\"},{\"name\":\"rejects null outer value with TypeError\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"rejects non-array outer value with TypeError\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"rejects sparse outer array with TypeError\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"rejects pair with wrong length\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"rejects non-array pair\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"rejects NaN endpoint\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"rejects infinite endpoint\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"rejects unsafe integer endpoint\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"uses RangeError for reversed endpoints\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (RangeError).\"}]}\n",
+  "stderr": "",
+  "grade": {
+    "passed": 5,
+    "failed": 21,
+    "total": 26,
+    "checks": [
+      {
+        "name": "exports a function",
+        "pass": true
+      },
+      {
+        "name": "empty input",
+        "pass": true
+      },
+      {
+        "name": "one interval",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     6\n-   ]\n- ]\n"
+      },
+      {
+        "name": "already sorted disjoint intervals",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     2\n-   ],\n-   [\n-     5,\n-     7\n-   ]\n- ]\n"
+      },
+      {
+        "name": "sorts unsorted intervals",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -2,\n-     0\n-   ],\n-   [\n-     3,\n-     4\n-   ],\n-   [\n-     8,\n-     9\n-   ]\n- ]\n"
+      },
+      {
+        "name": "merges partial overlap",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     8\n-   ]\n- ]\n"
+      },
+      {
+        "name": "merges touching intervals",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     6\n-   ]\n- ]\n"
+      },
+      {
+        "name": "merges nested intervals",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     10\n-   ]\n- ]\n"
+      },
+      {
+        "name": "merges duplicate intervals",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     2,\n-     4\n-   ]\n- ]\n"
+      },
+      {
+        "name": "handles negative endpoints",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     -8,\n-     1\n-   ]\n- ]\n"
+      },
+      {
+        "name": "preserves zero-length interval",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     4,\n-     4\n-   ]\n- ]\n"
+      },
+      {
+        "name": "keeps separated groups distinct",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     3\n-   ],\n-   [\n-     7,\n-     8\n-   ],\n-   [\n-     10,\n-     12\n-   ]\n- ]\n"
+      },
+      {
+        "name": "returns sorted output",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     1\n-   ],\n-   [\n-     4,\n-     5\n-   ],\n-   [\n-     9,\n-     10\n-   ]\n- ]\n"
+      },
+      {
+        "name": "returns a fresh outer array",
+        "pass": true
+      },
+      {
+        "name": "returns fresh interval pairs",
+        "pass": true
+      },
+      {
+        "name": "does not mutate ordinary input",
+        "pass": true
+      },
+      {
+        "name": "accepts frozen outer array and pairs",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   [\n-     1,\n-     4\n-   ]\n- ]\n"
+      },
+      {
+        "name": "rejects null outer value with TypeError",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "rejects non-array outer value with TypeError",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "rejects sparse outer array with TypeError",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "rejects pair with wrong length",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "rejects non-array pair",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "rejects NaN endpoint",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "rejects infinite endpoint",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "rejects unsafe integer endpoint",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "uses RangeError for reversed endpoints",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (RangeError)."
+      }
+    ]
+  }
+}

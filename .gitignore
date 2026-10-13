@@ -1,0 +1,23 @@
+# Run data and frozen task inputs: large, regenerable, or private. The write-ups, tools, task
+# records, measures and decisions are tracked; the README says how to rebuild the rest.
+/results/
+/private/
+/follow-up/study-002/results/
+/follow-up/study-002/pilot-b/results/
+/follow-up/study-002/reviews/
+/follow-up/study-002/tasks/*/
+/follow-up/study-002/probes/*/
+/follow-up/study-002/probes/*.bundle
+
+# Never track
+.env
+.env.*
+node_modules/
+__pycache__/
+*.pyc
+venv/
+.venv/
+
+# Run repositories inside archives (nested git repos)
+/archives/**/repo/
+/archives/**/baselines/

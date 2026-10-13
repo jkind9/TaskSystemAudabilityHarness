@@ -1,0 +1,163 @@
+{
+  "name": "grade",
+  "command": [
+    "C:\\Program Files\\nodejs\\node.exe",
+    "C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs",
+    "C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\medium-r1-full\\repo"
+  ],
+  "exitCode": 1,
+  "signal": null,
+  "executionError": null,
+  "stdout": "{\"passed\":2,\"failed\":27,\"total\":29,\"checks\":[{\"name\":\"exports a factory function\",\"pass\":true},{\"name\":\"rejects a non-function loader synchronously\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"returns the three cache methods\",\"pass\":true},{\"name\":\"invalid empty key returns a rejected Promise\",\"pass\":false,\"error\":\"AssertionError: The error is expected to be an instance of \\\"TypeError\\\". Received \\\"Error\\\"\\n\\nError message:\\n\\nnot implemented\"},{\"name\":\"invalid non-string key returns a rejected Promise\",\"pass\":false,\"error\":\"AssertionError: The error is expected to be an instance of \\\"TypeError\\\". Received \\\"Error\\\"\\n\\nError message:\\n\\nnot implemented\"},{\"name\":\"invalid get does not call loader\",\"pass\":false,\"error\":\"AssertionError: The error is expected to be an instance of \\\"TypeError\\\". Received \\\"Error\\\"\\n\\nError message:\\n\\nnot implemented\"},{\"name\":\"miss resolves loader value\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"loader receives the requested key once\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"same-key pending calls return the identical Promise\",\"pass\":false,\"error\":\"AssertionError: Expected \\\"actual\\\" to be reference-equal to \\\"expected\\\":\\n+ actual - expected\\n\\n  Promise {\\n    <rejected> Error: not implemented\\n        at Object.get (C:\\\\Users\\\\jkind\\\\Documents\\\\04 Personal Coding\\\\Harness_Development\\\\results\\\\medium-r1-full\\\\repo\\\\src\\\\index.js:6:35)\\n        at Proxy.<anonymous> (C:\\\\Users\\\\jkind\\\\Documents\\\\04 Personal Coding\\\\Harness_Development\\\\experiments\\\\medium\\\\grade.cjs:21:32)\\n+       at C:\\\\Users\\\\jkind\\\\Documents\\\\04 Personal Coding\\\\Harness_Development\\\\experiments\\\\medium\\\\grade.cjs:71:162\\n-       at C:\\\\Users\\\\jkind\\\\Documents\\\\04 Personal Coding\\\\Harness_Development\\\\experiments\\\\medium\\\\grade.cjs:71:184\\n        at async add (C:\\\\Users\\\\jkind\\\\Documents\\\\04 Personal Coding\\\\Harness_Development\\\\experiments\\\\medium\\\\grade.cjs:38:7)\\n        at async grade (C:\\\\Users\\\\jkind\\\\Documents\\\\04 Personal Coding\\\\Harness_Development\\\\experiments\\\\medium\\\\grade.cjs:71:5)\\n  }\\n\"},{\"name\":\"same-key pending calls invoke loader once\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly equal:\\n\\n0 !== 1\\n\"},{\"name\":\"different keys load independently\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly deep-equal:\\n+ actual - expected\\n\\n+ []\\n- [\\n-   'a',\\n-   'b'\\n- ]\\n\"},{\"name\":\"successful value is cached\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"cached value is reused after Promise turn\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"loader runs in the next microtask\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"rejection reaches caller\",\"pass\":false,\"error\":\"AssertionError: The input did not match the regular expression /offline/. Input:\\n\\n'Error: not implemented'\\n\"},{\"name\":\"rejected load is evicted for retry\",\"pass\":false,\"error\":\"AssertionError: The input did not match the regular expression /first/. Input:\\n\\n'Error: not implemented'\\n\"},{\"name\":\"synchronous loader throw becomes rejection\",\"pass\":false,\"error\":\"AssertionError: The input did not match the regular expression /sync failure/. Input:\\n\\n'Error: not implemented'\\n\"},{\"name\":\"synchronous loader throw does not poison retry\",\"pass\":false,\"error\":\"AssertionError: The input did not match the regular expression /once/. Input:\\n\\n'Error: not implemented'\\n\"},{\"name\":\"invalidate rejects invalid keys synchronously\",\"pass\":false,\"error\":\"AssertionError: Missing expected exception (TypeError).\"},{\"name\":\"invalidate removes a cached value\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"invalidate allows a new load while old load is pending\",\"pass\":false,\"error\":\"AssertionError: Expected values to be strictly equal:\\n\\n0 !== 2\\n\"},{\"name\":\"old success cannot overwrite a newer cached value\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"old rejection cannot delete a newer in-flight load\",\"pass\":false,\"error\":\"AssertionError: The input did not match the regular expression /old failure/. Input:\\n\\n'Error: not implemented'\\n\"},{\"name\":\"clear returns undefined and removes all cached keys\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"clear allows new loads while earlier loads are pending\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"pre-clear success cannot repopulate a key\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"pre-clear rejection cannot delete a newer value\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"invalidate one key preserves other cached keys\",\"pass\":false,\"error\":\"Error: not implemented\"},{\"name\":\"empty string values are cached as successful values\",\"pass\":false,\"error\":\"Error: not implemented\"}]}\n",
+  "stderr": "",
+  "grade": {
+    "passed": 2,
+    "failed": 27,
+    "total": 29,
+    "checks": [
+      {
+        "name": "exports a factory function",
+        "pass": true
+      },
+      {
+        "name": "rejects a non-function loader synchronously",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "returns the three cache methods",
+        "pass": true
+      },
+      {
+        "name": "invalid empty key returns a rejected Promise",
+        "pass": false,
+        "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+      },
+      {
+        "name": "invalid non-string key returns a rejected Promise",
+        "pass": false,
+        "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+      },
+      {
+        "name": "invalid get does not call loader",
+        "pass": false,
+        "error": "AssertionError: The error is expected to be an instance of \"TypeError\". Received \"Error\"\n\nError message:\n\nnot implemented"
+      },
+      {
+        "name": "miss resolves loader value",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "loader receives the requested key once",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "same-key pending calls return the identical Promise",
+        "pass": false,
+        "error": "AssertionError: Expected \"actual\" to be reference-equal to \"expected\":\n+ actual - expected\n\n  Promise {\n    <rejected> Error: not implemented\n        at Object.get (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\results\\medium-r1-full\\repo\\src\\index.js:6:35)\n        at Proxy.<anonymous> (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:21:32)\n+       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:162\n-       at C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:184\n        at async add (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:38:7)\n        at async grade (C:\\Users\\jkind\\Documents\\04 Personal Coding\\Harness_Development\\experiments\\medium\\grade.cjs:71:5)\n  }\n"
+      },
+      {
+        "name": "same-key pending calls invoke loader once",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 1\n"
+      },
+      {
+        "name": "different keys load independently",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly deep-equal:\n+ actual - expected\n\n+ []\n- [\n-   'a',\n-   'b'\n- ]\n"
+      },
+      {
+        "name": "successful value is cached",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "cached value is reused after Promise turn",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "loader runs in the next microtask",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "rejection reaches caller",
+        "pass": false,
+        "error": "AssertionError: The input did not match the regular expression /offline/. Input:\n\n'Error: not implemented'\n"
+      },
+      {
+        "name": "rejected load is evicted for retry",
+        "pass": false,
+        "error": "AssertionError: The input did not match the regular expression /first/. Input:\n\n'Error: not implemented'\n"
+      },
+      {
+        "name": "synchronous loader throw becomes rejection",
+        "pass": false,
+        "error": "AssertionError: The input did not match the regular expression /sync failure/. Input:\n\n'Error: not implemented'\n"
+      },
+      {
+        "name": "synchronous loader throw does not poison retry",
+        "pass": false,
+        "error": "AssertionError: The input did not match the regular expression /once/. Input:\n\n'Error: not implemented'\n"
+      },
+      {
+        "name": "invalidate rejects invalid keys synchronously",
+        "pass": false,
+        "error": "AssertionError: Missing expected exception (TypeError)."
+      },
+      {
+        "name": "invalidate removes a cached value",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "invalidate allows a new load while old load is pending",
+        "pass": false,
+        "error": "AssertionError: Expected values to be strictly equal:\n\n0 !== 2\n"
+      },
+      {
+        "name": "old success cannot overwrite a newer cached value",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "old rejection cannot delete a newer in-flight load",
+        "pass": false,
+        "error": "AssertionError: The input did not match the regular expression /old failure/. Input:\n\n'Error: not implemented'\n"
+      },
+      {
+        "name": "clear returns undefined and removes all cached keys",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "clear allows new loads while earlier loads are pending",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "pre-clear success cannot repopulate a key",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "pre-clear rejection cannot delete a newer value",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "invalidate one key preserves other cached keys",
+        "pass": false,
+        "error": "Error: not implemented"
+      },
+      {
+        "name": "empty string values are cached as successful values",
+        "pass": false,
+        "error": "Error: not implemented"
+      }
+    ]
+  }
+}

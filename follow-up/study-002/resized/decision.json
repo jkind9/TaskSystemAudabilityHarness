@@ -1,0 +1,172 @@
+{
+  "generatedAt": "2026-10-13T14:59:50.582Z",
+  "source": "resized/measures.json",
+  "criteria": {
+    "audit": {
+      "value": 5.916666666666667,
+      "missing": 0,
+      "met": true
+    },
+    "correctness": {
+      "tasksLower": 1,
+      "met": true
+    },
+    "tokens": {
+      "ratio": 1.42,
+      "met": true
+    }
+  },
+  "verdict": "lean becomes the recommended default",
+  "perTask": [
+    {
+      "task": "restart",
+      "stock": {
+        "pass": false,
+        "partial": 0.5,
+        "audit": 6.5,
+        "tokens": 1875547,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": null,
+        "filesOver800": 2
+      },
+      "lean": {
+        "pass": false,
+        "partial": 0.5,
+        "audit": 6.5,
+        "tokens": 3053699,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": 0.06432748538011696,
+        "filesOver800": 0
+      },
+      "leanLower": false,
+      "tokenRatio": 1.63
+    },
+    {
+      "task": "tablib",
+      "stock": {
+        "pass": false,
+        "partial": 0.75,
+        "audit": 6,
+        "tokens": 2026398,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 2,
+        "complexityAfter": null,
+        "filesOver800": 2
+      },
+      "lean": {
+        "pass": true,
+        "partial": 1,
+        "audit": 5.5,
+        "tokens": 3649984,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": null,
+        "filesOver800": 1
+      },
+      "leanLower": false,
+      "tokenRatio": 1.8
+    },
+    {
+      "task": "fastapi",
+      "stock": {
+        "pass": false,
+        "partial": 0,
+        "audit": 1.5,
+        "tokens": 181130,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": 0,
+        "filesOver800": 0
+      },
+      "lean": {
+        "pass": false,
+        "partial": 0,
+        "audit": 7.5,
+        "tokens": 186813,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": 0,
+        "filesOver800": 0
+      },
+      "leanLower": false,
+      "tokenRatio": 1.03
+    },
+    {
+      "task": "watson",
+      "stock": {
+        "pass": false,
+        "partial": 0.75,
+        "audit": 2,
+        "tokens": 5868508,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 3,
+        "complexityAfter": 0.2816666666666667,
+        "filesOver800": 2
+      },
+      "lean": {
+        "pass": true,
+        "partial": 1,
+        "audit": 6.5,
+        "tokens": 2570388,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": 0.2846715328467153,
+        "filesOver800": 2
+      },
+      "leanLower": false,
+      "tokenRatio": 0.44
+    },
+    {
+      "task": "mlflow",
+      "stock": {
+        "pass": false,
+        "partial": 0.9455,
+        "audit": 1,
+        "tokens": 648054,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": 0.2900763358778626,
+        "filesOver800": 0
+      },
+      "lean": {
+        "pass": false,
+        "partial": 0.9455,
+        "audit": 2.5,
+        "tokens": 2613351,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": 0.4326923076923077,
+        "filesOver800": 0
+      },
+      "leanLower": false,
+      "tokenRatio": 4.03
+    },
+    {
+      "task": "public",
+      "stock": {
+        "pass": false,
+        "partial": 0.7211,
+        "audit": 4.5,
+        "tokens": 816397,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": 0.40625,
+        "filesOver800": 1
+      },
+      "lean": {
+        "pass": false,
+        "partial": 0.449,
+        "audit": 7,
+        "tokens": 4121340,
+        "patternsPer1000": 0,
+        "duplicateBlocks": 0,
+        "complexityAfter": 0.43870967741935485,
+        "filesOver800": 0
+      },
+      "leanLower": true,
+      "tokenRatio": 5.05
+    }
+  ]
+}

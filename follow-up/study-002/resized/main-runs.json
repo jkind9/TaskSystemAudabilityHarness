@@ -1,0 +1,23 @@
+{
+  "purpose": "The resized study's 12 main runs (stock and lean on six tasks). The full reference runs are left out: restart-full stopped after session 1 at the budget check, and public-full did not start (task 11).",
+  "reviewProtocol": "C:/tmp/study2-resized/protocol.json",
+  "studies": [
+    {
+      "protocol": "C:/tmp/study2-resized/protocol.json",
+      "runs": [
+        "restart-stock",
+        "restart-lean",
+        "tablib-lean",
+        "tablib-stock",
+        "fastapi-stock",
+        "fastapi-lean",
+        "watson-lean",
+        "watson-stock",
+        "mlflow-stock",
+        "mlflow-lean",
+        "public-lean",
+        "public-stock"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "at": "2026-10-12T20:20:07.186Z",
+  "runs": [
+    {
+      "runId": "restart-task-only",
+      "status": "graded",
+      "from": "s2",
+      "protocol": "protocol.json"
+    },
+    {
+      "runId": "restart-stock",
+      "status": "graded",
+      "from": "s2",
+      "protocol": "pilot-b\\protocol.json"
+    },
+    {
+      "runId": "restart-full",
+      "status": "graded",
+      "from": "s2",
+      "protocol": "pilot-b\\protocol.json"
+    },
+    {
+      "runId": "public-stock",
+      "status": "graded",
+      "from": "s1",
+      "protocol": "pilot-b\\protocol.json"
+    },
+    {
+      "runId": "public-full",
+      "status": "graded",
+      "from": "s1",
+      "protocol": "pilot-b\\protocol.json"
+    },
+    {
+      "runId": "public-task-only",
+      "status": "graded",
+      "from": "s1",
+      "protocol": "pilot-b\\protocol.json"
+    }
+  ]
+}

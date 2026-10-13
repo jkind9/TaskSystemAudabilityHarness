@@ -1,0 +1,3 @@
+'use strict';
+function mergeIntervals(input) { const copy = input.map(pair => { if (!Array.isArray(pair) || pair.length !== 2 || typeof pair[0] !== 'number' || typeof pair[1] !== 'number' || !Number.isFinite(pair[0]) || !Number.isFinite(pair[1])) throw new TypeError(); if (pair[0] > pair[1]) throw new RangeError(); return pair.slice(); }).sort((a, b) => a[0] - b[0]); const out = []; for (const pair of copy) { const last = out[out.length - 1]; if (last && pair[0] <= last[1]) last[1] = Math.max(last[1], pair[1]); else out.push(pair); } return out; }
+module.exports = { mergeIntervals };

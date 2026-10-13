@@ -1,0 +1,28 @@
+{
+  "runId": "hard-r2-control",
+  "task": "hard",
+  "condition": "control",
+  "repetition": 2,
+  "state": "incomplete",
+  "parentPid": 73944,
+  "childPid": 401332,
+  "startedAt": "2026-10-12T09:12:05.073Z",
+  "timeoutMs": 720000,
+  "protocolSha256": "f2de45fdfd9fe37e1984e1c932b55fde80f08842cc64519292574c52f176a588",
+  "baselineHead": "23e504bb05ad7d84083c40f4ac7c66e7c9059711",
+  "hostSnapshotBefore": {
+    "C:\\Users\\jkind\\.codex\\config.toml": "7aac53eea86bfcfcae4422e594e2b7fcdfc8a6155064d176f4c0b7176fef2fbb",
+    "C:\\Users\\jkind\\.codex\\AGENTS.md": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+    "C:\\Users\\jkind\\.codex\\hooks.json": "4e72839c42005a8dca071743784f2f590fb6398d9988bd7706cb96683d70ed4e",
+    "C:/Users/jkind/.claude/CLAUDE.md": "bd37e7336d11dd1a82943a527c054fa9fc7b4788b4fc9e9598c00622df3e7e10",
+    "C:\\Users\\jkind\\.agents\\harness\\policy.json": "f9009220b99a6222ebf549eef59c6f65177fae8732143f2bffc5abf1d1236628",
+    "C:/Users/jkind/.agents/harness": "2fa9e6a63d5c5e485cbe217bff4a0ed2c40c9658589fe4c37e1a0138a3b8424c"
+  },
+  "spawnRequestedAt": "2026-10-12T09:12:05.079Z",
+  "spawnedAt": "2026-10-12T09:12:05.086Z",
+  "endedAt": "2026-10-12T09:12:05.285Z",
+  "credentialAliasRemoved": true,
+  "exitCode": 2,
+  "exitSignal": null,
+  "failure": null
+}

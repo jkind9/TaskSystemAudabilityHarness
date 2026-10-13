@@ -1,0 +1,10 @@
+state/
+installation.json
+validation.json
+generated/
+skills/.system/
+rules/default.rules
+*.bak*
+skills/synced/**/.last-complete-round
+
+skills/synced/

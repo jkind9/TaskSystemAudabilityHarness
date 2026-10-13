@@ -1,0 +1,26 @@
+{
+  "studyId": "study2-probes-20261012",
+  "kind": "probe",
+  "spares": false,
+  "codexExe": "C:/Users/jkind/.vscode/extensions/openai.chatgpt-26.1007.21434-win32-x64/bin/windows-x86_64/codex.exe",
+  "model": "gpt-6-luna",
+  "reasoning": "high",
+  "timeoutMs": 600000,
+  "harnessCommit": "906ce37b6dc2914a8b864202ec505d6dedc1011b",
+  "budget": { "sessions": 21000000, "reviews": 4000000, "firstReviewEstimate": 400000, "firstSessionEstimate": 0 },
+  "tasks": {
+    "probe": {
+      "bundle": "probes/fixture.bundle",
+      "ref": "main",
+      "wheels": "tasks/restart/wheels",
+      "requirements": ["pytest==8.4.2"],
+      "editableInstall": false,
+      "prompts": { "1": "probes/prompt-1.md", "2": "probes/prompt-2.md" }
+    }
+  },
+  "runs": [
+    { "id": "probe-stock", "task": "probe", "config": "stock", "sessions": [1] },
+    { "id": "probe-task-only", "task": "probe", "config": "task-only", "sessions": [1] },
+    { "id": "probe-full", "task": "probe", "config": "full", "sessions": [1, 2] }
+  ]
+}

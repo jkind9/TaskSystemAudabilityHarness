@@ -1,0 +1,355 @@
+{
+  "studyId": "luna-harness-study-20261012",
+  "protocolSha256": "f2de45fdfd9fe37e1984e1c932b55fde80f08842cc64519292574c52f176a588",
+  "model": "gpt-6-luna",
+  "reasoning": "high",
+  "serviceTier": "default",
+  "sandbox": "workspace-write",
+  "approval": "automatic review",
+  "multiAgent": false,
+  "timeoutMs": 720000,
+  "taskInputs": {
+    "easy": {
+      "treeSha256": "6e4f608f5712cc2a598208ed729a1f8fc2afe6252a5e78b975c8716c5dd5d3ca",
+      "seedSha256": "557941874dc033dd8a2e6321aae45c5b59876de51458867f957c3b8d2066b099"
+    },
+    "medium": {
+      "treeSha256": "64ea9f9b88abdb847066a95bb959fa28dd000db927e3425ceff8315ae3234313",
+      "seedSha256": "e6516eb757c8b5dc9a88087bb11a793f3e56aa683ecb3ce86419592f75893135"
+    },
+    "hard": {
+      "treeSha256": "87dd5e0dd4fc6042fd5797e8ae3f720beee5cc0863159ba264918f95cdc53480",
+      "seedSha256": "19252cdcb4083e27dbf64de088e9bd6d7cd42d93d3bed4a386e5ee17a0923cff"
+    }
+  },
+  "baselines": {
+    "easy": {
+      "head": "48287456d6b1714d39eb11d47b323cef12b97f2d",
+      "seedSha256": "557941874dc033dd8a2e6321aae45c5b59876de51458867f957c3b8d2066b099",
+      "reused": true
+    },
+    "medium": {
+      "head": "014d6eeaa992e9787a030d50b92dea4584698cb2",
+      "seedSha256": "e6516eb757c8b5dc9a88087bb11a793f3e56aa683ecb3ce86419592f75893135",
+      "reused": true
+    },
+    "hard": {
+      "head": "23e504bb05ad7d84083c40f4ac7c66e7c9059711",
+      "seedSha256": "19252cdcb4083e27dbf64de088e9bd6d7cd42d93d3bed4a386e5ee17a0923cff",
+      "reused": true
+    }
+  },
+  "toolHashes": {
+    "analyse.cjs": "b1a245f5c0b2869338d1919fb38b65ca69a91326af0721477fa3b41112b08e3d",
+    "analysis-selftest.cjs": "40a6204f165564f1583ceb893e63b70da17d1a91d889d27d3dfc5437114e8e70",
+    "evaluate.cjs": "62371456726cf067438873ef794586adeb54c0594d7dfc8e4c47f234a41285a0",
+    "prepare.cjs": "a07f3b085cdcd681401a8179081636087edd3aa33254c475b957b35f95c617fc",
+    "runner-selftest.cjs": "88c3df0d8162bdea95aa96d823fbbeae881837e4e8fbcdcbcf616e5666aed379",
+    "runner.cjs": "3be9c3997aa19587d65e18018bb9ea1c4afc3d7ec0f312322f75b19f93855703"
+  },
+  "skillCatalogSha256": "8e8d0be5903a366f3f210381ac6001286c7c18dc4a66580beacecf13168700f0",
+  "hostSnapshotAtPrepare": {
+    "C:\\Users\\jkind\\.codex\\config.toml": "7aac53eea86bfcfcae4422e594e2b7fcdfc8a6155064d176f4c0b7176fef2fbb",
+    "C:\\Users\\jkind\\.codex\\AGENTS.md": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+    "C:\\Users\\jkind\\.codex\\hooks.json": "4e72839c42005a8dca071743784f2f590fb6398d9988bd7706cb96683d70ed4e",
+    "C:/Users/jkind/.claude/CLAUDE.md": "bd37e7336d11dd1a82943a527c054fa9fc7b4788b4fc9e9598c00622df3e7e10",
+    "C:\\Users\\jkind\\.agents\\harness\\policy.json": "f9009220b99a6222ebf549eef59c6f65177fae8732143f2bffc5abf1d1236628",
+    "C:/Users/jkind/.agents/harness": "2fa9e6a63d5c5e485cbe217bff4a0ed2c40c9658589fe4c37e1a0138a3b8424c"
+  },
+  "privateHomes": {
+    "root": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012",
+    "runs": {
+      "easy-r1-control": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\easy-r1-control",
+        "configSha256": "c7bebb695edc71895ce2fa90165f2b7d2a4848c1ff978033b55238bc1ac89f4f",
+        "agentsSha256": null,
+        "hooksSha256": null
+      },
+      "easy-r1-instructions": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\easy-r1-instructions",
+        "configSha256": "6d3dcd27343ade27b44abc70352a1b2fbaf694cb33b495f91dfda445d89cb616",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": null
+      },
+      "easy-r1-full": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\easy-r1-full",
+        "configSha256": "0ccb708e00ecd44b1276551ff16dcaae7b0cbb46b1a0448657638937ae598f89",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": "4e72839c42005a8dca071743784f2f590fb6398d9988bd7706cb96683d70ed4e"
+      },
+      "medium-r1-instructions": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\medium-r1-instructions",
+        "configSha256": "6d3dcd27343ade27b44abc70352a1b2fbaf694cb33b495f91dfda445d89cb616",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": null
+      },
+      "medium-r1-full": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\medium-r1-full",
+        "configSha256": "c4f8a903eb317fb5386e9f88e22d59ffec07331bc997899476d914fd1f329de9",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": "4e72839c42005a8dca071743784f2f590fb6398d9988bd7706cb96683d70ed4e"
+      },
+      "medium-r1-control": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\medium-r1-control",
+        "configSha256": "c7bebb695edc71895ce2fa90165f2b7d2a4848c1ff978033b55238bc1ac89f4f",
+        "agentsSha256": null,
+        "hooksSha256": null
+      },
+      "hard-r1-full": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\hard-r1-full",
+        "configSha256": "5662c3f26692a48f0ca98c8734e6d5bf7e9d057952faba8745ee003f34bfe0a4",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": "4e72839c42005a8dca071743784f2f590fb6398d9988bd7706cb96683d70ed4e"
+      },
+      "hard-r1-control": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\hard-r1-control",
+        "configSha256": "c7bebb695edc71895ce2fa90165f2b7d2a4848c1ff978033b55238bc1ac89f4f",
+        "agentsSha256": null,
+        "hooksSha256": null
+      },
+      "hard-r1-instructions": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\hard-r1-instructions",
+        "configSha256": "6d3dcd27343ade27b44abc70352a1b2fbaf694cb33b495f91dfda445d89cb616",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": null
+      },
+      "easy-r2-full": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\easy-r2-full",
+        "configSha256": "ab3ca2342a2f332c955275d4a1b724bbb64d01835451f6209ec6716b55cce60d",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": "4e72839c42005a8dca071743784f2f590fb6398d9988bd7706cb96683d70ed4e"
+      },
+      "easy-r2-instructions": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\easy-r2-instructions",
+        "configSha256": "6d3dcd27343ade27b44abc70352a1b2fbaf694cb33b495f91dfda445d89cb616",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": null
+      },
+      "easy-r2-control": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\easy-r2-control",
+        "configSha256": "c7bebb695edc71895ce2fa90165f2b7d2a4848c1ff978033b55238bc1ac89f4f",
+        "agentsSha256": null,
+        "hooksSha256": null
+      },
+      "medium-r2-instructions": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\medium-r2-instructions",
+        "configSha256": "6d3dcd27343ade27b44abc70352a1b2fbaf694cb33b495f91dfda445d89cb616",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": null
+      },
+      "medium-r2-control": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\medium-r2-control",
+        "configSha256": "c7bebb695edc71895ce2fa90165f2b7d2a4848c1ff978033b55238bc1ac89f4f",
+        "agentsSha256": null,
+        "hooksSha256": null
+      },
+      "medium-r2-full": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\medium-r2-full",
+        "configSha256": "f20ebe6a9401a306b4c959fc8614226c684d8d881d52b53aff7bf094dc8e629f",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": "4e72839c42005a8dca071743784f2f590fb6398d9988bd7706cb96683d70ed4e"
+      },
+      "hard-r2-control": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\hard-r2-control",
+        "configSha256": "c7bebb695edc71895ce2fa90165f2b7d2a4848c1ff978033b55238bc1ac89f4f",
+        "agentsSha256": null,
+        "hooksSha256": null
+      },
+      "hard-r2-full": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\hard-r2-full",
+        "configSha256": "49fa748ee00bd47651a5326df97e9d5895a3bb9ca6f0f580513803d8eaa15f57",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": "4e72839c42005a8dca071743784f2f590fb6398d9988bd7706cb96683d70ed4e"
+      },
+      "hard-r2-instructions": {
+        "path": "C:\\Users\\jkind\\.codex\\benchmark-runtimes\\luna-harness-study-20261012\\hard-r2-instructions",
+        "configSha256": "6d3dcd27343ade27b44abc70352a1b2fbaf694cb33b495f91dfda445d89cb616",
+        "agentsSha256": "22943f3910f0deb88976cc7f6f4370ad617757193f6791725299db503e03bf77",
+        "hooksSha256": null
+      }
+    }
+  },
+  "promptSnapshots": {
+    "easy-r1-control": {
+      "promptSha256": "bcd8a9e2b741f1daced156fb6100eeb81fad4a7c8607c06d8df0d5163d9e46c3",
+      "snapshotFileSha256": "ba31b1eccd10189c72bbb1f893971390f3194a915ede7b8f1eef04e0383c61ab",
+      "markerChecks": {
+        "sharedHarness": false,
+        "sharedRules": false,
+        "customSkills": false,
+        "builtInSkills": true
+      }
+    },
+    "easy-r1-instructions": {
+      "promptSha256": "bcd8a9e2b741f1daced156fb6100eeb81fad4a7c8607c06d8df0d5163d9e46c3",
+      "snapshotFileSha256": "2f61883088b117c2427aa865adec9e74c012d30a5f69e62fb27005ff95c5092e",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "easy-r1-full": {
+      "promptSha256": "bcd8a9e2b741f1daced156fb6100eeb81fad4a7c8607c06d8df0d5163d9e46c3",
+      "snapshotFileSha256": "168aa4d28c5eee0fd17db622839b23671dbcf14fd1e77e1e7fc6b90236e34a22",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "medium-r1-instructions": {
+      "promptSha256": "e95cd62e5533db721b4365734b887db181e787159d7c317fad8ab98fec93c9e3",
+      "snapshotFileSha256": "ff2f7d3d6dd012bcdee18ade1ed83b70c172c924e3481892285e34161085bdef",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "medium-r1-full": {
+      "promptSha256": "e95cd62e5533db721b4365734b887db181e787159d7c317fad8ab98fec93c9e3",
+      "snapshotFileSha256": "31c72d5ba5c8f9a059796f9c1055acdd95687b0935c80cea0871ff87c83e2fa2",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "medium-r1-control": {
+      "promptSha256": "e95cd62e5533db721b4365734b887db181e787159d7c317fad8ab98fec93c9e3",
+      "snapshotFileSha256": "e916e6215d6df26aeaa3330d40a016e3a1df711108474b6eb1a684e14237e8f0",
+      "markerChecks": {
+        "sharedHarness": false,
+        "sharedRules": false,
+        "customSkills": false,
+        "builtInSkills": true
+      }
+    },
+    "hard-r1-full": {
+      "promptSha256": "1d6516120a4e2a829a17cdd4611c36220abb03890e7f59dcf88e2d52b462b350",
+      "snapshotFileSha256": "c708e7bed7746581490ce96a939ccb53305164c3ce0fa005e7e4256461519bac",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "hard-r1-control": {
+      "promptSha256": "1d6516120a4e2a829a17cdd4611c36220abb03890e7f59dcf88e2d52b462b350",
+      "snapshotFileSha256": "7b0a22d2177875ade88beda6006feda445503195333c81bafd2a2f1ab6a63122",
+      "markerChecks": {
+        "sharedHarness": false,
+        "sharedRules": false,
+        "customSkills": false,
+        "builtInSkills": true
+      }
+    },
+    "hard-r1-instructions": {
+      "promptSha256": "1d6516120a4e2a829a17cdd4611c36220abb03890e7f59dcf88e2d52b462b350",
+      "snapshotFileSha256": "7b12a5175390b7d938207eebd0ed26023f800b0cf8a7694b9c4c5dc4a6892209",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "easy-r2-full": {
+      "promptSha256": "bcd8a9e2b741f1daced156fb6100eeb81fad4a7c8607c06d8df0d5163d9e46c3",
+      "snapshotFileSha256": "0a6c49f419affcf44244bedfcc130bef06f50a9b37e7461b8e4d57cd0b05a0e1",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "easy-r2-instructions": {
+      "promptSha256": "bcd8a9e2b741f1daced156fb6100eeb81fad4a7c8607c06d8df0d5163d9e46c3",
+      "snapshotFileSha256": "40d8ee26bceff25a586a974383ad3b2b0e7352c56049aea0bbb557f92d8f1128",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "easy-r2-control": {
+      "promptSha256": "bcd8a9e2b741f1daced156fb6100eeb81fad4a7c8607c06d8df0d5163d9e46c3",
+      "snapshotFileSha256": "71dfc2594db0bfb6908dbed5903562cdfb314be76906b7f02c55fc63ad1a6132",
+      "markerChecks": {
+        "sharedHarness": false,
+        "sharedRules": false,
+        "customSkills": false,
+        "builtInSkills": true
+      }
+    },
+    "medium-r2-instructions": {
+      "promptSha256": "e95cd62e5533db721b4365734b887db181e787159d7c317fad8ab98fec93c9e3",
+      "snapshotFileSha256": "bc1e5d13b15e5968745744fec67b78a795b1013d3dea54977f9295a7ec6a92a9",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "medium-r2-control": {
+      "promptSha256": "e95cd62e5533db721b4365734b887db181e787159d7c317fad8ab98fec93c9e3",
+      "snapshotFileSha256": "ab1cd84b12eccd49a16b919630fef2137d4a0db8018d1ce77cae550e95ac3ce2",
+      "markerChecks": {
+        "sharedHarness": false,
+        "sharedRules": false,
+        "customSkills": false,
+        "builtInSkills": true
+      }
+    },
+    "medium-r2-full": {
+      "promptSha256": "e95cd62e5533db721b4365734b887db181e787159d7c317fad8ab98fec93c9e3",
+      "snapshotFileSha256": "56ff4106a1c8e77bde089259c137f27a8a09905c93de0368eb5d2d885347c53f",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "hard-r2-control": {
+      "promptSha256": "1d6516120a4e2a829a17cdd4611c36220abb03890e7f59dcf88e2d52b462b350",
+      "snapshotFileSha256": "502e3fc6fe9956a8bb90e029412888ff1cc4a9aff502977a018b1ab5de9b7a4e",
+      "markerChecks": {
+        "sharedHarness": false,
+        "sharedRules": false,
+        "customSkills": false,
+        "builtInSkills": true
+      }
+    },
+    "hard-r2-full": {
+      "promptSha256": "1d6516120a4e2a829a17cdd4611c36220abb03890e7f59dcf88e2d52b462b350",
+      "snapshotFileSha256": "d1a78dfe95a1201498562e85c11c5cfaf26efab08ba1310d359b77baa12a8ea0",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    },
+    "hard-r2-instructions": {
+      "promptSha256": "1d6516120a4e2a829a17cdd4611c36220abb03890e7f59dcf88e2d52b462b350",
+      "snapshotFileSha256": "fcc5dc9ab4b9b5d6f7d882408f19f104c683b9f5fc240cded14bb16eb74eaede",
+      "markerChecks": {
+        "sharedHarness": true,
+        "sharedRules": true,
+        "customSkills": true,
+        "builtInSkills": true
+      }
+    }
+  },
+  "preparedAt": "2026-10-12T09:07:41.706Z"
+}

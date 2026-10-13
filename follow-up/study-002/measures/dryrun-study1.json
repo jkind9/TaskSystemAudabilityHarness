@@ -1,0 +1,1235 @@
+{
+  "generatedAt": "2026-10-12T18:41:56.001Z",
+  "source": "Study 1 results/",
+  "wordList": {
+    "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+    "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+  },
+  "runs": 18,
+  "rows": [
+    {
+      "id": "easy-r1-control",
+      "task": "easy",
+      "config": "control",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 26,
+        "categoriesTotal": 26,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 38379,
+        "cachedInput": 123648,
+        "output": 3605,
+        "reasoning": 828,
+        "total": 165632,
+        "elapsedSeconds": 104.185,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 45,
+          "sentences": 4,
+          "avgSentenceLength": 11.25,
+          "flesch": 50.7,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 115,
+          "sentences": 12,
+          "avgSentenceLength": 9.58,
+          "flesch": 68.4,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 64,
+          "sentences": 7,
+          "avgSentenceLength": 9.14,
+          "flesch": 42.9,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 4,
+        "linesAdded": 108,
+        "linesRemoved": 18,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 5,
+        "linter": null
+      }
+    },
+    {
+      "id": "easy-r1-full",
+      "task": "easy",
+      "config": "full",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 26,
+        "categoriesTotal": 26,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 44692,
+        "cachedInput": 368128,
+        "output": 5378,
+        "reasoning": 2299,
+        "total": 418198,
+        "elapsedSeconds": 146.896,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 50,
+          "sentences": 6,
+          "avgSentenceLength": 8.33,
+          "flesch": 51.2,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 105,
+          "sentences": 13,
+          "avgSentenceLength": 8.08,
+          "flesch": 63.3,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 41,
+          "sentences": 7,
+          "avgSentenceLength": 5.86,
+          "flesch": 29.6,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 4,
+        "linesAdded": 101,
+        "linesRemoved": 18,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 6,
+        "linter": null
+      }
+    },
+    {
+      "id": "easy-r1-instructions",
+      "task": "easy",
+      "config": "instructions",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 26,
+        "categoriesTotal": 26,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 43450,
+        "cachedInput": 453632,
+        "output": 6455,
+        "reasoning": 2537,
+        "total": 503537,
+        "elapsedSeconds": 157.148,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 44,
+          "sentences": 7,
+          "avgSentenceLength": 6.29,
+          "flesch": 52.4,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 72,
+          "sentences": 7,
+          "avgSentenceLength": 10.29,
+          "flesch": 74.2,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 286,
+          "sentences": 44,
+          "avgSentenceLength": 6.5,
+          "flesch": 47.9,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 5,
+        "linesAdded": 148,
+        "linesRemoved": 58,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 5,
+        "linter": null
+      }
+    },
+    {
+      "id": "easy-r2-control",
+      "task": "easy",
+      "config": "control",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 26,
+        "categoriesTotal": 26,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 12485,
+        "cachedInput": 121856,
+        "output": 3109,
+        "reasoning": 796,
+        "total": 137450,
+        "elapsedSeconds": 92.398,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 48,
+          "sentences": 5,
+          "avgSentenceLength": 9.6,
+          "flesch": 36.7,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 115,
+          "sentences": 12,
+          "avgSentenceLength": 9.58,
+          "flesch": 69.8,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 95,
+        "linesRemoved": 10,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 4,
+        "linter": null
+      }
+    },
+    {
+      "id": "easy-r2-full",
+      "task": "easy",
+      "config": "full",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 26,
+        "categoriesTotal": 26,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 41200,
+        "cachedInput": 375296,
+        "output": 4832,
+        "reasoning": 1411,
+        "total": 421328,
+        "elapsedSeconds": 150.796,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 44,
+          "sentences": 5,
+          "avgSentenceLength": 8.8,
+          "flesch": 53.7,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 139,
+          "sentences": 13,
+          "avgSentenceLength": 10.69,
+          "flesch": 69.4,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 58,
+          "sentences": 9,
+          "avgSentenceLength": 6.44,
+          "flesch": 47.1,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 5,
+        "linesAdded": 127,
+        "linesRemoved": 18,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 4,
+        "linter": null
+      }
+    },
+    {
+      "id": "easy-r2-instructions",
+      "task": "easy",
+      "config": "instructions",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 26,
+        "categoriesTotal": 26,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 76086,
+        "cachedInput": 417792,
+        "output": 5256,
+        "reasoning": 2030,
+        "total": 499134,
+        "elapsedSeconds": 144.854,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 53,
+          "sentences": 6,
+          "avgSentenceLength": 8.83,
+          "flesch": 62.2,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 72,
+          "sentences": 7,
+          "avgSentenceLength": 10.29,
+          "flesch": 76.5,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 76,
+          "sentences": 8,
+          "avgSentenceLength": 9.5,
+          "flesch": 51.4,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 4,
+        "linesAdded": 101,
+        "linesRemoved": 17,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 5,
+        "linter": null
+      }
+    },
+    {
+      "id": "hard-r1-control",
+      "task": "hard",
+      "config": "control",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 20,
+        "categoriesTotal": 20,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 26301,
+        "cachedInput": 265984,
+        "output": 5915,
+        "reasoning": 1973,
+        "total": 298200,
+        "elapsedSeconds": 156.243,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 73,
+          "sentences": 5,
+          "avgSentenceLength": 14.6,
+          "flesch": 29.8,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 239,
+          "sentences": 20,
+          "avgSentenceLength": 11.95,
+          "flesch": 49.9,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 191,
+        "linesRemoved": 23,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 3,
+        "linter": null
+      }
+    },
+    {
+      "id": "hard-r1-full",
+      "task": "hard",
+      "config": "full",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 20,
+        "categoriesTotal": 20,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 59265,
+        "cachedInput": 492544,
+        "output": 9056,
+        "reasoning": 5055,
+        "total": 560865,
+        "elapsedSeconds": 146.556,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 43,
+          "sentences": 4,
+          "avgSentenceLength": 10.75,
+          "flesch": 20.8,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 115,
+          "sentences": 10,
+          "avgSentenceLength": 11.5,
+          "flesch": 59.1,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 4,
+        "linesAdded": 214,
+        "linesRemoved": 8,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 5,
+        "linter": null
+      }
+    },
+    {
+      "id": "hard-r1-instructions",
+      "task": "hard",
+      "config": "instructions",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 20,
+        "categoriesTotal": 20,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 45349,
+        "cachedInput": 384512,
+        "output": 7935,
+        "reasoning": 3755,
+        "total": 437796,
+        "elapsedSeconds": 109.011,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 56,
+          "sentences": 6,
+          "avgSentenceLength": 9.33,
+          "flesch": 49.3,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 233,
+          "sentences": 23,
+          "avgSentenceLength": 10.13,
+          "flesch": 58.9,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 221,
+        "linesRemoved": 27,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 4,
+        "linter": null
+      }
+    },
+    {
+      "id": "hard-r2-control",
+      "task": "hard",
+      "config": "control",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 20,
+        "categoriesTotal": 20,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 29808,
+        "cachedInput": 148224,
+        "output": 5916,
+        "reasoning": 1877,
+        "total": 183948,
+        "elapsedSeconds": 148.478,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 60,
+          "sentences": 5,
+          "avgSentenceLength": 12,
+          "flesch": 41,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 324,
+          "sentences": 55,
+          "avgSentenceLength": 5.89,
+          "flesch": 61.4,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 227,
+        "linesRemoved": 14,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 3,
+        "linter": null
+      }
+    },
+    {
+      "id": "hard-r2-full",
+      "task": "hard",
+      "config": "full",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 20,
+        "categoriesTotal": 20,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 83024,
+        "cachedInput": 513792,
+        "output": 10985,
+        "reasoning": 4965,
+        "total": 607801,
+        "elapsedSeconds": 155.761,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 56,
+          "sentences": 5,
+          "avgSentenceLength": 11.2,
+          "flesch": 39.9,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 276,
+          "sentences": 28,
+          "avgSentenceLength": 9.86,
+          "flesch": 57.7,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 254,
+        "linesRemoved": 21,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 5,
+        "linter": null
+      }
+    },
+    {
+      "id": "hard-r2-instructions",
+      "task": "hard",
+      "config": "instructions",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 20,
+        "categoriesTotal": 20,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 48523,
+        "cachedInput": 542464,
+        "output": 7374,
+        "reasoning": 3309,
+        "total": 598361,
+        "elapsedSeconds": 111.789,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 72,
+          "sentences": 7,
+          "avgSentenceLength": 10.29,
+          "flesch": 46,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 87,
+          "sentences": 8,
+          "avgSentenceLength": 10.88,
+          "flesch": 49.9,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 219,
+        "linesRemoved": 5,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 2,
+        "linter": null
+      }
+    },
+    {
+      "id": "medium-r1-control",
+      "task": "medium",
+      "config": "control",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 29,
+        "categoriesTotal": 29,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 17446,
+        "cachedInput": 174336,
+        "output": 3321,
+        "reasoning": 813,
+        "total": 195103,
+        "elapsedSeconds": 68.228,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 35,
+          "sentences": 4,
+          "avgSentenceLength": 8.75,
+          "flesch": 28.8,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 210,
+          "sentences": 20,
+          "avgSentenceLength": 10.5,
+          "flesch": 60.8,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 143,
+        "linesRemoved": 12,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 5,
+        "linter": null
+      }
+    },
+    {
+      "id": "medium-r1-full",
+      "task": "medium",
+      "config": "full",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 29,
+        "categoriesTotal": 29,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 48206,
+        "cachedInput": 576000,
+        "output": 6254,
+        "reasoning": 1764,
+        "total": 630460,
+        "elapsedSeconds": 122.763,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 60,
+          "sentences": 6,
+          "avgSentenceLength": 10,
+          "flesch": 48.6,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 65,
+          "sentences": 9,
+          "avgSentenceLength": 7.22,
+          "flesch": 65.4,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 137,
+        "linesRemoved": 8,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 5,
+        "linter": null
+      }
+    },
+    {
+      "id": "medium-r1-instructions",
+      "task": "medium",
+      "config": "instructions",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 29,
+        "categoriesTotal": 29,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 44726,
+        "cachedInput": 417024,
+        "output": 5353,
+        "reasoning": 2549,
+        "total": 467103,
+        "elapsedSeconds": 87.189,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 73,
+          "sentences": 7,
+          "avgSentenceLength": 10.43,
+          "flesch": 50.2,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 148,
+          "sentences": 16,
+          "avgSentenceLength": 9.25,
+          "flesch": 66,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 127,
+        "linesRemoved": 10,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 5,
+        "linter": null
+      }
+    },
+    {
+      "id": "medium-r2-control",
+      "task": "medium",
+      "config": "control",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 29,
+        "categoriesTotal": 29,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 23594,
+        "cachedInput": 171264,
+        "output": 3039,
+        "reasoning": 757,
+        "total": 197897,
+        "elapsedSeconds": 65.563,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 48,
+          "sentences": 5,
+          "avgSentenceLength": 9.6,
+          "flesch": 43.8,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 154,
+          "sentences": 24,
+          "avgSentenceLength": 6.42,
+          "flesch": 60.8,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 0,
+          "sentences": 0,
+          "avgSentenceLength": null,
+          "flesch": null,
+          "bannedHits": 0,
+          "bannedPer1000": null,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 3,
+        "linesAdded": 131,
+        "linesRemoved": 12,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 4,
+        "linter": null
+      }
+    },
+    {
+      "id": "medium-r2-full",
+      "task": "medium",
+      "config": "full",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 29,
+        "categoriesTotal": 29,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 44925,
+        "cachedInput": 471040,
+        "output": 7163,
+        "reasoning": 2989,
+        "total": 523128,
+        "elapsedSeconds": 134.673,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 48,
+          "sentences": 5,
+          "avgSentenceLength": 9.6,
+          "flesch": 63.1,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 138,
+          "sentences": 15,
+          "avgSentenceLength": 9.2,
+          "flesch": 70.6,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 357,
+          "sentences": 53,
+          "avgSentenceLength": 6.74,
+          "flesch": 52.6,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 4,
+        "linesAdded": 176,
+        "linesRemoved": 10,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 3,
+        "linter": null
+      }
+    },
+    {
+      "id": "medium-r2-instructions",
+      "task": "medium",
+      "config": "instructions",
+      "correctness": {
+        "wholeTaskPass": true,
+        "categoriesPassed": 29,
+        "categoriesTotal": 29,
+        "missed": []
+      },
+      "cost": {
+        "freshInput": 51468,
+        "cachedInput": 495616,
+        "output": 8386,
+        "reasoning": 4104,
+        "total": 555470,
+        "elapsedSeconds": 119.048,
+        "reviewTokens": null,
+        "sessions": 1
+      },
+      "plainLanguage": {
+        "wordList": {
+          "commit": "4650a1100fd021529ee9790f13af1741eddcfe59",
+          "sha256": "2c2a69ab9496a6eff2d825f4f21d6969536b16c8b34e027a3e7f8796640fdd5a"
+        },
+        "messages": {
+          "words": 63,
+          "sentences": 8,
+          "avgSentenceLength": 7.88,
+          "flesch": 63.2,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "docs": {
+          "words": 176,
+          "sentences": 18,
+          "avgSentenceLength": 9.78,
+          "flesch": 69,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        },
+        "taskRecords": {
+          "words": 352,
+          "sentences": 49,
+          "avgSentenceLength": 7.18,
+          "flesch": 49.3,
+          "bannedHits": 0,
+          "bannedPer1000": 0,
+          "byPhrase": {}
+        }
+      },
+      "debt": {
+        "filesTouched": 4,
+        "linesAdded": 204,
+        "linesRemoved": 13,
+        "filesOver800": [],
+        "duplicateBlocks": {
+          "total": 0,
+          "source": 0,
+          "test": 0,
+          "examples": []
+        },
+        "testsAdded": 4,
+        "linter": null
+      }
+    }
+  ]
+}
