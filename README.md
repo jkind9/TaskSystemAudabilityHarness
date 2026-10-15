@@ -15,6 +15,18 @@
 
 Not tracked, because it is large, private or regenerable: run folders (`results/`, `follow-up/study-002/results/`, `pilot-b/results/`, `probes/*/`, `reviews/`), frozen task inputs (`follow-up/study-002/tasks/*/`) and `private/` (the blind-review keys). See `.gitignore`.
 
+## Quick setup (Windows)
+
+Install [Git](https://git-scm.com/downloads) and [Node.js](https://nodejs.org/) first. Then open PowerShell and paste:
+
+```powershell
+git clone https://github.com/jkind9/TaskSystemAudabilityHarness.git "$HOME\TaskSystemAudabilityHarness"
+Set-Location "$HOME\TaskSystemAudabilityHarness"
+node harness/tools/install.cjs
+```
+
+Keep the cloned folder where it is: Claude and Codex load the harness from it. Close and reopen Claude and Codex after installation. On the first Codex start, review the requested hook definitions if prompted.
+
 ## Deploying the harness
 
 The harness is a folder; deploying it means putting that folder where the assistants expect it and running its installer once.
