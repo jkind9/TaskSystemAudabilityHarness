@@ -2,9 +2,9 @@
 
 ## What is enforced
 
-- From the second code file you change in a session, each code write must be listed in the open task's `files:`. A refused write is on purpose: start a task with `begin`, or add the file with `files add` (below), then retry. Never retry it unchanged.
+- From the second code file you change in a session, each code write must be listed in your session's open task's `files:`. A refused write is on purpose: start a task with `begin`, or add the file with `files add` (below), then retry. Never retry it unchanged.
 - No code file may grow past 800 lines. Put new code in a new module.
-- If you end a session with a task still open, you get one reminder to finish it.
+- If you end a session with your task still open, you get one reminder to finish it or leave it for a later session.
 - `task.js finish` refuses a new duplicate block (6 or more repeated lines) or a changed code file over 800 lines. Fix it and run `finish` again.
 
 ## Task records
@@ -18,9 +18,13 @@ One record per piece of work, in `task_list/` at the repository's top folder: `o
 
     node "$HOME/.claude/task-system/task.js" files add b.py
 
-Do not edit the record by hand. These three commands are all you need: the other files in `~/.claude/task-system/` describe a larger task system that does not apply here.
+A record belongs to the session that began it, and a session works on one task at a time. Tasks open in other sessions do not block you; do not finish, edit or add files to them. If `begin` says another open task lists one of your files, ask the user which session goes first.
 
-If the work continues in a later session, still run `finish` and say what is left in `--left`. The next session sees it at start-up and when it runs `begin`.
+If the work continues in a later session, either `finish` with what is left in `--left`, or leave the task open. When the user says the earlier session has ended, the later session takes the task over:
+
+    node "$HOME/.claude/task-system/task.js" adopt <id>
+
+Do not edit the record by hand. These four commands are all you need: the other files in `~/.claude/task-system/` describe a larger task system that does not apply here.
 
 ## Code
 

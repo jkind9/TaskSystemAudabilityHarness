@@ -61,13 +61,14 @@ function changes(root) {
   return { ok: true, files, unreadable: present.skipped };
 }
 
-/** Everything `finish` records. taskText is the task file, judged for prose with the changed docs. */
-function runChecks({ root, taskText = '', pythonExe = 'python' }) {
+/** Everything `finish` records. taskText is the task file, judged for prose with the changed docs.
+ *  skip(path) is true for a changed file that belongs to another session's open task. */
+function runChecks({ root, taskText = '', pythonExe = 'python', skip = () => false }) {
   const collected = changes(root);
   const result = { git: collected.ok, reason: collected.reason || '', unreadable: collected.unreadable || [], files: [], refusals: [] };
   const record = prosePatterns(taskText);
   if (!collected.ok) return { ...result, duplicates: null, complexity: null, deadCode: null, prose: record, overLimit: [] };
-  const files = collected.files;
+  const files = collected.files.filter(f => !skip(f.path));
   const code = files.filter(f => CODE.test(f.path) && f.after);
   result.files = files.map(f => ({ path: f.path, added: f.added, removed: f.removed, lines: lineCount(f.after) }));
   // Same rule as the size gate: a file already over the limit at the last commit may stay or

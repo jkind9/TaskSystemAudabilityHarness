@@ -10,11 +10,17 @@
 //   block - in_progress task has no `files:` declared          -> declare scope
 //   block - this file not matched by the in_progress task's `files:` globs -> add it / right task
 //   pass  - this file matches the in_progress task's `files:`
+//   NOTE  - "the task" means this session's task: one whose session: is this hook's session_id,
+//           or that names no session. Another session's open task never blocks this write, and
+//           the files it lists do not count toward this session's free first file.
+//   block - this file is listed by another session's open task and not by this session's
+//           -> ask the user, then `files add` it to this session's task
 //
 // See ~/.claude/rules/task-management.md §0.
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
+const { ownerOf, owns, globMatch, claimedElsewhere } = require('../../task-system/lean-board.js');
 
 let d = '';
 process.stdin.on('data', c => d += c);
@@ -50,11 +56,10 @@ process.stdin.on('end', () => {
       if (CODE.test(pendingRel) && !pendingRel.startsWith('..')) codeFiles.add(pendingRel);
     }
     codeFiles.add(rel);
-    if (codeFiles.size <= 1) { console.log(d); process.exit(0); }  // trivial single-file escape
 
     // Collect in_progress tasks across both conventions.
     const dirs = ['docs/tasks/open', 'task_list/open'];
-    const active = [];  // {id, path, files:[globs], hasFilesKey:bool}
+    const all = [];  // {id, path, files:[globs], hasFilesKey:bool, owner}
     for (const dir of dirs) {
       let files = [];
       try { files = fs.readdirSync(path.join(root, dir)).filter(f => f.endsWith('.md')); } catch { continue; }
@@ -66,9 +71,20 @@ process.stdin.on('end', () => {
         const idM = head.match(/^\s*id:\s*(.+)$/m);
         const id = idM ? idM[1].trim() : f.replace(/\.md$/, '');
         const globs = parseFilesList(head);
-        active.push({ id, path: dir + '/' + f, files: globs.list, hasFilesKey: globs.present });
+        all.push({ id, path: dir + '/' + f, files: globs.list, hasFilesKey: globs.present, owner: ownerOf(head) });
       }
     }
+    const session = inp.session_id || '';
+    const active = all.filter(a => owns(session, a.owner));
+    const others = all.filter(a => !owns(session, a.owner));
+    const elsewhere = claimedElsewhere(others.flatMap(a => a.files), active.flatMap(a => a.files));
+    // A task is held by one session at a time, so even a free first-file edit may not touch its files.
+    if (elsewhere(rel)) {
+      block(['This write (' + rel + ') is listed by open task ' + others.find(a => a.files.some(g => globMatch(g, rel))).id + ', which belongs to another session. Ask the user first.',
+        'If the user agrees, list it in your own task (task.js files add ' + rel + ', or begin one with --files ' + rel + '), then re-issue the write.']);
+    }
+    for (const f of codeFiles) if (elsewhere(f)) codeFiles.delete(f);  // another session's changes
+    if (codeFiles.size <= 1) { console.log(d); process.exit(0); }  // trivial single-file escape
 
     if (active.length === 0 && process.env.ECC_TASK_FLOW === 'lean') {
       block(['2nd+ code file this session and no task is open. Start one, then re-issue the write:',
@@ -150,20 +166,3 @@ function parseFilesList(head) {
 
 // Strip a YAML scalar: drop an inline " # comment", trailing whitespace, and surrounding quotes.
 function stripVal(s) { return String(s).replace(/\s+#.*$/, '').trim().replace(/^["']|["']$/g, '').trim(); }
-
-// Minimal glob: supports ** (any depth), * (within a segment), exact paths. Case-insensitive.
-function globMatch(glob, path) {
-  glob = glob.replace(/\\/g, '/').trim();
-  path = path.replace(/\\/g, '/').trim();
-  if (glob === path) return true;
-  let re = '';
-  for (let i = 0; i < glob.length; i++) {
-    const c = glob[i];
-    if (c === '*') {
-      if (glob[i + 1] === '*') { re += '.*'; i++; if (glob[i + 1] === '/') i++; }
-      else re += '[^/]*';
-    } else if ('.+^${}()|[]\\'.includes(c)) { re += '\\' + c; }
-    else re += c;
-  }
-  try { return new RegExp('^' + re + '$', 'i').test(path); } catch { return false; }
-}

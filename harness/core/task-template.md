@@ -2,6 +2,7 @@
 id: "{{ID}}"
 title: {{TITLE}}
 status: in_progress
+session: {{SESSION}}
 files:
 {{FILES}}
 created: {{CREATED}}

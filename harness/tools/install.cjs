@@ -112,6 +112,8 @@ try {
   config = 'project_doc_max_bytes = 131072\n' + config;
   // Existing native plugin integrations and approval settings are preserved.
   saveConfig(configFile, config);
+  // Even an empty folder marks this install, so uninstall.cjs never restores a later reinstall's copies.
+  fs.mkdirSync(backup, { recursive: true });
   fs.writeFileSync(installationFile, JSON.stringify({ home, backup, instructions, env: Object.keys(policyEnv), revision }, null, 2) + '\n');
   console.log(JSON.stringify({ installed: root, backup, ...revision }));
 } catch (error) {

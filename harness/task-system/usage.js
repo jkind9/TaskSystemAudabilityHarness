@@ -127,7 +127,7 @@ function report(args) {
   const transcripts = transcriptFiles(args.projects).filter(t => fs.statSync(t.file).mtimeMs >= earliest);
   for (const transcript of transcripts.filter(t => !t.isSubagent)) origins.set(transcript.project + '/' + transcript.session, transcriptCwd(transcript.file));
   for (const t of transcripts) {
-    if (args.session && t.session !== args.session) continue;
+    if (args.session && ![].concat(args.session).includes(t.session)) continue;
     const origin = transcriptCwd(t.file) || origins.get(t.project + '/' + t.session);
     if (origin && !repositories.has(origin)) repositories.set(origin, repositoryOf(origin));
     if (origin && repositories.get(origin) !== target) continue;

@@ -16,7 +16,7 @@ const { functionComplexity } = require(path.join(ROOT, 'checks', 'complexity.cjs
 // finish reads Claude transcripts under the home folder; give every call a scratch home.
 const SCRATCH_HOME = fs.mkdtempSync(path.join(os.tmpdir(), 'lean-home-'));
 test.after(() => fs.rmSync(SCRATCH_HOME, { recursive: true, force: true }));
-const env = { ...Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^GIT_/i.test(k) && k !== 'CLAUDE_PROJECT_DIR')), USERPROFILE: SCRATCH_HOME, HOME: SCRATCH_HOME };
+const env = { ...Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(GIT_|CLAUDE_CODE_SESSION_ID$|CODEX_SESSION_ID$|CODEX_THREAD_ID$)/i.test(k) && k !== 'CLAUDE_PROJECT_DIR')), USERPROFILE: SCRATCH_HOME, HOME: SCRATCH_HOME };
 const noSpawnEnv = { ...env, PATH: path.dirname(process.execPath), Path: path.dirname(process.execPath) };
 const git = (root, ...args) => { const r = spawnSync('git', args, { cwd: root, env, encoding: 'utf8' }); assert.equal(r.status, 0, r.stderr); return r.stdout; };
 

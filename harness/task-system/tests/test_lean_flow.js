@@ -12,7 +12,7 @@ const CLI = path.resolve(__dirname, '..', 'task.js');
 // finish reads Claude transcripts under the home folder; give every call a scratch home.
 const HOME = fs.mkdtempSync(path.join(os.tmpdir(), 'lean-flow-home-'));
 test.after(() => fs.rmSync(HOME, { recursive: true, force: true }));
-const env = { ...Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^GIT_/i.test(k) && k !== 'CLAUDE_PROJECT_DIR')), USERPROFILE: HOME, HOME };
+const env = { ...Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(GIT_|CLAUDE_CODE_SESSION_ID$|CODEX_SESSION_ID$|CODEX_THREAD_ID$)/i.test(k) && k !== 'CLAUDE_PROJECT_DIR')), USERPROFILE: HOME, HOME };
 const cli = (root, ...args) => spawnSync(process.execPath, [CLI, ...args], { cwd: root, env, encoding: 'utf8', windowsHide: true });
 const git = (root, ...args) => { const r = spawnSync('git', args, { cwd: root, env, encoding: 'utf8' }); assert.equal(r.status, 0, r.stderr); };
 
@@ -38,7 +38,7 @@ test('begin writes goal, plan and files in one call and makes the task active', 
   assert.match(text, /files:\n  - pkg\/core\.py\n  - tests\/test_core\.py/);
   assert.match(text, /## Goal\n\nSubtract two numbers\./);
   assert.match(text, /## Plan\n\n1\. add sub\(\) 2\. test it/);
-  assert.ok(text.trimEnd().split('\n').length <= 30, 'about 30 lines');
+  assert.ok(text.trimEnd().split('\n').length <= 31, 'about 30 lines (31 with the session: line)');
 });
 
 test('begin refuses while another task is open, and needs --files', t => {
@@ -144,7 +144,7 @@ test('core/AGENTS.md names one way to widen a task, and only commands task.js ha
   assert.match(text, /task\.js" files add /);
   assert.doesNotMatch(text, /add the file to `files:`/);
   const named = [...text.matchAll(/task\.js"? (\w+)/g)].map(m => m[1]);
-  assert.deepEqual([...new Set(named)].sort(), ['begin', 'files', 'finish']);
+  assert.deepEqual([...new Set(named)].sort(), ['adopt', 'begin', 'files', 'finish']);
 });
 
 test('help names files add', t => {

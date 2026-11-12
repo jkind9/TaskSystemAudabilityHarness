@@ -876,7 +876,7 @@ function parse(argv) {
 
 const USAGE = `task.js — manage a project's task_list/ (frontmatter-driven; the JS gates read the same state)
 
-  init                          create the task folder here  (lean: begin "<title>" --files a,b --goal "<line>" --plan "<steps>" | finish --checked "<command> -> <result>" --left "<text>" | files add <path>[,<path>])
+  init                          create the task folder here  (lean: begin "<title>" --files a,b --goal "<line>" --plan "<steps>" | finish --checked "<command> -> <result>" --left "<text>" | files add <path>[,<path>] | adopt <id>)
   new "<title>" [opts]          create a task in open/ and start it (status: in_progress)
       --type T --priority P --files a,b --docs c,d --no-start --worktree --base B
   start <id> [--worktree --base B]   make an existing open task the active (in_progress) one
@@ -916,7 +916,7 @@ const USAGE = `task.js — manage a project's task_list/ (frontmatter-driven; th
 
 function main() {
   const [cmd, ...rest] = process.argv.slice(2);
-  if (cmd === "begin" || cmd === "finish" || cmd === "files") return require(path.join(SCRIPT_DIR, "lean.js")).run(cmd, rest, LOC);  // lean profile
+  if (["begin", "finish", "files", "adopt"].includes(cmd)) return require(path.join(SCRIPT_DIR, "lean.js")).run(cmd, rest, LOC);  // lean profile
   const a = parse(rest);
   if (a.commit && !(cmd === 'close' || (cmd === 'move' && a._[1] === 'closed'))) die('--commit is only valid for close or move closed.');
   switch (cmd) {

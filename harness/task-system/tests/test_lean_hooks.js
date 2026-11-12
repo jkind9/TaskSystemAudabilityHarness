@@ -13,7 +13,7 @@ const CLI = path.join(ROOT, 'task-system/task.js');
 // finish reads Claude transcripts under the home folder; give every call a scratch home.
 const SCRATCH_HOME = fs.mkdtempSync(path.join(os.tmpdir(), 'lean-home-'));
 test.after(() => fs.rmSync(SCRATCH_HOME, { recursive: true, force: true }));
-const env = { ...Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^GIT_/i.test(k) && k !== 'CLAUDE_PROJECT_DIR' && k !== 'ECC_TASK_FLOW')), USERPROFILE: SCRATCH_HOME, HOME: SCRATCH_HOME };
+const env = { ...Object.fromEntries(Object.entries(process.env).filter(([k]) => !/^(GIT_|CLAUDE_CODE_SESSION_ID$|CODEX_SESSION_ID$|CODEX_THREAD_ID$)/i.test(k) && k !== 'CLAUDE_PROJECT_DIR' && k !== 'ECC_TASK_FLOW')), USERPROFILE: SCRATCH_HOME, HOME: SCRATCH_HOME };
 const hook = (name, cwd, extraEnv = {}, input = {}) => spawnSync(process.execPath, [path.join(ROOT, 'scripts/hooks', name)], {
   input: JSON.stringify({ cwd, session_id: 'lean-hooks', ...input }), cwd, env: { ...env, ...extraEnv }, encoding: 'utf8', windowsHide: true,
 });

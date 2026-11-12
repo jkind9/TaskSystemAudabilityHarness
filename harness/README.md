@@ -1,7 +1,7 @@
 # Shared Claude and Codex harness
 
 This is harness **v2**. `core/` holds what every session loads: `core/AGENTS.md`
-(what is enforced, the three task commands, a short style card for code and
+(what is enforced, the four task commands, a short style card for code and
 writing), `core/machine.md` (notes for this machine) and `core/policy.json` (five
 hooks). `skills/`, `agents/`, `commands/`, `scripts/` and `task-system/` are the
 rest of the maintained source. Authentication, permissions, sessions and project
@@ -66,8 +66,10 @@ tasks, and used 1.42 times stock's tokens.
   for Codex's approvals file.
 - Hooks: 5 (`core/policy.json`: task gate, file-size gate, one-line
   end-of-session reminder, docs snapshot, session-start note) against 42.
-- Task records: `task.js begin`, `task.js finish` and `task.js files add`; a
-  29-line record with Goal, Plan, Files, Checked and Left over, in `open/` then
+- Task records: `task.js begin`, `task.js finish`, `task.js files add` and
+  `task.js adopt`; each record names the session that began it, so parallel
+  sessions in one repository each work their own task (task 26); a
+  30-line record with Goal, Plan, Files, Checked and Left over, in `open/` then
   `done/`. `finish` runs the end-of-task checks (duplicate blocks, complexity,
   dead code, prose patterns), refuses a new duplicate block or a grown file over
   800 lines, and needs `--checked` to name a check that ran (tasks 16-19, 21-23).
@@ -125,6 +127,13 @@ told it not to touch. The owner chose one nudge on 13 October 2026.
 Run `node tools/validate.cjs` to check parity and behavioural regression tests.
 Run `node tools/install.cjs` to install the generated adapters and directory links;
 the installer preserves replaced files under `~/.agents/harness-backups/`.
+Run `node tools/uninstall.cjs` to undo it (harness task 27). It removes the links,
+moves the files the harness wrote (such as `settings.json`) into a new
+`<time>-uninstall` backup folder, and moves back what the install replaced, from
+the first backup folder after the last uninstall. It deletes nothing, and it
+refuses to run without `installation.json`, so it cannot run twice. Codex
+approvals made while installed stay in `rules/default.rules`. Run
+`node --test task-system/tests/test_uninstall.js`.
 Source hooks are read on every invocation. Codex requires native `/hooks` trust of
 the adapter definitions; changed definitions must be reviewed again. The stable
 adapter loads policy changes without changing its registered command.
@@ -333,8 +342,8 @@ harness clone and `core/AGENTS.md` into that run's Codex home; at a v2 commit it
 task-only setup would also run the core policy, because v2 no longer reads a root
 `policy.json`.
 
-- `core/AGENTS.md` (49 lines): what is enforced, where task records live, the
-  three task commands (`begin`, `finish`, `files add`; it no longer says both
+- `core/AGENTS.md` (53 lines): what is enforced, where task records live, the
+  four task commands (`begin`, `finish`, `files add`, `adopt`; it no longer says both
   "add the file to files:" and "do not edit the record by hand"), and a short style card for code and writing with one
   before/after example and a four-line end message.
 - `core/policy.json`: five hooks. The task gate and the file-size gate as in
@@ -344,7 +353,7 @@ task-only setup would also run the core policy, because v2 no longer reads a roo
   reads it yet); and `lean-session-note.js`, which tells a new session about the
   open task or what the last finished task left over.
   `ECC_TASK_FLOW=lean` makes the task gate's refusal name `task.js begin`.
-- `core/task-template.md` (29 lines): Goal, Plan, Files, Checked, Left over.
+- `core/task-template.md` (30 lines): Goal, Plan, Files, Checked, Left over.
 - `task.js begin "<title>" --files a,b --goal ".." --plan ".."` writes the
   record as the open task. `task.js finish --checked "<command> -> <result>"
   --left ".."` runs `checks/run.cjs` once, writes Files, Checked (with a cost
@@ -362,6 +371,26 @@ task-only setup would also run the core policy, because v2 no longer reads a roo
   to do this). All three live in `task-system/lean.js`. Under
   `ECC_TASK_FLOW=lean`, the task gate's refusal for a file outside the open
   record names `files add` with that file's path.
+- Owners (harness task 26). `begin` writes `session:` into the record: the
+  shell's `CODEX_SESSION_ID`, `CODEX_THREAD_ID` or `CLAUDE_CODE_SESSION_ID`,
+  the same id the hooks receive as `session_id`. Codex is read first because a
+  Codex worker started from a Claude shell inherits the Claude id. Every command
+  and hook then acts on the caller's own task. Another session's open task does
+  not refuse `begin`, a write or the end of a session. The files it lists do not
+  use up the free first code file, and `finish` neither lists nor judges them.
+  A code write to a file that only another session's open task lists is
+  refused, even as a free first file; listing it in your own task (after asking
+  the user) allows it.
+  `begin` and `files add` print a note when another open task lists the same
+  file. A session still works one task at a time. `task.js adopt <id>` moves an
+  open task to the current session, for work that runs over several sessions
+  one after another (a context reset or `/clear` starts a new session id); the
+  old session then counts as another session and can no longer write under it.
+  A record with no `session:` (older records, or a shell with no id) belongs to
+  every session, as before. `begin` claims its number by creating
+  `task_list/.ids/<id>`, so two sessions that begin at once get different
+  numbers. The cost line counts the sessions that `begin` and `adopt` name in
+  the journal, so a parallel session's tokens stay with its own task.
 - `checks/` compares the working tree with the last commit: new duplicate blocks
   (6 or more repeated lines, counted once per block), the share of complexity
   held by functions scoring over 10 before and after (Python exactly through its
