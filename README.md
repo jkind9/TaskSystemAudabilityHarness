@@ -6,11 +6,11 @@ This repository holds the harness (in [`harness/`](harness/)) and the studies th
 
 ## What it does
 
-- **Task records.** For each piece of work the assistant runs two commands. `task.js begin` writes the Goal and Plan. `task.js finish` writes Files, Checked and Left over. Records go in `task_list/` at the top of your repository, in `open/` and then `done/`. A one-file change needs no record.
-- **Edit limits.** From the second code file in a session, an edit to a file the open task does not list is refused. No code file may grow past 800 lines.
-- **End-of-task checks.** `finish` reports new duplicate blocks (6 or more repeated lines), complexity, dead code, and stock AI-sounding phrases in the record and changed docs. It refuses to finish only on a new duplicate block or on a file over 800 lines that grew.
-- **Reminders.** A new session is told about its open task, or what the last task left over. A session that ends with its task still open gets one reminder.
-- **Parallel sessions.** Each record names the session that began it, so two sessions in one repository each work on their own task.
+- Each piece of work gets a task record. The assistant runs `task.js begin` to write the Goal and Plan, then `task.js finish` to write Files, Checked and Left over. Records go in `task_list/` at the top of your repository, in `open/` and then `done/`. A one-file change needs no record.
+- From the second code file in a session, an edit to a file the open task does not list is refused. No code file may grow past 800 lines.
+- `finish` reports new duplicate blocks (6 or more repeated lines), complexity, dead code, and stock AI-sounding phrases in the record and changed docs. It refuses to finish only on a new duplicate block or on a file over 800 lines that grew.
+- A new session is told about its open task, or what the last task left over. A session that ends with its task still open gets one reminder.
+- Each record names the session that began it, so two sessions in one repository each work on their own task.
 
 A finished record, shortened (task 27 of the harness itself):
 
