@@ -15,7 +15,7 @@ function writeChanged(file, value) {
 const POLICY = 'core/policy.json';
 function instructionTexts() {
   const source = root.replace(/\\/g, '/');
-  const text = '# Shared harness (v2)\n\nEdit the source at ' + source + ', then run `node tools/render.cjs`. Both assistants use this source.\n\n'
+  const text = '# Shared harness (v2)\n\nInstalled from ' + source + '; both assistants use this copy. After it changes, run `node tools/render.cjs` there.\n\n'
     + read('core/AGENTS.md') + '\n\n' + read('core/machine.md')
     + '\n\n# Tool adapters\n\nUse the available skill loader or read the named SKILL.md directly. Use the native agent tool for delegation. Claude slash commands are compatibility entry points; Codex uses the equivalent source-command skills.\n';
   return { claude: text, codex: text };
