@@ -6,7 +6,7 @@
 const test = require('node:test'), assert = require('node:assert/strict');
 const fs = require('node:fs'), os = require('node:os'), path = require('node:path'), { spawnSync } = require('node:child_process');
 const ROOT = path.resolve(__dirname, '..', '..');
-const { globMatch } = require(path.join(ROOT, 'task-system/lean-board.js'));
+const { globMatch, ownerOf } = require(path.join(ROOT, 'task-system/lean-board.js'));
 const CLI = path.join(ROOT, 'task-system/task.js');
 const HOME = fs.mkdtempSync(path.join(os.tmpdir(), 'lean-owner-home-'));
 test.after(() => fs.rmSync(HOME, { recursive: true, force: true }));
@@ -150,6 +150,37 @@ test('task gate: another session\'s open task neither blocks a write nor uses up
   assert.match(off.stderr, /not in open task "?01"?'s files/);
   as('B', root, 'files', 'add', 'a.py');
   assert.equal(hook('task-gate.js', root, 'B', write(root, 'a.py')).status, 0, 'listed in both tasks once the user agreed');
+});
+
+test('ownerOf reads the session line from the frontmatter only, closed or not', () => {
+  assert.equal(ownerOf('---\nid: "1"\nsession: A\nfiles:\n  - a.py\n---\n'), 'A');
+  assert.equal(ownerOf('---\nid: "1"\nsession: A\nfiles:\n  - a.py\n'), 'A', 'a missing closing line is still A\'s record');
+  assert.equal(ownerOf('---\nid: "1"\nfiles:\n  - a.py\n---\n'), '', 'no session line: a record from before owners');
+  assert.equal(ownerOf('---\nid: "1"\n---\nsession: X\n'), '', 'a session line in the body is not the owner');
+});
+
+test('task gate: a record longer than 2,000 characters keeps its owner and every file', t => {
+  const root = repo(t);
+  const theirs = Array.from({ length: 40 }, (_, i) => 'experiments/cvpr2027/e25_recording_cue_audit/tests/test_part_' + i + '.py');
+  as('A', root, 'begin', 'E25', '--files', theirs.join(','));
+  assert.ok(fs.readFileSync(path.join(root, 'task_list/open', openFiles(root)[0]), 'utf8').indexOf('\n---', 3) > 2000);
+  assert.equal(as('B', root, 'begin', 'E26', '--files', 'b.py,c.py').status, 0);
+  fs.writeFileSync(path.join(root, 'b.py'), 'y = 2\n');
+  assert.equal(hook('task-gate.js', root, 'B', write(root, 'c.py')).status, 0, 'A\'s long record is not B\'s task');
+  assert.match(hook('task-gate.js', root, 'B', write(root, theirs[34])).stderr, /listed by open task "?00"?, which belongs to another session/);
+  fs.mkdirSync(path.join(root, path.dirname(theirs[0])), { recursive: true });
+  fs.writeFileSync(path.join(root, theirs[0]), 'x = 1\n');
+  assert.equal(hook('task-gate.js', root, 'A', write(root, theirs[34])).status, 0, 'A may write its own 35th file');
+});
+
+test('task gate: a record missing its closing frontmatter line stays its session\'s', t => {
+  const root = repo(t);
+  fs.mkdirSync(path.join(root, 'task_list/open'), { recursive: true });
+  fs.writeFileSync(path.join(root, 'task_list/open/05_cut.md'), '---\nid: "05"\ntitle: Cut\nstatus: in_progress\nsession: A\nfiles:\n  - a.py\n');
+  assert.equal(as('B', root, 'begin', 'Own', '--files', 'b.py,c.py').status, 0);
+  fs.writeFileSync(path.join(root, 'b.py'), 'y = 2\n');
+  assert.equal(hook('task-gate.js', root, 'B', write(root, 'c.py')).status, 0);
+  assert.match(hook('task-gate.js', root, 'B', write(root, 'a.py')).stderr, /listed by open task "?05"?, which belongs to another session/);
 });
 
 test('task gate: after adopt the old session may not write the task\'s files', t => {

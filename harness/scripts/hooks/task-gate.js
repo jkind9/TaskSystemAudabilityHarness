@@ -20,7 +20,7 @@
 const { execSync } = require('child_process');
 const fs = require('fs');
 const path = require('path');
-const { ownerOf, owns, globMatch, claimedElsewhere } = require('../../task-system/lean-board.js');
+const { frontOf, ownerOf, owns, globMatch, claimedElsewhere } = require('../../task-system/lean-board.js');
 
 let d = '';
 process.stdin.on('data', c => d += c);
@@ -66,12 +66,13 @@ process.stdin.on('end', () => {
       for (const f of files) {
         let fm = '';
         try { fm = fs.readFileSync(path.join(root, dir, f), 'utf8'); } catch { continue; }
-        const head = fm.slice(0, 2000);
-        if (!/^\s*status:\s*in_progress/m.test(head)) continue;
-        const idM = head.match(/^\s*id:\s*(.+)$/m);
+        // The whole frontmatter: a record that lists many files can run past any fixed cut.
+        const front = frontOf(fm);
+        if (!/^\s*status:\s*in_progress/m.test(front)) continue;
+        const idM = front.match(/^\s*id:\s*(.+)$/m);
         const id = idM ? idM[1].trim() : f.replace(/\.md$/, '');
-        const globs = parseFilesList(head);
-        all.push({ id, path: dir + '/' + f, files: globs.list, hasFilesKey: globs.present, owner: ownerOf(head) });
+        const globs = parseFilesList(front);
+        all.push({ id, path: dir + '/' + f, files: globs.list, hasFilesKey: globs.present, owner: ownerOf(fm) });
       }
     }
     const session = inp.session_id || '';

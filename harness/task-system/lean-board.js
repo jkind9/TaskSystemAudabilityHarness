@@ -18,11 +18,11 @@ const filesOf = text => ((text.match(FILES_BLOCK) || [])[1] || "").split("\n").m
 /** The id this process's hooks receive as session_id, or "" outside an agent session. */
 // Codex first: a Codex worker started from a Claude shell also inherits CLAUDE_CODE_SESSION_ID.
 const sessionId = (env = process.env) => env.CODEX_SESSION_ID || env.CODEX_THREAD_ID || env.CLAUDE_CODE_SESSION_ID || "";
+/** A record's frontmatter without its --- lines. With no closing line it runs to the end, so a damaged
+ * record keeps its owner instead of reading as one from before owners, which every session would own. */
+const frontOf = text => (String(text).replace(/\r\n/g, "\n").match(/^---\n([\s\S]*?)(?:\n---|$)/) || [])[1] || "";
 /** The session a record names in its frontmatter, or "" for a record from before owners. */
-const ownerOf = text => {
-  const front = (String(text).replace(/\r\n/g, "\n").match(/^---\n([\s\S]*?)\n---/) || [])[1] || "";
-  return (front.match(/^session:[ \t]*["']?([^"'\s]*)/m) || [])[1] || "";
-};
+const ownerOf = text => (frontOf(text).match(/^session:[ \t]*["']?([^"'\s]*)/m) || [])[1] || "";
 const owns = (session, owner) => !session || !owner || owner === session;
 
 function repoTop(dir) {
@@ -59,5 +59,5 @@ function globMatch(glob, file) {
 /** A test for paths another session's open task lists and this session's task does not. */
 const claimedElsewhere = (theirs, mine) => file => theirs.some(g => globMatch(g, file)) && !mine.some(g => globMatch(g, file));
 
-module.exports = { readText, section, title, FILES_BLOCK, filesOf, sessionId, ownerOf, owns, tasks, openIn, othersIn, lastDoneIn,
+module.exports = { readText, section, title, FILES_BLOCK, filesOf, sessionId, frontOf, ownerOf, owns, tasks, openIn, othersIn, lastDoneIn,
   boardOf, openTask, openElsewhere, lastDone, globMatch, claimedElsewhere };

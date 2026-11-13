@@ -26,8 +26,8 @@ function repo(taskId) {
   fs.writeFileSync(path.join(dir, 'task_list', 'open', taskId + '_t.' + 'md'), '---\nid: "' + taskId + '"\nstatus: in_progress\nfiles:\n  - big.js\n---\n');
   return dir;
 }
-function edit(cwd, file, oldS, newS) {
-  const input = JSON.stringify({ tool_name: 'Edit', cwd, tool_input: { file_path: file, old_string: oldS, new_string: newS } });
+function edit(cwd, file, oldS, newS, session) {
+  const input = JSON.stringify({ tool_name: 'Edit', cwd, session_id: session, tool_input: { file_path: file, old_string: oldS, new_string: newS } });
   return spawnSync(process.execPath, [GATE], { cwd, input, env: cleanEnv(), encoding: 'utf8' });
 }
 
@@ -47,6 +47,15 @@ test('an uncommitted oversized file may not grow at all', () => {
   const dir = repo('07'), file = path.join(dir, 'fresh.js');
   fs.writeFileSync(file, lines(850));
   assert.strictEqual(edit(dir, file, 'const v0 = 0;\n', 'const v0 = 0;\nconst a = 1;\n').status, 2);
+});
+
+test('the shrinks escape reads this session\'s task while other sessions have tasks open', () => {
+  const dir = repo('07'), file = path.join(dir, 'big.js'), open = path.join(dir, 'task_list', 'open');
+  fs.writeFileSync(path.join(open, '07_t.md'), '---\nid: "07"\nstatus: in_progress\nsession: A\nfiles:\n  - big.js\nshrinks:\n  - big.js\n---\n');
+  fs.writeFileSync(path.join(open, '08_t.md'), '---\nid: "08"\nstatus: in_progress\nsession: B\nfiles:\n  - other.js\n---\n');
+  const grow = session => edit(dir, file, 'const v0 = 0;\n', 'const v0 = 0;\nconst a = 1;\n', session).status;
+  assert.strictEqual(grow('A'), 0, 'A is splitting big.js');
+  assert.strictEqual(grow('B'), 2, 'B is not');
 });
 
 test('the splitter hint names the file\'s own repository task, not the session\'s', () => {
