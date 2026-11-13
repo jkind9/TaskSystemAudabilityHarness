@@ -12,5 +12,5 @@ VS Code or any Chromium-based viewer. On this machine ffmpeg has no libx264; use
 # Changing the harness
 Make every harness change in `C:/Users/jkind/Documents/04 Personal Coding/Harness_Development/harness`
 first, under that repository's task board, and test and commit it there. Then deploy it to the
-installed copy with the steps in that repository's `docs/maintenance.md`. Do not edit the
-installed copy by hand.
+installed copy: run `node tools/deploy-harness.cjs` from that repository's top folder. Do not
+edit the installed copy by hand.

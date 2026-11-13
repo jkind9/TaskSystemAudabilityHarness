@@ -21,31 +21,40 @@ After each deploy, `harness/` holds exactly the live harness's tracked files, an
    cd harness && env -u ECC_TASK_FLOW node --test task-system/tests/*.js scripts/hooks/tests/*.js
    ```
 
-   Two tests in `test_install_version.js` fail here with exit 128. They clone the harness with its git history and tags, which only the live harness has. Run that file in the live harness after the deploy.
+   Two tests in `test_install_version.js` fail here with exit 128. They clone the harness with its git history and tags, which only the live harness has. The deploy runs them in its clone.
 
 3. Update [FINDINGS.md](../FINDINGS.md), then commit.
 4. Deploy, below. Then commit the new bundle and push.
 
 ## Deploy to the live harness
 
-From this repository's top folder, in Git Bash, with the change committed:
+From this repository's top folder, with the change committed:
 
 ```bash
-LIVE=C:/Users/jkind/.agents/harness
-git -C "$LIVE" status --porcelain                  # must print nothing
-git fetch -q "$LIVE" main                          # the live harness's commits, as FETCH_HEAD
-git diff --binary FETCH_HEAD HEAD:harness | git -C "$LIVE" apply --index
-git -C "$LIVE" commit -m "<the change, as in this repository's commit>"
-test "$(git -C "$LIVE" rev-parse 'HEAD^{tree}')" = "$(git rev-parse HEAD:harness)" && echo deployed
-(cd "$LIVE" && node tools/render.cjs)
-git -C "$LIVE" bundle create "$(pwd -W)/harness-history.bundle" --all
+node tools/deploy-harness.cjs --check   # build and test only; the live harness is not touched
+node tools/deploy-harness.cjs           # build, test, then deploy
 ```
 
-- The diff compares the live harness's last commit with `harness/` here. It carries every change not yet deployed, however many commits made it.
-- The `test` line prints `deployed` only when the live harness's tracked files match `harness/` exactly.
-- Untracked files in the live harness are left alone: `installation.json`, `state/`, `generated/` and `rules/default.rules`.
-- `render.cjs` rewrites the instruction files that `~/.claude/CLAUDE.md` and `~/.codex/AGENTS.md` link to.
-- The bundle path must be absolute. `git -C` runs from the live harness, so a relative path would write the bundle there.
+The script is the only way a change reaches the live harness. It:
+
+1. Refuses uncommitted changes under `harness/` here, or any uncommitted change in the live harness.
+2. Finds the commit here whose `harness/` matches the live harness. If none does, the live harness was changed outside this repository, and the script refuses (next section).
+3. Clones the live harness into a temporary folder, with its history, tags and line-ending setting. It applies the difference between that commit and `harness/` now, then checks the clone's files match `harness/`. Then it runs every harness test in the clone. If a test fails, it stops, and the live harness is unchanged.
+4. Fast-forwards the live harness to the tested commit, runs `tools/render.cjs` there, and rewrites `harness-history.bundle` here.
+
+Then commit `harness-history.bundle` and push. Untracked files in the live harness are left alone: `installation.json`, `state/`, `generated/` and `rules/default.rules`. The script's self-test is `node --test tools/deploy-harness-selftest.cjs`.
+
+## If the live harness was changed directly
+
+The deploy refuses until the change is brought here. With no undeployed changes in `harness/`, copy the live harness's last commit over `harness/`, review the difference, and commit it:
+
+```bash
+rm -rf harness && mkdir harness
+git -C C:/Users/jkind/.agents/harness archive HEAD | tar -x -C harness
+git diff --stat -- harness
+```
+
+Uncommitted edits in the live harness have to be committed there first, or moved here by hand.
 
 ## Install an older version
 
