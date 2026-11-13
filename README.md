@@ -129,17 +129,44 @@ The uninstaller deletes nothing:
 
 Close and reopen Claude Code and Codex. You can then delete the cloned folder. Codex command approvals made while the harness was installed are in `harness/rules/default.rules`, if you want to keep them.
 
+## Change the harness
+
+Skip this if you only use the harness.
+
+The hooks and task commands run from the folder the harness was installed from. An edit there changes every running session at once, before any test has run. So the copy you edit and the copy you install are kept apart:
+
+- Edit only `harness/` in this repository, under a task record, and commit.
+- Install from a separate git repository with the harness's history. On the owner's PC that is `~/.agents/harness`. To make one, clone the bundle and install from the clone:
+
+  ```powershell
+  git clone harness-history.bundle "$HOME\.agents\harness"
+  Set-Location "$HOME\.agents\harness"
+  node tools/install.cjs
+  ```
+
+- Deploy each committed change with the deploy script, from this repository's top folder. Never edit the installed copy by hand.
+
+  ```powershell
+  node tools/deploy-harness.cjs --check   # build and test only
+  node tools/deploy-harness.cjs           # build, test, then deploy
+  ```
+
+The script applies the change to a temporary clone of the installed copy and runs all the harness tests there. Only when they pass does it move the installed copy to the tested commit and rebuild the instructions. It refuses to run when either copy has uncommitted changes. It also refuses when the installed copy matches no commit here, which means someone edited it directly. After a deploy, commit the rewritten `harness-history.bundle` and push. `--live <folder>` deploys to an installed copy other than `~/.agents/harness`.
+
+Steps, and how to recover from a direct edit: [docs/maintenance.md](docs/maintenance.md).
+
 ## Repository layout
 
 | Path | What it is |
 |---|---|
-| [`harness/`](harness/) | The harness: a copy of its latest commit. Its own [README](harness/README.md) has the change log |
-| `harness-history.bundle` | The harness's git history, with tags `v1`, `v2` and `v2.1` |
+| [`harness/`](harness/) | The harness. Every change is made here, then deployed. Its own [README](harness/README.md) has the change log |
+| `harness-history.bundle` | The installed harness's git history, with tags `v1`, `v2` and `v2.1`. Rewritten by each deploy |
+| [`tools/deploy-harness.cjs`](tools/deploy-harness.cjs) | Deploys committed changes from `harness/` to the installed copy; self-test in `tools/deploy-harness-selftest.cjs` |
 | [`FINDINGS.md`](FINDINGS.md) | Results, design decisions and what each release changed |
 | [`docs/study-1.md`](docs/study-1.md) | Study 1: the v1 harness on three small tasks |
-| [`docs/maintenance.md`](docs/maintenance.md) | How the copy and the bundle are refreshed, and how to install an older version |
+| [`docs/maintenance.md`](docs/maintenance.md) | Deploy steps, recovering from a direct edit of the installed copy, and installing an older version |
 | [`follow-up/study-002/`](follow-up/study-002/) | Study 2 tools, protocols and measures |
-| `archives/`, `experiments/`, `tools/`, `protocol.json` | Study 1 tools and inputs |
+| `archives/`, `experiments/`, the rest of `tools/`, `protocol.json` | Study 1 tools and inputs |
 | `task_list/` | This study's own task records |
 
 Run folders, frozen task inputs and the blind-review keys are not tracked, because they are large or private. See `.gitignore`.
